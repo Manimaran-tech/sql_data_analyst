@@ -1,0 +1,25 @@
+# Python & Environments
+.venv/
+venv/
+env/
+.env
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+build/
+dist/
+
+# Databases
+*.sqlite3
+*.db
+
+# OS / Tooling
+.DS_Store
+.idea/
+.vscode/
+
+# OpenEnv Output logs
+outputs/
+build.log
