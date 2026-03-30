@@ -41,15 +41,19 @@ app = create_app(
 )
 
 
-# ── Fix HF Spaces /web redirect loop ────────────────────────────────────────
-# Gradio is mounted at /web, but Starlette auto-redirects /web → /web/ (307).
-# HF Spaces proxy doesn't follow this redirect, causing an infinite loop.
-# This middleware internally rewrites the path so no redirect is ever sent.
+# ── Fix HF Spaces /web redirect loop & asset paths ──────────────────────────
+# 1. Gradio is mounted at /web, but Starlette auto-redirects /web → /web/ (307).
+#    HF Spaces proxy doesn't follow this redirect, causing an infinite loop.
+# 2. Gradio's HTML references assets at /assets/... but serves them at /web/assets/...
+# This middleware internally rewrites both paths so everything works behind HF's proxy.
 
 @app.middleware("http")
-async def fix_trailing_slash_redirect(request, call_next):
-    if request.scope["path"] == "/web":
+async def fix_hf_proxy_paths(request, call_next):
+    path = request.scope["path"]
+    if path == "/web":
         request.scope["path"] = "/web/"
+    elif path.startswith("/assets/"):
+        request.scope["path"] = "/web" + path
     return await call_next(request)
 
 
