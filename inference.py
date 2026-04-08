@@ -265,17 +265,21 @@ async def run_task(env: SqlDataAnalystEnv, task_id: str) -> float:
 
 async def main():
     parser = argparse.ArgumentParser(description="SQL Data Analyst Inference Agent (Rule-Based)")
-    parser.add_argument("--base-url", default="http://localhost:8001", help="Server URL")
+    parser.add_argument("--base-url", default="http://localhost:8000", help="Server URL")
     parser.add_argument("--task", default=None, help="Specific task to run (default: all)")
     args = parser.parse_args()
 
     task_ids = [args.task] if args.task else list(STRATEGIES.keys())
     scores = {}
 
-    async with SqlDataAnalystEnv(base_url=args.base_url) as env:
-        for task_id in task_ids:
-            score = await run_task(env, task_id)
-            scores[task_id] = score
+    try:
+        async with SqlDataAnalystEnv(base_url=args.base_url) as env:
+            for task_id in task_ids:
+                score = await run_task(env, task_id)
+                scores[task_id] = score
+    except Exception as e:
+        print(f"Error connecting to OpenEnv on {args.base_url}: {e}")
+        sys.exit(1)
 
     # Print summary
     print(f"\n{'=' * 60}")
