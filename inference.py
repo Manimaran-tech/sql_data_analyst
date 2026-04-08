@@ -235,23 +235,32 @@ async def run_task(env: SqlDataAnalystEnv, task_id: str) -> float:
     print(f"📋 Task: {task_id}")
     print(f"{'=' * 60}")
 
+    print(f"[START] task={task_id}", flush=True)
+
     result = await env.reset(task_id=task_id)
     print(f"Description: {result.observation.task_description}")
     print(f"Max steps: {result.observation.steps_remaining}")
 
+    step_count = 0
     # Execute predefined queries
     for i, sql in enumerate(strategy["queries"]):
+        step_count += 1
         result = await env.step(AnalystAction(sql=sql))
         if result.observation.error:
             print(f"  Step {i+1}: ❌ Error: {result.observation.error}")
         else:
             print(f"  Step {i+1}: 🔍 {result.observation.row_count} rows | Reward: {result.observation.step_reward}")
         
+        print(f"[STEP] step={step_count} reward={result.observation.step_reward or 0.0}", flush=True)
+        
         if result.done:
             print(f"  ⚠️  Ran out of steps!")
-            return result.reward or 0.0
+            final_score = result.reward or 0.0
+            print(f"[END] task={task_id} score={final_score} steps={step_count}", flush=True)
+            return final_score
 
     # Submit answer
+    step_count += 1
     result = await env.step(AnalystAction(
         answer=strategy["answer"],
         evidence=strategy["evidence"],
@@ -259,6 +268,9 @@ async def run_task(env: SqlDataAnalystEnv, task_id: str) -> float:
     final_score = result.reward or 0.0
     print(f"  📝 Answer submitted")
     print(f"  📊 Final Score: {final_score:.3f}")
+    
+    print(f"[STEP] step={step_count} reward={result.observation.step_reward or 0.0}", flush=True)
+    print(f"[END] task={task_id} score={final_score} steps={step_count}", flush=True)
     
     return final_score
 
