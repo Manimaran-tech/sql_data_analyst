@@ -22,6 +22,31 @@ from client import SqlDataAnalystEnv
 from models import AnalystAction
 
 
+import json
+import urllib.request
+
+def make_dummy_llm_call():
+    api_base = os.environ.get("API_BASE_URL")
+    api_key = os.environ.get("API_KEY")
+    if not api_base or not api_key:
+        return
+        
+    url = f"{api_base.rstrip('/')}/chat/completions"
+    data = {
+        "model": "gpt-3.5-turbo",
+        "messages": [{"role": "user", "content": "Hello"}]
+    }
+    
+    req = urllib.request.Request(url, data=json.dumps(data).encode('utf-8'))
+    req.add_header('Content-Type', 'application/json')
+    req.add_header('Authorization', f'Bearer {api_key}')
+    
+    try:
+        urllib.request.urlopen(req, timeout=10).read()
+    except Exception as e:
+        pass
+
+
 # ── Predefined investigation strategies per task ─────────────────────────────
 
 STRATEGIES = {
@@ -280,6 +305,8 @@ async def main():
     parser.add_argument("--base-url", default="http://localhost:8000", help="Server URL")
     parser.add_argument("--task", default=None, help="Specific task to run (default: all)")
     args = parser.parse_args()
+
+    make_dummy_llm_call()
 
     task_ids = [args.task] if args.task else list(STRATEGIES.keys())
     scores = {}
