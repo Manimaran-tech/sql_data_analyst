@@ -117,7 +117,7 @@ def compute_final_reward(
 
     # ── Total Score ──────────────────────────────────────────────
     weighted = correctness * 0.6 + completeness * 0.3 + (efficiency / 1.3) * 0.1
-    total = max(0.0, min(1.0, cumulative_step_reward + weighted))
+    total = max(0.001, min(0.999, cumulative_step_reward + weighted))
 
     return {
         "correctness": round(correctness, 3),
