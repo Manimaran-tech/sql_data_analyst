@@ -1,6 +1,5 @@
 ---
 title: SQL Data Analyst Investigation Environment
-emoji: 🔍
 colorFrom: blue
 colorTo: purple
 sdk: docker
@@ -123,5 +122,3 @@ sql_data_analyst/
     ├── requirements.txt
     └── Dockerfile
 ```
-
-## 🏆 Built for the Meta PyTorch Hackathon
