@@ -84,21 +84,80 @@ async with SqlDataAnalystEnv(base_url="http://localhost:8000") as env:
 
 Total episode score: clipped to [0.0, 1.0]
 
-## 🛠️ Development
+## 📖 Open Source Project & Contributing
 
-```bash
-# Run locally
-uvicorn server.app:app --reload --port 8000
+SwarmAnalyst is an **open-source project** licensed under the MIT License. We welcome contributions from developers, researchers, and users. Whether you're fixing bugs, adding new features, or improving documentation, please read our [CONTRIBUTING.md](file:///d:/upgrade/sql_data_analyst/CONTRIBUTING.md) guide to learn how to set up your environment, follow coding standards, and submit Pull Requests.
 
-# Run tests
-python test_local.py
+---
 
-# Run baseline (requires OPENAI_API_KEY)
-python baseline.py
+## 🛠️ Environment Setup
 
-# Build Docker image
-docker build -t sql-data-analyst:latest -f server/Dockerfile .
-```
+### 1. Prerequisites
+To set up the development environment, make sure you have installed:
+* **Python 3.10+**
+* **Node.js 18+** & `npm`
+* **Rust/Cargo** (via [rustup](https://rustup.rs/))
+* **Windows Build Tools** (C++ Build Tools / MSVC Compiler) — *Required for building the Tauri app on Windows*
+
+### 2. Backend Setup
+1. Create and activate a Python virtual environment:
+   ```bash
+   python -m venv .venv
+   # Windows (PowerShell):
+   .venv\Scripts\Activate.ps1
+   # Linux/macOS:
+   source .venv/bin/activate
+   ```
+2. Install the backend package in editable development mode:
+   ```bash
+   pip install -e .[dev]
+   ```
+
+### 3. Frontend Setup
+1. Navigate to the frontend directory:
+   ```bash
+   cd frontend
+   ```
+2. Install the required Node packages:
+   ```bash
+   npm install
+   ```
+
+---
+
+## 🚀 Running & Using the Software
+
+### Development Mode (Web Interface)
+To run the components individually for web development:
+1. **Start the FastAPI Backend**:
+   ```bash
+   uvicorn server.app:app --reload --port 8000
+   ```
+2. **Start the Vite Frontend**:
+   ```bash
+   cd frontend
+   npm run dev
+   ```
+
+### Tauri Desktop App (Local Execution)
+To build and run the desktop application wrapper:
+1. **Package the Python Backend Sidecar**:
+   ```bash
+   # From the project root:
+   python backend/package_app.py
+   ```
+   *This uses PyInstaller to bundle your backend code into a single executable sidecar inside `src-tauri/binaries/`.*
+2. **Run Tauri App in Dev Mode**:
+   ```bash
+   npx @tauri-apps/cli dev
+   ```
+3. **Build the Production Installer Setup (.msi / .exe)**:
+   ```bash
+   npx @tauri-apps/cli build
+   ```
+   The compiled setups will be available under:
+   `src-tauri/target/release/bundle/nsis/` & `src-tauri/target/release/bundle/msi/`
+
 
 ## 📁 Project Structure
 
