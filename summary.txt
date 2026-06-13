@@ -1,0 +1,70 @@
+================================================================================
+                       SWARMANALYST - PROJECT DEVELOPMENT SUMMARY
+================================================================================
+This file summarizes all the architectures, features, bug fixes, and desktop app 
+packaging built inside the SwarmAnalyst codebase.
+
+--------------------------------------------------------------------------------
+1. UI/UX FRONT-END ARCHITECTURE & INTEGRATION
+--------------------------------------------------------------------------------
+* Integrated the custom UI/UX design (from the "UI AND UX" folder) into the active 
+  Vite + React frontend workspace, replacing all placeholders with active widgets.
+* Wired the UI to the local FastAPI (port 8002) and WebSocket backend:
+  - Live Swarm Logs: Streams color-coded logs showing real-time thoughts, queries, 
+    and approvals from the Schema, Query Writer, and QA agents.
+  - Connection Setup Hub: Wires pg, mongo, firestore, and CSV uploads to the 
+    backend DB adapters, complete with connection testing and schema reflection.
+  - Settings: Integrates key generation/deletion with the OS keyring endpoints 
+    and supports dynamic AI NIM model selection.
+* Fixed TypeScript compilation issues in "tsconfig.app.json" by disabling strict 
+  unused import constraints (setting noUnusedLocals, noUnusedParameters, and 
+  verbatimModuleSyntax to false) and resolved a missing React.useEffect import 
+  in "App.tsx". The frontend now builds successfully.
+
+--------------------------------------------------------------------------------
+2. HIGH-FIDELITY SEABORN DASHBOARD & DOWNLOADS
+--------------------------------------------------------------------------------
+* Re-engineered the backend's "generate_seaborn_dashboard" in "backend/utils.py" 
+  to produce a polished, high-density enterprise dashboard layout.
+* Dynamic KPI Cards Panel: Draws three aligned, white cards with colored indicators 
+  at the top of the canvas showing overall analytics metadata:
+  - "TOTAL RECORDS PROCESSED": Row counts aggregated across all sub-queries.
+  - "PRIMARY METRIC SUM": Dynamic summation of numerical values (formatted 
+    with suffixes like $M/k).
+  - "SWARM AGENT ORCHESTRATION": QA approval status.
+* Grid Layout Subplots: Scales plots (1x1, 1x2, or 2x2) based on active subtasks. 
+  Generates beautiful area fills under trend lines, clean categorical bars (color-
+  cycled), and scatter plots with light slate grid lines.
+* Download API: Exposed a "Download PNG" button in the Workspace UI, which calls 
+  the backend's "/api/download-dashboard" static download endpoint to save the 
+  dashboard locally.
+
+--------------------------------------------------------------------------------
+3. NATIVE DESKTOP EXPORT FEATURES (SAVE & SAVE AS)
+--------------------------------------------------------------------------------
+* Triggered native OS "Save As" prompts in the Tauri wrapper via HTML5 client Blob 
+  download pipelines:
+  - "Save Report": Exports the executive narrative analysis to a local Markdown 
+    file ("swarm_analytical_report.md").
+  - "Save SQL": Exports the compiled SQL database statements and execution details 
+    to a local text file ("swarm_execution_queries.txt").
+
+--------------------------------------------------------------------------------
+4. DESKTOP WRAPPER PACKAGING & COMPILER BUG FIXES
+--------------------------------------------------------------------------------
+* Downgraded the transitive dependency "time" to "=0.3.36" in "src-tauri/Cargo.toml". 
+  This resolved a trait coherence error (E0119 conflicting From implementations) 
+  triggered by "tauri-utils" on modern Rust toolchains (Rust 1.92+).
+* Fixed "ModuleNotFoundError" inside the PyInstaller sidecar binary by:
+  - Injecting workspace paths into Python's "sys.path" inside "backend/app.py".
+  - Updating "backend/package_app.py" to pass the workspace root folder to 
+    PyInstaller's "--paths" search directory.
+* Prevented process-forking loops in the sidecar backend. Packaged executables 
+  using uvicorn's reload=True attempt to spawn subprocesses of the binary, causing 
+  a fork storm of zombie processes. Disabled uvicorn's "reload" and passed the 
+  actual FastAPI "app" instance to "uvicorn.run()" to bypass dynamic string imports.
+* Compiled the production release of the Tauri desktop application, producing 
+  two zero-dependency installers:
+  - MSI: D:\upgrade\sql_data_analyst\src-tauri\target\release\bundle\msi\SwarmAnalyst_1.0.0_x64_en-US.msi
+  - EXE: D:\upgrade\sql_data_analyst\src-tauri\target\release\bundle\nsis\SwarmAnalyst_1.0.0_x64-setup.exe
+================================================================================

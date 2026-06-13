@@ -23,19 +23,19 @@ BASE_URL = os.environ.get("ENV_URL", "http://localhost:8001")
 async def test_basic_lookup():
     """Test the basic_lookup task end-to-end."""
     print("=" * 60)
-    print("🔍 TEST: basic_lookup — Top Revenue Products in Q4 2025")
+    print("TEST: basic_lookup - Top Revenue Products in Q4 2025")
     print("=" * 60)
 
     async with SqlDataAnalystEnv(base_url=BASE_URL) as env:
         # Reset with specific task
         result = await env.reset(task_id="basic_lookup")
-        print(f"\n📋 Task: {result.observation.task_description}")
-        print(f"📊 Steps allowed: {result.observation.steps_remaining}")
+        print(f"\nTask: {result.observation.task_description}")
+        print(f"Steps allowed: {result.observation.steps_remaining}")
         print(f"\n{result.observation.schema_info[:500]}...")
         print("-" * 60)
 
         # Step 1: Explore revenue by product
-        print("\n🔎 Step 1: Query top products by revenue in Q4 2025")
+        print("\nStep 1: Query top products by revenue in Q4 2025")
         result = await env.step(AnalystAction(
             sql="""
             SELECT p.name, p.category, 
@@ -55,7 +55,7 @@ async def test_basic_lookup():
         print("-" * 60)
 
         # Step 2: Verify with category breakdown
-        print("\n🔎 Step 2: Revenue by category in Q4 2025")
+        print("\nStep 2: Revenue by category in Q4 2025")
         result = await env.step(AnalystAction(
             sql="""
             SELECT p.category, SUM(oi.quantity * oi.unit_price * (1 - oi.discount)) as revenue
@@ -72,7 +72,7 @@ async def test_basic_lookup():
         print("-" * 60)
 
         # Step 3: Submit answer
-        print("\n📝 Step 3: Submit final answer")
+        print("\nStep 3: Submit final answer")
         result = await env.step(AnalystAction(
             answer=(
                 "The top 5 products by revenue in Q4 2025 are: "
@@ -96,7 +96,7 @@ async def test_basic_lookup():
 
         # Get state
         state = await env.state()
-        print(f"\n📊 Episode Summary:")
+        print(f"\nEpisode Summary:")
         print(f"  Task: {state.task_id}")
         print(f"  Steps used: {state.current_step}")
         print(f"  Total reward: {state.total_reward}")
@@ -107,44 +107,44 @@ async def test_basic_lookup():
 async def test_error_handling():
     """Test error handling: bad SQL, duplicate queries."""
     print("\n" + "=" * 60)
-    print("⚠️  TEST: Error Handling")
+    print("TEST: Error Handling")
     print("=" * 60)
 
     async with SqlDataAnalystEnv(base_url=BASE_URL) as env:
         result = await env.reset(task_id="basic_lookup")
 
         # Bad SQL (non-SELECT)
-        print("\n🔴 Non-SELECT test:")
+        print("\nNon-SELECT test:")
         result = await env.step(AnalystAction(sql="DELETE FROM orders"))
         print(f"Error: {result.observation.error}")
         print(f"Reward: {result.observation.step_reward}")
 
         # Invalid SQL
-        print("\n🔴 Invalid SQL test:")
+        print("\nInvalid SQL test:")
         result = await env.step(AnalystAction(sql="SELECT * FROM nonexistent_table"))
         print(f"Error: {result.observation.error}")
         print(f"Reward: {result.observation.step_reward}")
 
         # Duplicate query
-        print("\n🔴 Duplicate query test:")
+        print("\nDuplicate query test:")
         result = await env.step(AnalystAction(sql="SELECT COUNT(*) FROM orders"))
         print(f"First query reward: {result.observation.step_reward}")
         result = await env.step(AnalystAction(sql="SELECT COUNT(*) FROM orders"))
         print(f"Duplicate reward: {result.observation.step_reward}")
 
-        print("\n✅ Error handling works correctly!")
+        print("\nError handling works correctly!")
 
 
 async def main():
-    print("🚀 SQL Data Analyst Environment — Local Tests")
+    print("SQL Data Analyst Environment - Local Tests")
     print("=" * 60)
     try:
         await test_basic_lookup()
         await test_error_handling()
         print("\n" + "=" * 60)
-        print("✅ All tests passed!")
+        print("All tests passed!")
     except Exception as e:
-        print(f"\n❌ Test failed: {e}")
+        print(f"\nTest failed: {e}")
         import traceback
         traceback.print_exc()
 

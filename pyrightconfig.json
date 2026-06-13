@@ -1,0 +1,7 @@
+{
+  "extraPaths": [
+    ".",
+    "sql_data_analyst",
+    "d:/upgrade/sql_data_analyst"
+  ]
+}

@@ -8,9 +8,16 @@ version = "0.1.0"
 description = "Multi-step SQL Data Investigation Environment for OpenEnv"
 requires-python = ">=3.10"
 dependencies = [
+    "asyncpg>=0.31.0",
+    "duckdb>=1.5.3",
     # Core OpenEnv runtime (provides FastAPI server + HTTP client types)
+    "firebase-admin>=7.4.0",
+    "motor>=3.7.1",
     "openenv-core[core]>=0.2.1",
     # SQLite is built into Python stdlib — no extra DB deps needed
+    "openpyxl>=3.1.5",
+    "pymongo>=4.17.0",
+    "sqlalchemy>=2.0.50",
 ]
 
 [project.optional-dependencies]
@@ -26,3 +33,6 @@ server = "sql_data_analyst.server.app:main"
 include-package-data = true
 packages = ["sql_data_analyst", "sql_data_analyst.server"]
 package-dir = { "sql_data_analyst" = ".", "sql_data_analyst.server" = "server" }
+
+[tool.pyright]
+extraPaths = ["."]

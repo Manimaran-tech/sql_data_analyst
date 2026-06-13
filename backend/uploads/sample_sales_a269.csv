@@ -1,0 +1,2661 @@
+order_id,order_date,product_name,category,quantity,unit_price,discount,region,customer_segment
+1000,2025-01-01,Cotton T-Shirt,Clothing,2,36.49,0.1,Europe,Premium
+1001,2025-01-01,Denim Jeans,Clothing,2,91.85,0.2,Europe,Consumer
+1002,2025-01-01,Wool Sweater,Clothing,3,141.17,0.0,LATAM,Premium
+1003,2025-01-01,Dumbbell Set,Sports,4,51.6,0.0,North America,Corporate
+1004,2025-01-01,Smartwatch Ultra,Electronics,2,800.77,0.0,Europe,Consumer
+1005,2025-01-01,Smartwatch Ultra,Electronics,4,690.77,0.0,LATAM,Consumer
+1006,2025-01-01,Camping Tent,Sports,2,38.08,0.05,Europe,Premium
+1007,2025-01-01,iPhone 15,Electronics,4,1029.94,0.05,APAC,Premium
+1008,2025-01-01,Tennis Racket,Sports,2,151.76,0.0,Europe,Consumer
+1009,2025-01-01,Air Purifier,Home,3,208.85,0.0,APAC,Corporate
+1010,2025-01-02,Camping Tent,Sports,4,125.24,0.0,Europe,Corporate
+1011,2025-01-02,iPad Pro,Electronics,3,745.13,0.05,LATAM,Consumer
+1012,2025-01-02,Camping Tent,Sports,2,92.9,0.0,North America,Premium
+1013,2025-01-02,Ergonomic Chair,Home,2,386.84,0.0,North America,Premium
+1014,2025-01-02,Denim Jeans,Clothing,1,86.78,0.0,Europe,Corporate
+1015,2025-01-02,iPad Pro,Electronics,4,306.16,0.0,Europe,Home Office
+1016,2025-01-02,MacBook Air,Electronics,4,703.95,0.2,North America,Consumer
+1017,2025-01-02,Wool Sweater,Clothing,2,60.99,0.0,LATAM,Corporate
+1018,2025-01-02,Air Purifier,Home,1,137.97,0.0,LATAM,Premium
+1019,2025-01-02,Cotton T-Shirt,Clothing,1,138.89,0.0,LATAM,Corporate
+1020,2025-01-03,Tennis Racket,Sports,4,30.54,0.15,LATAM,Home Office
+1021,2025-01-03,iPad Pro,Electronics,1,708.72,0.0,Europe,Premium
+1022,2025-01-03,Bluetooth Speaker,Electronics,4,736.25,0.2,LATAM,Premium
+1023,2025-01-03,Denim Jeans,Clothing,1,92.9,0.0,North America,Corporate
+1024,2025-01-03,Coffee Maker,Home,4,90.11,0.0,Europe,Home Office
+1025,2025-01-03,Denim Jeans,Clothing,4,42.88,0.0,Europe,Home Office
+1026,2025-01-03,Camping Tent,Sports,2,64.52,0.15,LATAM,Corporate
+1027,2025-01-03,Wool Sweater,Clothing,1,40.87,0.0,LATAM,Consumer
+1028,2025-01-03,Tennis Racket,Sports,4,99.36,0.0,North America,Premium
+1029,2025-01-03,MacBook Air,Electronics,1,1108.59,0.1,APAC,Home Office
+1030,2025-01-03,Dumbbell Set,Sports,2,82.74,0.1,Europe,Corporate
+1031,2025-01-03,Air Purifier,Home,2,142.08,0.2,Europe,Consumer
+1032,2025-01-03,Running Shoes,Clothing,1,42.18,0.05,LATAM,Home Office
+1033,2025-01-03,Leather Jacket,Clothing,3,118.98,0.1,LATAM,Home Office
+1034,2025-01-03,Air Purifier,Home,3,230.92,0.05,Europe,Corporate
+1035,2025-01-03,Camping Tent,Sports,3,68.62,0.05,Europe,Corporate
+1036,2025-01-03,Standing Desk,Home,4,157.34,0.0,Europe,Home Office
+1037,2025-01-03,Denim Jeans,Clothing,3,50.3,0.2,LATAM,Corporate
+1038,2025-01-03,Coffee Maker,Home,4,348.66,0.05,North America,Home Office
+1039,2025-01-03,Denim Jeans,Clothing,3,79.06,0.0,LATAM,Premium
+1040,2025-01-04,Wool Sweater,Clothing,4,30.87,0.2,LATAM,Home Office
+1041,2025-01-04,MacBook Air,Electronics,3,963.9,0.15,APAC,Corporate
+1042,2025-01-04,Leather Jacket,Clothing,2,76.23,0.1,LATAM,Corporate
+1043,2025-01-04,LED Desk Lamp,Home,1,292.28,0.0,Europe,Consumer
+1044,2025-01-04,Air Purifier,Home,4,125.97,0.1,North America,Premium
+1045,2025-01-04,LED Desk Lamp,Home,3,202.88,0.15,APAC,Home Office
+1046,2025-01-04,Smartwatch Ultra,Electronics,3,770.24,0.0,Europe,Home Office
+1047,2025-01-04,Running Shoes,Clothing,1,34.88,0.0,North America,Consumer
+1048,2025-01-04,Ergonomic Chair,Home,3,195.19,0.0,North America,Premium
+1049,2025-01-04,Smartwatch Ultra,Electronics,2,1149.03,0.0,North America,Consumer
+1050,2025-01-04,Ergonomic Chair,Home,2,383.58,0.0,APAC,Consumer
+1051,2025-01-04,Smartwatch Ultra,Electronics,4,731.58,0.05,APAC,Premium
+1052,2025-01-04,Bluetooth Speaker,Electronics,1,1106.92,0.0,North America,Premium
+1053,2025-01-04,Sleeping Bag,Sports,1,126.69,0.1,Europe,Corporate
+1054,2025-01-05,Denim Jeans,Clothing,2,54.11,0.0,North America,Corporate
+1055,2025-01-05,Ergonomic Chair,Home,1,324.96,0.05,APAC,Home Office
+1056,2025-01-05,Yoga Mat,Sports,4,160.16,0.0,APAC,Consumer
+1057,2025-01-05,Tennis Racket,Sports,4,157.23,0.15,APAC,Consumer
+1058,2025-01-05,Cotton T-Shirt,Clothing,2,142.25,0.05,APAC,Corporate
+1059,2025-01-05,Running Shoes,Clothing,4,94.08,0.2,North America,Consumer
+1060,2025-01-05,Coffee Maker,Home,3,231.9,0.1,North America,Consumer
+1061,2025-01-05,iPhone 15,Electronics,3,449.1,0.0,LATAM,Premium
+1062,2025-01-05,Air Purifier,Home,3,53.93,0.1,Europe,Consumer
+1063,2025-01-05,Denim Jeans,Clothing,1,99.21,0.1,APAC,Corporate
+1064,2025-01-05,Ergonomic Chair,Home,1,225.37,0.15,APAC,Home Office
+1065,2025-01-05,Cotton T-Shirt,Clothing,4,79.12,0.15,Europe,Consumer
+1066,2025-01-05,Sleeping Bag,Sports,2,36.87,0.2,APAC,Consumer
+1067,2025-01-05,Camping Tent,Sports,3,86.3,0.15,Europe,Home Office
+1068,2025-01-06,Sleeping Bag,Sports,4,45.91,0.0,APAC,Consumer
+1069,2025-01-06,Ergonomic Chair,Home,4,273.37,0.0,LATAM,Corporate
+1070,2025-01-06,Standing Desk,Home,2,125.14,0.0,APAC,Corporate
+1071,2025-01-06,Ergonomic Chair,Home,1,163.32,0.0,North America,Corporate
+1072,2025-01-06,Bluetooth Speaker,Electronics,3,650.81,0.0,APAC,Consumer
+1073,2025-01-06,Air Purifier,Home,2,141.16,0.15,LATAM,Home Office
+1074,2025-01-06,Cotton T-Shirt,Clothing,3,106.26,0.1,LATAM,Home Office
+1075,2025-01-06,Leather Jacket,Clothing,3,118.95,0.1,LATAM,Premium
+1076,2025-01-06,Cotton T-Shirt,Clothing,4,78.39,0.1,Europe,Home Office
+1077,2025-01-06,Sleeping Bag,Sports,3,166.59,0.2,APAC,Corporate
+1078,2025-01-06,iPhone 15,Electronics,3,394.32,0.0,North America,Premium
+1079,2025-01-06,Wool Sweater,Clothing,4,107.54,0.0,APAC,Consumer
+1080,2025-01-06,Bluetooth Speaker,Electronics,4,572.26,0.2,LATAM,Corporate
+1081,2025-01-06,Dumbbell Set,Sports,2,97.14,0.0,Europe,Consumer
+1082,2025-01-06,Dumbbell Set,Sports,1,145.65,0.0,LATAM,Premium
+1083,2025-01-06,MacBook Air,Electronics,3,826.36,0.0,APAC,Premium
+1084,2025-01-06,Coffee Maker,Home,3,298.74,0.0,APAC,Consumer
+1085,2025-01-06,Running Shoes,Clothing,1,53.87,0.0,LATAM,Home Office
+1086,2025-01-06,Tennis Racket,Sports,1,76.68,0.0,North America,Home Office
+1087,2025-01-06,Cotton T-Shirt,Clothing,3,81.53,0.0,APAC,Consumer
+1088,2025-01-07,Air Purifier,Home,3,168.02,0.0,APAC,Home Office
+1089,2025-01-07,Ergonomic Chair,Home,1,58.14,0.15,North America,Consumer
+1090,2025-01-07,Cotton T-Shirt,Clothing,4,98.78,0.15,APAC,Consumer
+1091,2025-01-07,iPhone 15,Electronics,2,1086.98,0.05,APAC,Premium
+1092,2025-01-07,Camping Tent,Sports,1,143.46,0.15,APAC,Home Office
+1093,2025-01-07,Wool Sweater,Clothing,1,80.6,0.1,LATAM,Premium
+1094,2025-01-07,Yoga Mat,Sports,4,22.32,0.0,LATAM,Home Office
+1095,2025-01-07,Ergonomic Chair,Home,4,198.56,0.2,LATAM,Consumer
+1096,2025-01-07,iPad Pro,Electronics,3,428.32,0.0,Europe,Premium
+1097,2025-01-07,LED Desk Lamp,Home,2,79.74,0.05,LATAM,Corporate
+1098,2025-01-07,Wool Sweater,Clothing,2,43.47,0.05,APAC,Premium
+1099,2025-01-07,Leather Jacket,Clothing,4,54.55,0.2,Europe,Corporate
+1100,2025-01-07,Standing Desk,Home,2,215.37,0.1,LATAM,Corporate
+1101,2025-01-07,Standing Desk,Home,1,330.57,0.05,LATAM,Premium
+1102,2025-01-07,Bluetooth Speaker,Electronics,4,633.33,0.15,APAC,Premium
+1103,2025-01-07,Air Purifier,Home,3,239.37,0.1,Europe,Consumer
+1104,2025-01-07,Cotton T-Shirt,Clothing,1,31.18,0.0,APAC,Corporate
+1105,2025-01-07,Yoga Mat,Sports,2,124.14,0.2,LATAM,Consumer
+1106,2025-01-07,Air Purifier,Home,2,133.51,0.2,North America,Premium
+1107,2025-01-07,Standing Desk,Home,1,352.53,0.1,Europe,Corporate
+1108,2025-01-08,Bluetooth Speaker,Electronics,4,308.27,0.0,North America,Consumer
+1109,2025-01-08,Denim Jeans,Clothing,2,93.51,0.15,LATAM,Consumer
+1110,2025-01-08,Bluetooth Speaker,Electronics,4,820.12,0.15,Europe,Corporate
+1111,2025-01-08,Leather Jacket,Clothing,3,145.78,0.0,LATAM,Consumer
+1112,2025-01-08,Wool Sweater,Clothing,1,40.85,0.05,LATAM,Consumer
+1113,2025-01-08,Coffee Maker,Home,1,173.98,0.2,APAC,Premium
+1114,2025-01-08,iPhone 15,Electronics,4,1012.19,0.0,Europe,Home Office
+1115,2025-01-08,Camping Tent,Sports,1,186.25,0.15,APAC,Corporate
+1116,2025-01-08,Coffee Maker,Home,4,130.05,0.0,North America,Corporate
+1117,2025-01-08,Yoga Mat,Sports,2,122.62,0.0,North America,Home Office
+1118,2025-01-08,Dumbbell Set,Sports,2,54.17,0.0,North America,Consumer
+1119,2025-01-08,iPad Pro,Electronics,1,940.64,0.1,LATAM,Premium
+1120,2025-01-08,Camping Tent,Sports,4,128.87,0.2,Europe,Corporate
+1121,2025-01-09,iPhone 15,Electronics,4,1143.16,0.05,North America,Corporate
+1122,2025-01-09,iPad Pro,Electronics,2,856.02,0.2,LATAM,Consumer
+1123,2025-01-09,Cotton T-Shirt,Clothing,3,135.33,0.05,North America,Consumer
+1124,2025-01-09,Wool Sweater,Clothing,3,123.62,0.0,APAC,Premium
+1125,2025-01-09,MacBook Air,Electronics,3,797.42,0.2,LATAM,Corporate
+1126,2025-01-09,MacBook Air,Electronics,3,348.49,0.0,LATAM,Corporate
+1127,2025-01-09,Cotton T-Shirt,Clothing,4,127.5,0.0,LATAM,Home Office
+1128,2025-01-09,iPhone 15,Electronics,4,422.7,0.05,North America,Home Office
+1129,2025-01-09,Camping Tent,Sports,3,107.7,0.1,APAC,Home Office
+1130,2025-01-09,Tennis Racket,Sports,2,144.75,0.1,APAC,Corporate
+1131,2025-01-10,Wool Sweater,Clothing,4,141.76,0.05,APAC,Corporate
+1132,2025-01-10,iPad Pro,Electronics,1,380.29,0.15,Europe,Home Office
+1133,2025-01-10,Standing Desk,Home,3,73.79,0.05,North America,Corporate
+1134,2025-01-10,Running Shoes,Clothing,3,125.32,0.1,APAC,Corporate
+1135,2025-01-10,Denim Jeans,Clothing,3,68.68,0.1,LATAM,Corporate
+1136,2025-01-10,Smartwatch Ultra,Electronics,4,581.09,0.15,Europe,Premium
+1137,2025-01-10,MacBook Air,Electronics,2,797.27,0.0,APAC,Consumer
+1138,2025-01-10,iPad Pro,Electronics,3,608.4,0.1,APAC,Corporate
+1139,2025-01-10,Smartwatch Ultra,Electronics,2,216.58,0.1,LATAM,Home Office
+1140,2025-01-10,Sleeping Bag,Sports,4,148.08,0.1,North America,Premium
+1141,2025-01-10,Cotton T-Shirt,Clothing,4,72.14,0.1,North America,Premium
+1142,2025-01-10,Standing Desk,Home,4,250.65,0.05,North America,Premium
+1143,2025-01-10,Air Purifier,Home,4,280.12,0.15,Europe,Consumer
+1144,2025-01-10,Wool Sweater,Clothing,1,45.68,0.15,North America,Consumer
+1145,2025-01-11,LED Desk Lamp,Home,4,144.87,0.1,LATAM,Home Office
+1146,2025-01-11,LED Desk Lamp,Home,3,275.95,0.0,Europe,Consumer
+1147,2025-01-11,Wool Sweater,Clothing,1,70.04,0.0,North America,Corporate
+1148,2025-01-11,Coffee Maker,Home,4,205.34,0.0,APAC,Consumer
+1149,2025-01-11,Air Purifier,Home,4,107.22,0.2,LATAM,Home Office
+1150,2025-01-11,LED Desk Lamp,Home,1,230.05,0.15,APAC,Corporate
+1151,2025-01-11,Camping Tent,Sports,3,45.95,0.0,LATAM,Premium
+1152,2025-01-11,Dumbbell Set,Sports,3,60.86,0.0,LATAM,Consumer
+1153,2025-01-11,Smartwatch Ultra,Electronics,1,705.97,0.0,LATAM,Corporate
+1154,2025-01-11,Cotton T-Shirt,Clothing,2,93.87,0.2,North America,Home Office
+1155,2025-01-11,iPhone 15,Electronics,2,264.75,0.0,LATAM,Consumer
+1156,2025-01-11,Bluetooth Speaker,Electronics,4,405.62,0.0,APAC,Corporate
+1157,2025-01-12,Tennis Racket,Sports,4,192.17,0.2,LATAM,Corporate
+1158,2025-01-12,Smartwatch Ultra,Electronics,1,663.0,0.2,APAC,Corporate
+1159,2025-01-12,Yoga Mat,Sports,2,174.14,0.0,Europe,Premium
+1160,2025-01-12,iPad Pro,Electronics,2,689.1,0.05,North America,Consumer
+1161,2025-01-12,MacBook Air,Electronics,4,485.94,0.15,APAC,Premium
+1162,2025-01-12,Sleeping Bag,Sports,3,134.69,0.05,North America,Home Office
+1163,2025-01-12,Tennis Racket,Sports,4,51.73,0.0,LATAM,Premium
+1164,2025-01-12,Denim Jeans,Clothing,4,51.83,0.1,North America,Premium
+1165,2025-01-12,Ergonomic Chair,Home,4,171.45,0.0,Europe,Home Office
+1166,2025-01-12,Ergonomic Chair,Home,1,161.16,0.0,LATAM,Corporate
+1167,2025-01-12,Camping Tent,Sports,1,124.76,0.1,Europe,Corporate
+1168,2025-01-12,Standing Desk,Home,1,186.38,0.0,North America,Consumer
+1169,2025-01-12,MacBook Air,Electronics,3,868.54,0.0,LATAM,Premium
+1170,2025-01-12,Ergonomic Chair,Home,3,349.76,0.05,Europe,Premium
+1171,2025-01-13,Bluetooth Speaker,Electronics,1,895.67,0.1,Europe,Consumer
+1172,2025-01-13,Bluetooth Speaker,Electronics,3,401.22,0.0,North America,Consumer
+1173,2025-01-13,Wool Sweater,Clothing,3,51.17,0.2,LATAM,Home Office
+1174,2025-01-13,Dumbbell Set,Sports,1,136.4,0.05,APAC,Consumer
+1175,2025-01-13,Wool Sweater,Clothing,3,68.92,0.2,APAC,Corporate
+1176,2025-01-13,Dumbbell Set,Sports,1,25.11,0.05,APAC,Corporate
+1177,2025-01-13,Yoga Mat,Sports,2,146.86,0.0,APAC,Corporate
+1178,2025-01-13,Bluetooth Speaker,Electronics,4,909.4,0.2,LATAM,Premium
+1179,2025-01-13,Cotton T-Shirt,Clothing,4,95.58,0.15,Europe,Home Office
+1180,2025-01-13,Smartwatch Ultra,Electronics,1,950.07,0.15,North America,Consumer
+1181,2025-01-14,iPad Pro,Electronics,2,1068.77,0.1,LATAM,Consumer
+1182,2025-01-14,Denim Jeans,Clothing,2,59.57,0.0,Europe,Consumer
+1183,2025-01-14,Leather Jacket,Clothing,4,85.68,0.05,LATAM,Consumer
+1184,2025-01-14,Standing Desk,Home,1,65.4,0.1,Europe,Home Office
+1185,2025-01-14,Cotton T-Shirt,Clothing,3,128.38,0.2,North America,Corporate
+1186,2025-01-14,Leather Jacket,Clothing,4,39.15,0.2,LATAM,Home Office
+1187,2025-01-14,Yoga Mat,Sports,2,126.08,0.15,LATAM,Corporate
+1188,2025-01-14,Tennis Racket,Sports,4,38.06,0.0,North America,Premium
+1189,2025-01-14,Sleeping Bag,Sports,1,178.17,0.2,LATAM,Corporate
+1190,2025-01-14,Denim Jeans,Clothing,4,104.86,0.0,North America,Premium
+1191,2025-01-14,Leather Jacket,Clothing,1,30.29,0.0,Europe,Corporate
+1192,2025-01-14,Ergonomic Chair,Home,1,119.19,0.05,North America,Premium
+1193,2025-01-15,Yoga Mat,Sports,1,64.03,0.0,APAC,Consumer
+1194,2025-01-15,Air Purifier,Home,4,266.64,0.1,Europe,Home Office
+1195,2025-01-15,iPad Pro,Electronics,2,520.96,0.05,LATAM,Home Office
+1196,2025-01-15,Bluetooth Speaker,Electronics,1,1151.06,0.2,North America,Premium
+1197,2025-01-15,Yoga Mat,Sports,3,58.65,0.05,LATAM,Home Office
+1198,2025-01-15,Leather Jacket,Clothing,1,55.53,0.2,Europe,Consumer
+1199,2025-01-15,Smartwatch Ultra,Electronics,4,1042.52,0.15,APAC,Corporate
+1200,2025-01-15,Wool Sweater,Clothing,1,107.12,0.1,North America,Premium
+1201,2025-01-15,Smartwatch Ultra,Electronics,4,1130.73,0.15,APAC,Corporate
+1202,2025-01-15,MacBook Air,Electronics,1,587.37,0.0,LATAM,Consumer
+1203,2025-01-15,Ergonomic Chair,Home,4,363.11,0.15,LATAM,Home Office
+1204,2025-01-15,Coffee Maker,Home,4,84.16,0.05,APAC,Home Office
+1205,2025-01-15,Smartwatch Ultra,Electronics,2,728.87,0.0,North America,Premium
+1206,2025-01-16,Running Shoes,Clothing,4,56.19,0.2,Europe,Corporate
+1207,2025-01-16,Dumbbell Set,Sports,2,134.85,0.0,LATAM,Consumer
+1208,2025-01-16,Coffee Maker,Home,3,294.54,0.0,North America,Corporate
+1209,2025-01-16,Camping Tent,Sports,3,78.98,0.0,LATAM,Premium
+1210,2025-01-16,Coffee Maker,Home,2,194.97,0.2,North America,Home Office
+1211,2025-01-16,Smartwatch Ultra,Electronics,4,342.59,0.05,APAC,Corporate
+1212,2025-01-16,iPad Pro,Electronics,2,711.86,0.15,APAC,Home Office
+1213,2025-01-16,Bluetooth Speaker,Electronics,3,349.55,0.05,North America,Home Office
+1214,2025-01-16,Leather Jacket,Clothing,4,65.24,0.1,Europe,Consumer
+1215,2025-01-16,Bluetooth Speaker,Electronics,1,840.54,0.0,LATAM,Premium
+1216,2025-01-16,Smartwatch Ultra,Electronics,4,1023.4,0.2,LATAM,Home Office
+1217,2025-01-16,Standing Desk,Home,2,336.59,0.05,Europe,Consumer
+1218,2025-01-17,Tennis Racket,Sports,4,107.61,0.0,Europe,Consumer
+1219,2025-01-17,Air Purifier,Home,1,344.26,0.1,North America,Corporate
+1220,2025-01-17,Wool Sweater,Clothing,2,117.91,0.1,LATAM,Premium
+1221,2025-01-17,Leather Jacket,Clothing,3,55.38,0.0,North America,Home Office
+1222,2025-01-17,Leather Jacket,Clothing,1,74.74,0.2,LATAM,Consumer
+1223,2025-01-17,Bluetooth Speaker,Electronics,4,467.63,0.2,North America,Home Office
+1224,2025-01-17,Bluetooth Speaker,Electronics,4,282.89,0.0,North America,Premium
+1225,2025-01-17,Sleeping Bag,Sports,4,64.09,0.0,Europe,Premium
+1226,2025-01-17,Cotton T-Shirt,Clothing,1,87.72,0.2,Europe,Consumer
+1227,2025-01-17,Sleeping Bag,Sports,2,122.28,0.05,North America,Consumer
+1228,2025-01-17,Cotton T-Shirt,Clothing,1,137.86,0.2,North America,Corporate
+1229,2025-01-17,Bluetooth Speaker,Electronics,3,348.48,0.2,North America,Consumer
+1230,2025-01-17,Standing Desk,Home,4,307.62,0.0,Europe,Corporate
+1231,2025-01-17,Coffee Maker,Home,3,293.41,0.15,Europe,Consumer
+1232,2025-01-18,Dumbbell Set,Sports,3,36.29,0.0,APAC,Premium
+1233,2025-01-18,Ergonomic Chair,Home,3,350.87,0.0,Europe,Home Office
+1234,2025-01-18,Coffee Maker,Home,2,304.14,0.0,Europe,Corporate
+1235,2025-01-18,Smartwatch Ultra,Electronics,2,638.14,0.2,APAC,Home Office
+1236,2025-01-18,Denim Jeans,Clothing,3,61.37,0.15,North America,Premium
+1237,2025-01-18,Leather Jacket,Clothing,4,117.14,0.2,Europe,Home Office
+1238,2025-01-18,Smartwatch Ultra,Electronics,2,1043.29,0.0,APAC,Consumer
+1239,2025-01-18,Denim Jeans,Clothing,4,148.53,0.05,APAC,Home Office
+1240,2025-01-18,Standing Desk,Home,1,98.03,0.0,North America,Home Office
+1241,2025-01-18,Sleeping Bag,Sports,3,74.0,0.1,LATAM,Corporate
+1242,2025-01-18,Cotton T-Shirt,Clothing,3,146.33,0.1,APAC,Corporate
+1243,2025-01-18,Coffee Maker,Home,3,58.85,0.0,LATAM,Premium
+1244,2025-01-18,Sleeping Bag,Sports,3,107.7,0.05,Europe,Premium
+1245,2025-01-18,Air Purifier,Home,1,232.83,0.1,APAC,Corporate
+1246,2025-01-18,LED Desk Lamp,Home,1,146.93,0.15,APAC,Consumer
+1247,2025-01-18,iPhone 15,Electronics,3,888.48,0.1,LATAM,Consumer
+1248,2025-01-18,Yoga Mat,Sports,1,110.37,0.15,LATAM,Consumer
+1249,2025-01-19,Coffee Maker,Home,4,304.57,0.1,Europe,Home Office
+1250,2025-01-19,Leather Jacket,Clothing,3,133.47,0.1,North America,Corporate
+1251,2025-01-19,Ergonomic Chair,Home,3,173.92,0.0,Europe,Corporate
+1252,2025-01-19,Camping Tent,Sports,1,123.58,0.0,North America,Consumer
+1253,2025-01-19,Dumbbell Set,Sports,4,113.56,0.15,LATAM,Home Office
+1254,2025-01-19,LED Desk Lamp,Home,3,251.0,0.1,APAC,Home Office
+1255,2025-01-19,Yoga Mat,Sports,1,168.75,0.2,LATAM,Consumer
+1256,2025-01-19,Denim Jeans,Clothing,1,120.82,0.0,APAC,Corporate
+1257,2025-01-19,MacBook Air,Electronics,2,202.55,0.15,APAC,Consumer
+1258,2025-01-19,Yoga Mat,Sports,1,100.26,0.2,North America,Premium
+1259,2025-01-19,Tennis Racket,Sports,4,17.47,0.0,LATAM,Corporate
+1260,2025-01-19,Leather Jacket,Clothing,3,92.24,0.05,APAC,Corporate
+1261,2025-01-19,Dumbbell Set,Sports,4,23.3,0.15,APAC,Consumer
+1262,2025-01-19,Tennis Racket,Sports,2,111.64,0.0,North America,Premium
+1263,2025-01-19,Standing Desk,Home,1,304.43,0.0,Europe,Home Office
+1264,2025-01-20,Wool Sweater,Clothing,4,144.47,0.0,LATAM,Corporate
+1265,2025-01-20,Cotton T-Shirt,Clothing,3,90.9,0.0,LATAM,Premium
+1266,2025-01-20,Cotton T-Shirt,Clothing,1,88.27,0.05,LATAM,Corporate
+1267,2025-01-20,iPad Pro,Electronics,4,657.58,0.05,APAC,Home Office
+1268,2025-01-20,Standing Desk,Home,3,57.56,0.05,APAC,Premium
+1269,2025-01-20,Yoga Mat,Sports,4,156.67,0.0,Europe,Home Office
+1270,2025-01-20,Wool Sweater,Clothing,1,122.28,0.0,North America,Premium
+1271,2025-01-20,Denim Jeans,Clothing,4,54.34,0.05,LATAM,Consumer
+1272,2025-01-20,Wool Sweater,Clothing,1,140.65,0.2,Europe,Consumer
+1273,2025-01-20,Wool Sweater,Clothing,2,84.37,0.1,North America,Corporate
+1274,2025-01-20,Smartwatch Ultra,Electronics,1,502.1,0.0,APAC,Consumer
+1275,2025-01-21,LED Desk Lamp,Home,3,210.45,0.2,Europe,Premium
+1276,2025-01-21,Camping Tent,Sports,3,91.4,0.0,North America,Consumer
+1277,2025-01-21,Running Shoes,Clothing,4,98.92,0.1,North America,Home Office
+1278,2025-01-21,Wool Sweater,Clothing,4,110.73,0.0,APAC,Premium
+1279,2025-01-21,Running Shoes,Clothing,2,51.45,0.0,Europe,Consumer
+1280,2025-01-21,Standing Desk,Home,2,371.33,0.05,LATAM,Corporate
+1281,2025-01-21,Sleeping Bag,Sports,2,158.6,0.0,North America,Corporate
+1282,2025-01-21,Wool Sweater,Clothing,4,60.03,0.15,Europe,Consumer
+1283,2025-01-21,Running Shoes,Clothing,2,139.75,0.15,North America,Home Office
+1284,2025-01-21,Leather Jacket,Clothing,3,91.54,0.1,North America,Premium
+1285,2025-01-21,iPhone 15,Electronics,2,703.14,0.15,APAC,Premium
+1286,2025-01-21,Leather Jacket,Clothing,2,100.89,0.0,APAC,Corporate
+1287,2025-01-21,Cotton T-Shirt,Clothing,2,132.75,0.0,LATAM,Consumer
+1288,2025-01-22,Running Shoes,Clothing,4,85.32,0.1,LATAM,Home Office
+1289,2025-01-22,Yoga Mat,Sports,4,110.58,0.2,North America,Consumer
+1290,2025-01-22,Coffee Maker,Home,2,326.68,0.2,APAC,Home Office
+1291,2025-01-22,Bluetooth Speaker,Electronics,2,492.1,0.1,North America,Premium
+1292,2025-01-22,Yoga Mat,Sports,1,38.5,0.2,North America,Premium
+1293,2025-01-22,Camping Tent,Sports,1,75.6,0.0,North America,Corporate
+1294,2025-01-22,MacBook Air,Electronics,2,1104.25,0.0,Europe,Home Office
+1295,2025-01-22,Standing Desk,Home,1,227.47,0.0,APAC,Consumer
+1296,2025-01-22,Coffee Maker,Home,3,346.34,0.15,LATAM,Consumer
+1297,2025-01-22,Bluetooth Speaker,Electronics,2,988.97,0.15,APAC,Corporate
+1298,2025-01-23,Ergonomic Chair,Home,1,241.76,0.05,Europe,Premium
+1299,2025-01-23,Dumbbell Set,Sports,2,60.31,0.1,Europe,Consumer
+1300,2025-01-23,iPad Pro,Electronics,1,283.24,0.15,APAC,Premium
+1301,2025-01-23,LED Desk Lamp,Home,3,165.58,0.15,LATAM,Premium
+1302,2025-01-23,Bluetooth Speaker,Electronics,2,974.06,0.0,North America,Corporate
+1303,2025-01-23,Camping Tent,Sports,4,50.83,0.0,Europe,Home Office
+1304,2025-01-23,Ergonomic Chair,Home,3,144.51,0.0,LATAM,Home Office
+1305,2025-01-23,Coffee Maker,Home,2,176.52,0.0,North America,Home Office
+1306,2025-01-23,Yoga Mat,Sports,1,129.13,0.1,Europe,Premium
+1307,2025-01-23,Bluetooth Speaker,Electronics,4,1119.76,0.0,North America,Corporate
+1308,2025-01-23,Running Shoes,Clothing,3,36.76,0.05,North America,Premium
+1309,2025-01-23,Denim Jeans,Clothing,3,94.44,0.0,LATAM,Home Office
+1310,2025-01-23,iPhone 15,Electronics,2,1139.61,0.0,North America,Corporate
+1311,2025-01-23,Yoga Mat,Sports,4,59.22,0.15,LATAM,Premium
+1312,2025-01-23,Running Shoes,Clothing,2,32.46,0.2,Europe,Consumer
+1313,2025-01-24,Standing Desk,Home,1,261.5,0.0,North America,Premium
+1314,2025-01-24,Yoga Mat,Sports,3,84.09,0.2,North America,Consumer
+1315,2025-01-24,Cotton T-Shirt,Clothing,1,115.31,0.15,APAC,Premium
+1316,2025-01-24,iPad Pro,Electronics,1,794.89,0.1,LATAM,Premium
+1317,2025-01-24,MacBook Air,Electronics,1,275.06,0.0,LATAM,Corporate
+1318,2025-01-24,Denim Jeans,Clothing,2,91.24,0.0,APAC,Corporate
+1319,2025-01-24,iPad Pro,Electronics,3,913.56,0.1,LATAM,Premium
+1320,2025-01-24,Ergonomic Chair,Home,1,139.56,0.0,North America,Premium
+1321,2025-01-24,Yoga Mat,Sports,4,123.91,0.0,APAC,Premium
+1322,2025-01-24,iPad Pro,Electronics,2,289.53,0.15,APAC,Premium
+1323,2025-01-24,Coffee Maker,Home,2,216.43,0.0,North America,Home Office
+1324,2025-01-24,Air Purifier,Home,2,242.34,0.1,LATAM,Home Office
+1325,2025-01-24,LED Desk Lamp,Home,4,347.86,0.0,LATAM,Consumer
+1326,2025-01-24,Coffee Maker,Home,1,108.85,0.1,LATAM,Premium
+1327,2025-01-24,Yoga Mat,Sports,3,84.01,0.0,North America,Premium
+1328,2025-01-24,LED Desk Lamp,Home,3,198.16,0.05,LATAM,Consumer
+1329,2025-01-25,iPhone 15,Electronics,4,662.03,0.0,APAC,Home Office
+1330,2025-01-25,Camping Tent,Sports,4,124.38,0.0,APAC,Corporate
+1331,2025-01-25,MacBook Air,Electronics,1,638.53,0.2,APAC,Home Office
+1332,2025-01-25,iPad Pro,Electronics,2,878.34,0.0,LATAM,Corporate
+1333,2025-01-25,Tennis Racket,Sports,2,180.21,0.0,LATAM,Corporate
+1334,2025-01-25,Leather Jacket,Clothing,4,72.42,0.15,LATAM,Home Office
+1335,2025-01-25,MacBook Air,Electronics,2,1163.38,0.1,APAC,Corporate
+1336,2025-01-25,Cotton T-Shirt,Clothing,2,131.24,0.0,LATAM,Corporate
+1337,2025-01-25,Wool Sweater,Clothing,3,54.27,0.2,North America,Premium
+1338,2025-01-25,Running Shoes,Clothing,3,136.48,0.2,Europe,Corporate
+1339,2025-01-25,Smartwatch Ultra,Electronics,1,669.82,0.15,Europe,Consumer
+1340,2025-01-25,iPad Pro,Electronics,2,473.18,0.1,APAC,Corporate
+1341,2025-01-25,Bluetooth Speaker,Electronics,3,1054.4,0.0,APAC,Premium
+1342,2025-01-25,MacBook Air,Electronics,1,449.28,0.2,APAC,Corporate
+1343,2025-01-25,Cotton T-Shirt,Clothing,3,100.91,0.2,Europe,Premium
+1344,2025-01-25,Sleeping Bag,Sports,1,101.31,0.2,Europe,Consumer
+1345,2025-01-25,Sleeping Bag,Sports,2,82.42,0.1,LATAM,Home Office
+1346,2025-01-25,Denim Jeans,Clothing,1,60.02,0.2,APAC,Corporate
+1347,2025-01-25,MacBook Air,Electronics,1,1176.69,0.2,Europe,Premium
+1348,2025-01-26,Camping Tent,Sports,2,73.64,0.1,LATAM,Consumer
+1349,2025-01-26,Sleeping Bag,Sports,2,26.26,0.1,APAC,Premium
+1350,2025-01-26,LED Desk Lamp,Home,2,67.02,0.0,APAC,Corporate
+1351,2025-01-26,iPad Pro,Electronics,2,1000.21,0.15,Europe,Home Office
+1352,2025-01-26,iPhone 15,Electronics,1,311.43,0.1,North America,Corporate
+1353,2025-01-26,Coffee Maker,Home,1,136.66,0.15,LATAM,Premium
+1354,2025-01-26,Ergonomic Chair,Home,3,201.76,0.15,LATAM,Home Office
+1355,2025-01-26,Camping Tent,Sports,2,131.27,0.2,LATAM,Consumer
+1356,2025-01-26,Bluetooth Speaker,Electronics,4,1151.07,0.15,LATAM,Consumer
+1357,2025-01-26,Sleeping Bag,Sports,4,15.14,0.15,Europe,Home Office
+1358,2025-01-26,Wool Sweater,Clothing,1,90.08,0.0,Europe,Premium
+1359,2025-01-26,Running Shoes,Clothing,1,68.63,0.1,North America,Premium
+1360,2025-01-26,Tennis Racket,Sports,2,33.7,0.15,Europe,Consumer
+1361,2025-01-26,Standing Desk,Home,1,77.19,0.05,North America,Premium
+1362,2025-01-26,Wool Sweater,Clothing,2,100.47,0.0,LATAM,Consumer
+1363,2025-01-26,MacBook Air,Electronics,1,1167.66,0.0,North America,Home Office
+1364,2025-01-27,Cotton T-Shirt,Clothing,3,108.4,0.0,North America,Consumer
+1365,2025-01-27,iPad Pro,Electronics,1,1185.78,0.2,LATAM,Consumer
+1366,2025-01-27,Standing Desk,Home,2,378.01,0.05,North America,Premium
+1367,2025-01-27,Coffee Maker,Home,4,232.48,0.05,Europe,Premium
+1368,2025-01-27,Sleeping Bag,Sports,2,182.88,0.05,APAC,Premium
+1369,2025-01-27,Leather Jacket,Clothing,4,117.7,0.2,Europe,Corporate
+1370,2025-01-27,Wool Sweater,Clothing,1,85.09,0.0,APAC,Home Office
+1371,2025-01-27,Leather Jacket,Clothing,1,34.07,0.15,North America,Premium
+1372,2025-01-27,Dumbbell Set,Sports,3,122.7,0.15,North America,Home Office
+1373,2025-01-27,Dumbbell Set,Sports,2,57.1,0.05,LATAM,Consumer
+1374,2025-01-27,Leather Jacket,Clothing,2,75.19,0.15,North America,Premium
+1375,2025-01-27,Denim Jeans,Clothing,3,149.81,0.05,APAC,Premium
+1376,2025-01-27,Wool Sweater,Clothing,2,77.83,0.2,LATAM,Corporate
+1377,2025-01-27,Ergonomic Chair,Home,3,297.03,0.05,North America,Premium
+1378,2025-01-27,Ergonomic Chair,Home,3,193.11,0.0,North America,Home Office
+1379,2025-01-27,Air Purifier,Home,1,124.97,0.0,APAC,Home Office
+1380,2025-01-27,Running Shoes,Clothing,4,70.43,0.0,APAC,Premium
+1381,2025-01-28,MacBook Air,Electronics,1,968.83,0.0,APAC,Consumer
+1382,2025-01-28,Cotton T-Shirt,Clothing,3,86.87,0.0,APAC,Premium
+1383,2025-01-28,Bluetooth Speaker,Electronics,1,725.97,0.0,LATAM,Consumer
+1384,2025-01-28,Leather Jacket,Clothing,3,67.08,0.0,North America,Consumer
+1385,2025-01-28,Ergonomic Chair,Home,3,291.52,0.0,APAC,Corporate
+1386,2025-01-28,iPad Pro,Electronics,2,885.89,0.0,LATAM,Premium
+1387,2025-01-28,Running Shoes,Clothing,4,119.79,0.15,North America,Corporate
+1388,2025-01-28,Denim Jeans,Clothing,3,53.73,0.2,North America,Corporate
+1389,2025-01-28,Standing Desk,Home,2,325.64,0.0,LATAM,Consumer
+1390,2025-01-28,iPhone 15,Electronics,1,522.83,0.0,Europe,Premium
+1391,2025-01-28,Coffee Maker,Home,4,193.19,0.15,APAC,Home Office
+1392,2025-01-28,LED Desk Lamp,Home,3,79.22,0.1,LATAM,Premium
+1393,2025-01-28,Standing Desk,Home,4,249.55,0.0,LATAM,Corporate
+1394,2025-01-28,Standing Desk,Home,1,291.25,0.1,LATAM,Home Office
+1395,2025-01-28,iPhone 15,Electronics,4,397.08,0.0,North America,Home Office
+1396,2025-01-28,Camping Tent,Sports,2,193.48,0.0,LATAM,Premium
+1397,2025-01-28,Cotton T-Shirt,Clothing,3,144.28,0.0,APAC,Home Office
+1398,2025-01-29,iPad Pro,Electronics,3,204.02,0.2,North America,Consumer
+1399,2025-01-29,Sleeping Bag,Sports,2,175.05,0.1,LATAM,Corporate
+1400,2025-01-29,MacBook Air,Electronics,4,502.69,0.1,Europe,Consumer
+1401,2025-01-29,Dumbbell Set,Sports,1,171.3,0.15,Europe,Corporate
+1402,2025-01-29,Air Purifier,Home,3,365.97,0.2,LATAM,Home Office
+1403,2025-01-29,Running Shoes,Clothing,1,103.6,0.2,LATAM,Corporate
+1404,2025-01-29,Smartwatch Ultra,Electronics,1,1191.88,0.0,Europe,Home Office
+1405,2025-01-29,Denim Jeans,Clothing,2,134.19,0.0,North America,Corporate
+1406,2025-01-29,iPad Pro,Electronics,1,759.86,0.0,North America,Premium
+1407,2025-01-29,Tennis Racket,Sports,4,100.12,0.0,APAC,Consumer
+1408,2025-01-29,Dumbbell Set,Sports,2,101.97,0.0,North America,Consumer
+1409,2025-01-29,Yoga Mat,Sports,2,58.21,0.0,North America,Consumer
+1410,2025-01-29,Dumbbell Set,Sports,1,95.9,0.15,North America,Home Office
+1411,2025-01-29,Denim Jeans,Clothing,2,38.85,0.2,LATAM,Consumer
+1412,2025-01-29,Denim Jeans,Clothing,4,55.87,0.0,APAC,Corporate
+1413,2025-01-29,Bluetooth Speaker,Electronics,4,919.58,0.0,Europe,Corporate
+1414,2025-01-29,Denim Jeans,Clothing,3,62.48,0.2,Europe,Corporate
+1415,2025-01-29,Cotton T-Shirt,Clothing,3,104.27,0.0,Europe,Home Office
+1416,2025-01-29,MacBook Air,Electronics,4,719.78,0.0,Europe,Home Office
+1417,2025-01-29,Air Purifier,Home,1,354.08,0.0,Europe,Consumer
+1418,2025-01-30,iPhone 15,Electronics,2,578.67,0.05,APAC,Consumer
+1419,2025-01-30,Bluetooth Speaker,Electronics,2,550.8,0.2,APAC,Premium
+1420,2025-01-30,Yoga Mat,Sports,2,75.62,0.0,APAC,Consumer
+1421,2025-01-30,Coffee Maker,Home,1,210.59,0.0,APAC,Corporate
+1422,2025-01-30,Dumbbell Set,Sports,1,75.87,0.1,APAC,Consumer
+1423,2025-01-30,Leather Jacket,Clothing,2,101.52,0.1,North America,Corporate
+1424,2025-01-30,Standing Desk,Home,1,98.14,0.0,APAC,Home Office
+1425,2025-01-30,Denim Jeans,Clothing,3,108.07,0.15,North America,Premium
+1426,2025-01-30,Camping Tent,Sports,2,43.48,0.0,APAC,Home Office
+1427,2025-01-30,Running Shoes,Clothing,1,93.26,0.1,LATAM,Corporate
+1428,2025-01-30,LED Desk Lamp,Home,2,357.86,0.2,LATAM,Premium
+1429,2025-01-30,Yoga Mat,Sports,4,67.68,0.0,Europe,Premium
+1430,2025-01-30,Ergonomic Chair,Home,4,385.74,0.05,LATAM,Home Office
+1431,2025-01-30,Air Purifier,Home,2,152.1,0.0,Europe,Home Office
+1432,2025-01-30,iPhone 15,Electronics,3,693.05,0.2,North America,Corporate
+1433,2025-01-30,iPhone 15,Electronics,4,1053.63,0.15,LATAM,Consumer
+1434,2025-01-30,Yoga Mat,Sports,4,32.63,0.2,North America,Corporate
+1435,2025-01-30,Camping Tent,Sports,3,185.24,0.05,APAC,Premium
+1436,2025-01-30,Smartwatch Ultra,Electronics,3,814.28,0.0,North America,Premium
+1437,2025-01-30,Sleeping Bag,Sports,3,168.02,0.2,Europe,Corporate
+1438,2025-01-31,Ergonomic Chair,Home,2,66.86,0.0,North America,Consumer
+1439,2025-01-31,Denim Jeans,Clothing,3,30.68,0.0,North America,Corporate
+1440,2025-01-31,Yoga Mat,Sports,4,119.16,0.0,North America,Premium
+1441,2025-01-31,MacBook Air,Electronics,4,575.76,0.15,Europe,Consumer
+1442,2025-01-31,Ergonomic Chair,Home,1,318.03,0.15,APAC,Home Office
+1443,2025-01-31,Yoga Mat,Sports,3,38.76,0.2,APAC,Premium
+1444,2025-01-31,Sleeping Bag,Sports,2,126.03,0.05,APAC,Home Office
+1445,2025-01-31,LED Desk Lamp,Home,1,362.01,0.15,LATAM,Premium
+1446,2025-01-31,Leather Jacket,Clothing,1,91.43,0.2,North America,Corporate
+1447,2025-01-31,iPad Pro,Electronics,4,795.84,0.0,APAC,Corporate
+1448,2025-01-31,Running Shoes,Clothing,2,90.2,0.15,Europe,Home Office
+1449,2025-01-31,Running Shoes,Clothing,1,104.7,0.0,North America,Home Office
+1450,2025-01-31,MacBook Air,Electronics,2,234.76,0.0,North America,Premium
+1451,2025-01-31,Camping Tent,Sports,3,179.03,0.15,Europe,Home Office
+1452,2025-01-31,Smartwatch Ultra,Electronics,3,818.36,0.15,LATAM,Corporate
+1453,2025-01-31,Ergonomic Chair,Home,3,68.83,0.2,LATAM,Corporate
+1454,2025-02-01,Sleeping Bag,Sports,1,40.64,0.0,LATAM,Consumer
+1455,2025-02-01,Running Shoes,Clothing,1,126.15,0.0,APAC,Consumer
+1456,2025-02-01,Bluetooth Speaker,Electronics,2,1104.32,0.0,Europe,Home Office
+1457,2025-02-01,LED Desk Lamp,Home,1,219.7,0.0,Europe,Premium
+1458,2025-02-01,MacBook Air,Electronics,3,946.87,0.0,APAC,Home Office
+1459,2025-02-01,Standing Desk,Home,3,183.49,0.05,Europe,Home Office
+1460,2025-02-01,Yoga Mat,Sports,3,50.97,0.0,Europe,Home Office
+1461,2025-02-01,Cotton T-Shirt,Clothing,2,62.9,0.15,LATAM,Corporate
+1462,2025-02-01,Camping Tent,Sports,3,172.7,0.2,APAC,Consumer
+1463,2025-02-01,Camping Tent,Sports,1,133.47,0.15,Europe,Premium
+1464,2025-02-01,Air Purifier,Home,1,285.94,0.2,LATAM,Premium
+1465,2025-02-02,Coffee Maker,Home,1,195.82,0.1,Europe,Home Office
+1466,2025-02-02,MacBook Air,Electronics,2,1168.9,0.2,Europe,Home Office
+1467,2025-02-02,Wool Sweater,Clothing,4,122.34,0.15,Europe,Premium
+1468,2025-02-02,Yoga Mat,Sports,1,169.18,0.0,LATAM,Home Office
+1469,2025-02-02,Running Shoes,Clothing,3,95.77,0.0,APAC,Consumer
+1470,2025-02-02,Ergonomic Chair,Home,4,61.15,0.0,APAC,Corporate
+1471,2025-02-02,Yoga Mat,Sports,4,94.31,0.2,Europe,Consumer
+1472,2025-02-02,Air Purifier,Home,4,164.77,0.1,North America,Corporate
+1473,2025-02-02,Camping Tent,Sports,4,117.37,0.0,Europe,Corporate
+1474,2025-02-02,Standing Desk,Home,2,189.04,0.2,LATAM,Home Office
+1475,2025-02-02,iPad Pro,Electronics,2,753.86,0.15,North America,Home Office
+1476,2025-02-02,Coffee Maker,Home,1,384.83,0.1,APAC,Corporate
+1477,2025-02-03,Dumbbell Set,Sports,1,66.36,0.05,North America,Premium
+1478,2025-02-03,Dumbbell Set,Sports,4,197.27,0.0,APAC,Corporate
+1479,2025-02-03,LED Desk Lamp,Home,1,86.33,0.0,North America,Premium
+1480,2025-02-03,Coffee Maker,Home,1,199.3,0.15,Europe,Consumer
+1481,2025-02-03,Dumbbell Set,Sports,4,75.81,0.0,APAC,Home Office
+1482,2025-02-03,Sleeping Bag,Sports,1,62.93,0.2,LATAM,Consumer
+1483,2025-02-03,Standing Desk,Home,3,176.75,0.1,LATAM,Consumer
+1484,2025-02-03,iPhone 15,Electronics,1,1134.09,0.0,APAC,Home Office
+1485,2025-02-03,Wool Sweater,Clothing,1,136.21,0.05,LATAM,Home Office
+1486,2025-02-03,Camping Tent,Sports,1,89.24,0.2,North America,Home Office
+1487,2025-02-03,Yoga Mat,Sports,2,40.03,0.0,LATAM,Premium
+1488,2025-02-03,MacBook Air,Electronics,2,374.22,0.0,LATAM,Corporate
+1489,2025-02-03,Wool Sweater,Clothing,2,52.5,0.1,North America,Premium
+1490,2025-02-04,Bluetooth Speaker,Electronics,4,1001.0,0.2,LATAM,Home Office
+1491,2025-02-04,Yoga Mat,Sports,2,183.05,0.0,Europe,Corporate
+1492,2025-02-04,MacBook Air,Electronics,4,665.53,0.0,North America,Consumer
+1493,2025-02-04,Sleeping Bag,Sports,2,129.72,0.0,LATAM,Consumer
+1494,2025-02-04,Standing Desk,Home,2,154.73,0.15,APAC,Home Office
+1495,2025-02-04,Tennis Racket,Sports,2,120.12,0.0,APAC,Corporate
+1496,2025-02-04,LED Desk Lamp,Home,4,146.63,0.05,Europe,Consumer
+1497,2025-02-04,Yoga Mat,Sports,2,105.81,0.0,LATAM,Consumer
+1498,2025-02-04,Cotton T-Shirt,Clothing,3,34.81,0.0,APAC,Corporate
+1499,2025-02-04,Camping Tent,Sports,2,20.03,0.05,Europe,Home Office
+1500,2025-02-04,Smartwatch Ultra,Electronics,4,354.0,0.0,LATAM,Corporate
+1501,2025-02-04,Camping Tent,Sports,2,118.52,0.0,LATAM,Premium
+1502,2025-02-04,Leather Jacket,Clothing,1,102.81,0.2,LATAM,Premium
+1503,2025-02-05,Standing Desk,Home,2,150.7,0.05,Europe,Premium
+1504,2025-02-05,iPad Pro,Electronics,1,1075.56,0.15,APAC,Consumer
+1505,2025-02-05,Sleeping Bag,Sports,2,197.45,0.1,Europe,Premium
+1506,2025-02-05,Smartwatch Ultra,Electronics,4,1188.39,0.15,APAC,Premium
+1507,2025-02-05,MacBook Air,Electronics,3,772.65,0.0,Europe,Home Office
+1508,2025-02-05,Cotton T-Shirt,Clothing,3,121.78,0.15,Europe,Home Office
+1509,2025-02-05,Air Purifier,Home,3,245.75,0.0,LATAM,Corporate
+1510,2025-02-05,iPad Pro,Electronics,2,480.22,0.2,North America,Premium
+1511,2025-02-05,Running Shoes,Clothing,1,35.93,0.05,North America,Home Office
+1512,2025-02-05,Wool Sweater,Clothing,3,58.3,0.05,APAC,Consumer
+1513,2025-02-06,iPad Pro,Electronics,4,661.28,0.15,LATAM,Premium
+1514,2025-02-06,Standing Desk,Home,4,68.57,0.0,North America,Home Office
+1515,2025-02-06,Sleeping Bag,Sports,2,23.79,0.0,North America,Home Office
+1516,2025-02-06,MacBook Air,Electronics,3,619.08,0.05,Europe,Corporate
+1517,2025-02-06,Bluetooth Speaker,Electronics,4,609.07,0.15,APAC,Corporate
+1518,2025-02-06,Wool Sweater,Clothing,1,114.79,0.15,LATAM,Consumer
+1519,2025-02-06,Air Purifier,Home,3,164.83,0.0,North America,Premium
+1520,2025-02-06,Denim Jeans,Clothing,2,90.77,0.15,LATAM,Home Office
+1521,2025-02-06,Denim Jeans,Clothing,1,44.0,0.2,Europe,Home Office
+1522,2025-02-06,Dumbbell Set,Sports,1,89.43,0.2,APAC,Corporate
+1523,2025-02-06,Running Shoes,Clothing,2,146.41,0.05,North America,Home Office
+1524,2025-02-06,Sleeping Bag,Sports,2,190.13,0.0,Europe,Corporate
+1525,2025-02-07,Standing Desk,Home,3,334.27,0.0,APAC,Premium
+1526,2025-02-07,iPhone 15,Electronics,1,922.4,0.15,North America,Corporate
+1527,2025-02-07,Cotton T-Shirt,Clothing,1,125.64,0.0,Europe,Home Office
+1528,2025-02-07,Cotton T-Shirt,Clothing,3,123.21,0.15,Europe,Home Office
+1529,2025-02-07,Sleeping Bag,Sports,3,129.27,0.0,LATAM,Premium
+1530,2025-02-07,Dumbbell Set,Sports,4,187.77,0.0,Europe,Corporate
+1531,2025-02-07,MacBook Air,Electronics,3,349.68,0.05,APAC,Premium
+1532,2025-02-07,Coffee Maker,Home,3,106.62,0.05,APAC,Home Office
+1533,2025-02-07,Sleeping Bag,Sports,4,140.65,0.1,Europe,Home Office
+1534,2025-02-07,Leather Jacket,Clothing,4,82.96,0.0,LATAM,Corporate
+1535,2025-02-07,Standing Desk,Home,3,116.7,0.1,APAC,Premium
+1536,2025-02-07,Dumbbell Set,Sports,3,27.91,0.0,North America,Corporate
+1537,2025-02-07,iPad Pro,Electronics,2,852.27,0.1,Europe,Consumer
+1538,2025-02-07,Tennis Racket,Sports,2,18.73,0.0,Europe,Premium
+1539,2025-02-07,Ergonomic Chair,Home,1,328.66,0.05,Europe,Premium
+1540,2025-02-07,Smartwatch Ultra,Electronics,4,457.49,0.0,APAC,Consumer
+1541,2025-02-07,Leather Jacket,Clothing,1,87.62,0.2,LATAM,Home Office
+1542,2025-02-08,Cotton T-Shirt,Clothing,1,70.92,0.2,Europe,Corporate
+1543,2025-02-08,Smartwatch Ultra,Electronics,2,307.12,0.0,LATAM,Corporate
+1544,2025-02-08,Cotton T-Shirt,Clothing,3,95.31,0.0,APAC,Premium
+1545,2025-02-08,Standing Desk,Home,3,315.07,0.15,North America,Home Office
+1546,2025-02-08,Running Shoes,Clothing,1,83.13,0.0,Europe,Premium
+1547,2025-02-08,iPhone 15,Electronics,3,248.17,0.0,APAC,Corporate
+1548,2025-02-08,Tennis Racket,Sports,2,106.11,0.0,North America,Home Office
+1549,2025-02-08,Ergonomic Chair,Home,3,102.5,0.0,North America,Premium
+1550,2025-02-08,Leather Jacket,Clothing,1,72.62,0.0,Europe,Home Office
+1551,2025-02-08,Bluetooth Speaker,Electronics,2,845.37,0.0,LATAM,Consumer
+1552,2025-02-09,Smartwatch Ultra,Electronics,1,421.33,0.2,Europe,Premium
+1553,2025-02-09,MacBook Air,Electronics,2,1040.22,0.05,North America,Home Office
+1554,2025-02-09,Dumbbell Set,Sports,1,96.56,0.05,North America,Corporate
+1555,2025-02-09,Sleeping Bag,Sports,4,145.62,0.2,APAC,Consumer
+1556,2025-02-09,Leather Jacket,Clothing,4,88.48,0.0,North America,Corporate
+1557,2025-02-09,LED Desk Lamp,Home,4,280.86,0.0,LATAM,Premium
+1558,2025-02-09,Cotton T-Shirt,Clothing,3,101.75,0.2,LATAM,Home Office
+1559,2025-02-09,Ergonomic Chair,Home,3,202.51,0.15,Europe,Consumer
+1560,2025-02-09,Sleeping Bag,Sports,4,172.47,0.2,APAC,Premium
+1561,2025-02-09,iPad Pro,Electronics,3,989.14,0.2,Europe,Premium
+1562,2025-02-09,Cotton T-Shirt,Clothing,4,126.17,0.1,LATAM,Consumer
+1563,2025-02-09,Ergonomic Chair,Home,1,397.91,0.0,APAC,Premium
+1564,2025-02-09,Air Purifier,Home,4,169.45,0.0,North America,Corporate
+1565,2025-02-09,Standing Desk,Home,4,181.03,0.1,North America,Home Office
+1566,2025-02-09,iPad Pro,Electronics,1,662.12,0.0,Europe,Consumer
+1567,2025-02-09,MacBook Air,Electronics,4,1038.56,0.15,North America,Corporate
+1568,2025-02-09,MacBook Air,Electronics,4,254.82,0.05,North America,Premium
+1569,2025-02-09,MacBook Air,Electronics,3,1172.09,0.0,North America,Home Office
+1570,2025-02-09,Denim Jeans,Clothing,3,83.17,0.05,APAC,Consumer
+1571,2025-02-10,Coffee Maker,Home,1,163.35,0.15,Europe,Home Office
+1572,2025-02-10,Bluetooth Speaker,Electronics,1,377.78,0.1,North America,Premium
+1573,2025-02-10,LED Desk Lamp,Home,3,270.49,0.2,APAC,Premium
+1574,2025-02-10,Ergonomic Chair,Home,3,283.94,0.1,APAC,Corporate
+1575,2025-02-10,LED Desk Lamp,Home,4,192.56,0.05,North America,Consumer
+1576,2025-02-10,Tennis Racket,Sports,2,130.56,0.15,APAC,Consumer
+1577,2025-02-10,Smartwatch Ultra,Electronics,3,465.18,0.2,LATAM,Consumer
+1578,2025-02-10,Dumbbell Set,Sports,3,167.87,0.0,APAC,Consumer
+1579,2025-02-10,Smartwatch Ultra,Electronics,1,1161.56,0.0,APAC,Corporate
+1580,2025-02-10,Cotton T-Shirt,Clothing,3,132.52,0.05,Europe,Consumer
+1581,2025-02-10,Smartwatch Ultra,Electronics,4,1059.86,0.15,APAC,Premium
+1582,2025-02-10,Standing Desk,Home,4,240.73,0.0,LATAM,Consumer
+1583,2025-02-10,Tennis Racket,Sports,4,34.9,0.15,LATAM,Consumer
+1584,2025-02-10,Leather Jacket,Clothing,4,118.41,0.2,Europe,Premium
+1585,2025-02-10,iPad Pro,Electronics,1,364.7,0.05,Europe,Home Office
+1586,2025-02-10,Bluetooth Speaker,Electronics,3,305.47,0.05,LATAM,Corporate
+1587,2025-02-10,Wool Sweater,Clothing,3,103.18,0.1,Europe,Home Office
+1588,2025-02-10,iPhone 15,Electronics,4,1056.06,0.1,Europe,Home Office
+1589,2025-02-10,LED Desk Lamp,Home,1,239.99,0.15,Europe,Premium
+1590,2025-02-11,Dumbbell Set,Sports,3,191.23,0.05,LATAM,Premium
+1591,2025-02-11,Bluetooth Speaker,Electronics,1,855.64,0.0,APAC,Premium
+1592,2025-02-11,Sleeping Bag,Sports,3,190.03,0.0,APAC,Corporate
+1593,2025-02-11,iPad Pro,Electronics,2,1147.81,0.0,LATAM,Home Office
+1594,2025-02-11,Sleeping Bag,Sports,1,81.03,0.0,North America,Consumer
+1595,2025-02-11,Smartwatch Ultra,Electronics,2,505.91,0.05,Europe,Home Office
+1596,2025-02-11,Ergonomic Chair,Home,2,115.8,0.0,LATAM,Corporate
+1597,2025-02-11,Cotton T-Shirt,Clothing,3,98.79,0.0,North America,Premium
+1598,2025-02-11,LED Desk Lamp,Home,3,133.47,0.0,North America,Corporate
+1599,2025-02-11,Cotton T-Shirt,Clothing,2,127.0,0.15,APAC,Home Office
+1600,2025-02-11,iPad Pro,Electronics,3,440.34,0.05,LATAM,Premium
+1601,2025-02-11,Smartwatch Ultra,Electronics,2,228.76,0.0,North America,Consumer
+1602,2025-02-11,Bluetooth Speaker,Electronics,4,860.69,0.0,APAC,Home Office
+1603,2025-02-11,Denim Jeans,Clothing,4,95.38,0.1,North America,Home Office
+1604,2025-02-11,Sleeping Bag,Sports,3,161.14,0.05,LATAM,Home Office
+1605,2025-02-11,Standing Desk,Home,4,242.45,0.1,APAC,Consumer
+1606,2025-02-11,Smartwatch Ultra,Electronics,3,266.62,0.0,North America,Consumer
+1607,2025-02-11,Coffee Maker,Home,1,107.67,0.0,North America,Corporate
+1608,2025-02-11,Cotton T-Shirt,Clothing,2,97.24,0.0,North America,Home Office
+1609,2025-02-11,Running Shoes,Clothing,4,43.59,0.0,Europe,Corporate
+1610,2025-02-12,Camping Tent,Sports,1,103.39,0.05,APAC,Home Office
+1611,2025-02-12,Leather Jacket,Clothing,4,35.54,0.0,North America,Home Office
+1612,2025-02-12,iPad Pro,Electronics,2,1153.83,0.05,Europe,Premium
+1613,2025-02-12,LED Desk Lamp,Home,3,146.67,0.0,Europe,Corporate
+1614,2025-02-12,Sleeping Bag,Sports,4,164.33,0.2,North America,Premium
+1615,2025-02-12,Running Shoes,Clothing,3,56.69,0.05,LATAM,Premium
+1616,2025-02-12,Smartwatch Ultra,Electronics,1,202.89,0.0,LATAM,Corporate
+1617,2025-02-12,iPhone 15,Electronics,1,1005.88,0.05,LATAM,Home Office
+1618,2025-02-12,Bluetooth Speaker,Electronics,3,1023.71,0.05,LATAM,Home Office
+1619,2025-02-12,Bluetooth Speaker,Electronics,4,616.01,0.0,North America,Consumer
+1620,2025-02-13,Yoga Mat,Sports,4,150.66,0.1,Europe,Home Office
+1621,2025-02-13,iPad Pro,Electronics,3,967.68,0.0,LATAM,Consumer
+1622,2025-02-13,Leather Jacket,Clothing,1,139.14,0.2,LATAM,Corporate
+1623,2025-02-13,Bluetooth Speaker,Electronics,4,902.31,0.15,North America,Home Office
+1624,2025-02-13,LED Desk Lamp,Home,4,132.5,0.2,LATAM,Premium
+1625,2025-02-13,Leather Jacket,Clothing,3,57.02,0.0,LATAM,Premium
+1626,2025-02-13,iPhone 15,Electronics,2,259.2,0.1,APAC,Home Office
+1627,2025-02-13,LED Desk Lamp,Home,4,208.63,0.0,Europe,Consumer
+1628,2025-02-13,Bluetooth Speaker,Electronics,3,257.48,0.2,LATAM,Home Office
+1629,2025-02-13,Coffee Maker,Home,2,306.67,0.0,Europe,Corporate
+1630,2025-02-13,Coffee Maker,Home,4,81.22,0.05,APAC,Home Office
+1631,2025-02-13,Yoga Mat,Sports,2,121.22,0.05,APAC,Premium
+1632,2025-02-13,MacBook Air,Electronics,4,410.12,0.0,LATAM,Premium
+1633,2025-02-13,iPhone 15,Electronics,1,865.03,0.15,North America,Home Office
+1634,2025-02-13,Air Purifier,Home,2,190.0,0.0,LATAM,Premium
+1635,2025-02-13,Wool Sweater,Clothing,3,70.65,0.0,APAC,Consumer
+1636,2025-02-14,Coffee Maker,Home,1,373.84,0.0,Europe,Home Office
+1637,2025-02-14,Yoga Mat,Sports,3,171.8,0.05,North America,Home Office
+1638,2025-02-14,Coffee Maker,Home,2,193.99,0.05,LATAM,Home Office
+1639,2025-02-14,Air Purifier,Home,2,65.4,0.0,APAC,Premium
+1640,2025-02-14,Coffee Maker,Home,1,51.16,0.2,Europe,Premium
+1641,2025-02-14,Ergonomic Chair,Home,4,283.96,0.0,Europe,Consumer
+1642,2025-02-14,Sleeping Bag,Sports,1,96.2,0.0,APAC,Premium
+1643,2025-02-14,iPad Pro,Electronics,2,738.78,0.05,North America,Corporate
+1644,2025-02-14,Coffee Maker,Home,1,75.22,0.0,LATAM,Home Office
+1645,2025-02-14,Sleeping Bag,Sports,1,157.02,0.0,APAC,Home Office
+1646,2025-02-14,Coffee Maker,Home,1,297.69,0.2,APAC,Premium
+1647,2025-02-14,LED Desk Lamp,Home,1,100.34,0.0,LATAM,Premium
+1648,2025-02-14,LED Desk Lamp,Home,4,251.79,0.2,APAC,Corporate
+1649,2025-02-14,Sleeping Bag,Sports,1,155.56,0.0,Europe,Corporate
+1650,2025-02-14,Air Purifier,Home,2,53.67,0.15,North America,Premium
+1651,2025-02-15,Wool Sweater,Clothing,2,113.55,0.1,LATAM,Home Office
+1652,2025-02-15,Denim Jeans,Clothing,3,103.7,0.15,APAC,Premium
+1653,2025-02-15,iPad Pro,Electronics,1,1137.22,0.05,LATAM,Home Office
+1654,2025-02-15,MacBook Air,Electronics,4,849.37,0.2,Europe,Corporate
+1655,2025-02-15,Yoga Mat,Sports,4,36.15,0.05,APAC,Corporate
+1656,2025-02-15,Air Purifier,Home,4,203.28,0.05,APAC,Premium
+1657,2025-02-15,Ergonomic Chair,Home,3,126.55,0.0,LATAM,Home Office
+1658,2025-02-15,Leather Jacket,Clothing,2,114.62,0.0,North America,Home Office
+1659,2025-02-15,iPhone 15,Electronics,3,793.89,0.0,North America,Consumer
+1660,2025-02-15,Denim Jeans,Clothing,4,124.33,0.2,APAC,Consumer
+1661,2025-02-15,Air Purifier,Home,3,135.19,0.1,LATAM,Home Office
+1662,2025-02-15,LED Desk Lamp,Home,3,280.57,0.15,Europe,Corporate
+1663,2025-02-16,Camping Tent,Sports,2,21.3,0.15,North America,Consumer
+1664,2025-02-16,Wool Sweater,Clothing,4,45.61,0.05,LATAM,Corporate
+1665,2025-02-16,Running Shoes,Clothing,2,72.53,0.0,APAC,Premium
+1666,2025-02-16,Cotton T-Shirt,Clothing,1,85.66,0.15,APAC,Corporate
+1667,2025-02-16,iPhone 15,Electronics,4,577.49,0.2,APAC,Consumer
+1668,2025-02-16,LED Desk Lamp,Home,2,238.62,0.1,Europe,Premium
+1669,2025-02-16,iPhone 15,Electronics,2,880.1,0.15,APAC,Consumer
+1670,2025-02-16,Sleeping Bag,Sports,1,163.57,0.0,North America,Corporate
+1671,2025-02-16,Standing Desk,Home,1,174.97,0.15,LATAM,Premium
+1672,2025-02-16,Wool Sweater,Clothing,4,79.97,0.1,Europe,Corporate
+1673,2025-02-16,Yoga Mat,Sports,1,28.48,0.15,Europe,Consumer
+1674,2025-02-16,Cotton T-Shirt,Clothing,3,44.32,0.1,Europe,Home Office
+1675,2025-02-16,Dumbbell Set,Sports,1,48.81,0.15,North America,Consumer
+1676,2025-02-16,Bluetooth Speaker,Electronics,1,707.2,0.05,LATAM,Premium
+1677,2025-02-16,Air Purifier,Home,1,124.47,0.15,North America,Premium
+1678,2025-02-16,Air Purifier,Home,2,123.16,0.0,LATAM,Home Office
+1679,2025-02-17,Ergonomic Chair,Home,3,169.98,0.0,LATAM,Corporate
+1680,2025-02-17,Ergonomic Chair,Home,1,279.65,0.0,APAC,Home Office
+1681,2025-02-17,Air Purifier,Home,1,86.18,0.0,LATAM,Corporate
+1682,2025-02-17,Camping Tent,Sports,1,147.03,0.0,LATAM,Corporate
+1683,2025-02-17,Smartwatch Ultra,Electronics,2,978.25,0.2,APAC,Home Office
+1684,2025-02-17,Air Purifier,Home,3,338.34,0.0,APAC,Premium
+1685,2025-02-17,Cotton T-Shirt,Clothing,1,51.06,0.05,Europe,Corporate
+1686,2025-02-17,Tennis Racket,Sports,1,67.61,0.05,North America,Home Office
+1687,2025-02-17,Yoga Mat,Sports,2,103.55,0.0,Europe,Corporate
+1688,2025-02-17,Bluetooth Speaker,Electronics,3,600.32,0.0,LATAM,Consumer
+1689,2025-02-18,iPhone 15,Electronics,1,1149.16,0.2,APAC,Consumer
+1690,2025-02-18,Tennis Racket,Sports,4,110.48,0.05,Europe,Corporate
+1691,2025-02-18,Dumbbell Set,Sports,4,126.6,0.05,North America,Home Office
+1692,2025-02-18,Standing Desk,Home,2,80.26,0.1,North America,Consumer
+1693,2025-02-18,MacBook Air,Electronics,1,583.71,0.05,LATAM,Corporate
+1694,2025-02-18,Coffee Maker,Home,2,277.52,0.0,LATAM,Home Office
+1695,2025-02-18,Air Purifier,Home,2,84.24,0.05,North America,Home Office
+1696,2025-02-18,Standing Desk,Home,2,98.81,0.2,APAC,Consumer
+1697,2025-02-18,Smartwatch Ultra,Electronics,4,1170.16,0.0,APAC,Corporate
+1698,2025-02-18,Leather Jacket,Clothing,3,75.31,0.1,North America,Consumer
+1699,2025-02-18,Air Purifier,Home,2,98.74,0.0,Europe,Premium
+1700,2025-02-18,Wool Sweater,Clothing,3,113.4,0.2,North America,Corporate
+1701,2025-02-18,Leather Jacket,Clothing,1,99.27,0.15,Europe,Consumer
+1702,2025-02-18,iPhone 15,Electronics,4,295.77,0.15,LATAM,Premium
+1703,2025-02-18,iPhone 15,Electronics,4,562.76,0.0,LATAM,Corporate
+1704,2025-02-18,iPad Pro,Electronics,2,851.62,0.1,North America,Home Office
+1705,2025-02-19,Sleeping Bag,Sports,1,103.9,0.0,LATAM,Home Office
+1706,2025-02-19,Dumbbell Set,Sports,2,162.48,0.0,Europe,Consumer
+1707,2025-02-19,Dumbbell Set,Sports,2,171.03,0.2,LATAM,Corporate
+1708,2025-02-19,Dumbbell Set,Sports,2,189.36,0.0,North America,Home Office
+1709,2025-02-19,iPad Pro,Electronics,3,1117.04,0.05,Europe,Consumer
+1710,2025-02-19,Smartwatch Ultra,Electronics,2,1045.38,0.0,North America,Premium
+1711,2025-02-19,Denim Jeans,Clothing,4,97.0,0.1,North America,Home Office
+1712,2025-02-19,Air Purifier,Home,3,101.74,0.0,LATAM,Home Office
+1713,2025-02-19,MacBook Air,Electronics,3,472.52,0.15,APAC,Premium
+1714,2025-02-19,Dumbbell Set,Sports,2,28.13,0.1,APAC,Consumer
+1715,2025-02-19,MacBook Air,Electronics,2,624.9,0.0,LATAM,Home Office
+1716,2025-02-19,iPhone 15,Electronics,4,1033.15,0.0,APAC,Home Office
+1717,2025-02-19,MacBook Air,Electronics,3,1086.35,0.2,North America,Home Office
+1718,2025-02-19,LED Desk Lamp,Home,4,166.02,0.15,LATAM,Consumer
+1719,2025-02-19,iPhone 15,Electronics,4,687.48,0.0,North America,Home Office
+1720,2025-02-19,LED Desk Lamp,Home,2,184.09,0.15,Europe,Home Office
+1721,2025-02-19,Yoga Mat,Sports,3,18.67,0.2,LATAM,Premium
+1722,2025-02-19,Camping Tent,Sports,3,197.75,0.05,North America,Home Office
+1723,2025-02-20,Leather Jacket,Clothing,3,139.56,0.2,Europe,Premium
+1724,2025-02-20,Smartwatch Ultra,Electronics,1,712.09,0.1,APAC,Premium
+1725,2025-02-20,Denim Jeans,Clothing,1,43.48,0.05,APAC,Corporate
+1726,2025-02-20,iPhone 15,Electronics,3,869.03,0.1,North America,Premium
+1727,2025-02-20,Air Purifier,Home,2,221.02,0.0,Europe,Consumer
+1728,2025-02-20,Ergonomic Chair,Home,3,121.42,0.0,LATAM,Consumer
+1729,2025-02-20,Camping Tent,Sports,4,27.4,0.1,Europe,Consumer
+1730,2025-02-20,Tennis Racket,Sports,4,87.57,0.0,Europe,Consumer
+1731,2025-02-20,iPad Pro,Electronics,3,262.1,0.05,APAC,Premium
+1732,2025-02-20,Air Purifier,Home,2,268.07,0.0,North America,Premium
+1733,2025-02-20,Dumbbell Set,Sports,3,103.27,0.1,Europe,Home Office
+1734,2025-02-20,Coffee Maker,Home,3,149.19,0.15,North America,Consumer
+1735,2025-02-21,Air Purifier,Home,2,152.83,0.05,Europe,Consumer
+1736,2025-02-21,Camping Tent,Sports,3,63.18,0.0,North America,Consumer
+1737,2025-02-21,Leather Jacket,Clothing,1,106.6,0.15,Europe,Consumer
+1738,2025-02-21,Denim Jeans,Clothing,4,79.99,0.0,LATAM,Corporate
+1739,2025-02-21,Smartwatch Ultra,Electronics,4,300.62,0.15,Europe,Consumer
+1740,2025-02-21,Leather Jacket,Clothing,3,31.78,0.0,North America,Consumer
+1741,2025-02-21,Cotton T-Shirt,Clothing,2,143.69,0.2,APAC,Home Office
+1742,2025-02-21,Smartwatch Ultra,Electronics,2,634.48,0.0,North America,Premium
+1743,2025-02-21,Bluetooth Speaker,Electronics,4,573.29,0.2,APAC,Home Office
+1744,2025-02-21,Bluetooth Speaker,Electronics,1,626.83,0.05,North America,Corporate
+1745,2025-02-21,LED Desk Lamp,Home,2,274.3,0.0,LATAM,Corporate
+1746,2025-02-21,Standing Desk,Home,4,201.32,0.15,North America,Consumer
+1747,2025-02-22,Wool Sweater,Clothing,3,122.71,0.0,Europe,Premium
+1748,2025-02-22,Yoga Mat,Sports,3,196.05,0.2,Europe,Home Office
+1749,2025-02-22,Ergonomic Chair,Home,1,201.25,0.2,APAC,Consumer
+1750,2025-02-22,Bluetooth Speaker,Electronics,1,1001.14,0.1,Europe,Premium
+1751,2025-02-22,Coffee Maker,Home,1,88.67,0.05,APAC,Premium
+1752,2025-02-22,iPad Pro,Electronics,3,657.57,0.0,Europe,Home Office
+1753,2025-02-22,Denim Jeans,Clothing,4,82.77,0.15,LATAM,Premium
+1754,2025-02-22,LED Desk Lamp,Home,1,242.72,0.2,LATAM,Corporate
+1755,2025-02-22,Yoga Mat,Sports,3,147.39,0.0,LATAM,Corporate
+1756,2025-02-22,Standing Desk,Home,3,295.86,0.1,North America,Corporate
+1757,2025-02-22,MacBook Air,Electronics,3,783.45,0.05,Europe,Consumer
+1758,2025-02-22,Dumbbell Set,Sports,2,81.14,0.0,APAC,Consumer
+1759,2025-02-22,iPad Pro,Electronics,4,250.21,0.05,APAC,Corporate
+1760,2025-02-22,Wool Sweater,Clothing,2,143.58,0.2,APAC,Home Office
+1761,2025-02-23,MacBook Air,Electronics,1,523.48,0.2,APAC,Corporate
+1762,2025-02-23,Denim Jeans,Clothing,1,81.78,0.0,APAC,Consumer
+1763,2025-02-23,Cotton T-Shirt,Clothing,3,109.95,0.2,Europe,Home Office
+1764,2025-02-23,Dumbbell Set,Sports,2,106.5,0.05,North America,Corporate
+1765,2025-02-23,Leather Jacket,Clothing,3,54.65,0.0,Europe,Premium
+1766,2025-02-23,Air Purifier,Home,1,168.12,0.05,APAC,Corporate
+1767,2025-02-23,Air Purifier,Home,1,162.2,0.0,LATAM,Home Office
+1768,2025-02-23,Coffee Maker,Home,3,381.43,0.05,APAC,Home Office
+1769,2025-02-23,Leather Jacket,Clothing,3,70.16,0.05,LATAM,Home Office
+1770,2025-02-23,Wool Sweater,Clothing,3,86.99,0.1,North America,Premium
+1771,2025-02-23,Wool Sweater,Clothing,1,126.28,0.15,APAC,Consumer
+1772,2025-02-23,Sleeping Bag,Sports,2,171.1,0.2,Europe,Home Office
+1773,2025-02-23,Air Purifier,Home,4,227.29,0.1,North America,Premium
+1774,2025-02-23,iPhone 15,Electronics,4,1108.51,0.0,North America,Home Office
+1775,2025-02-24,Standing Desk,Home,1,87.85,0.1,North America,Home Office
+1776,2025-02-24,Tennis Racket,Sports,4,154.47,0.0,North America,Corporate
+1777,2025-02-24,Smartwatch Ultra,Electronics,1,955.98,0.15,APAC,Consumer
+1778,2025-02-24,Smartwatch Ultra,Electronics,1,309.37,0.0,APAC,Home Office
+1779,2025-02-24,Wool Sweater,Clothing,3,54.37,0.15,North America,Home Office
+1780,2025-02-24,Camping Tent,Sports,4,96.05,0.0,APAC,Corporate
+1781,2025-02-24,Bluetooth Speaker,Electronics,3,710.05,0.0,APAC,Home Office
+1782,2025-02-24,Yoga Mat,Sports,1,171.58,0.1,Europe,Home Office
+1783,2025-02-24,LED Desk Lamp,Home,1,187.41,0.0,LATAM,Premium
+1784,2025-02-24,Dumbbell Set,Sports,2,137.13,0.05,LATAM,Consumer
+1785,2025-02-24,Denim Jeans,Clothing,4,105.61,0.05,Europe,Corporate
+1786,2025-02-24,iPad Pro,Electronics,2,474.41,0.0,North America,Consumer
+1787,2025-02-24,Standing Desk,Home,4,224.58,0.2,North America,Consumer
+1788,2025-02-24,Yoga Mat,Sports,2,139.95,0.05,LATAM,Home Office
+1789,2025-02-24,Cotton T-Shirt,Clothing,2,84.01,0.1,LATAM,Home Office
+1790,2025-02-24,Standing Desk,Home,3,385.11,0.0,APAC,Premium
+1791,2025-02-24,Tennis Racket,Sports,3,115.78,0.1,LATAM,Corporate
+1792,2025-02-24,Ergonomic Chair,Home,1,295.11,0.0,Europe,Consumer
+1793,2025-02-25,iPad Pro,Electronics,3,560.91,0.2,APAC,Premium
+1794,2025-02-25,Ergonomic Chair,Home,4,177.33,0.0,LATAM,Home Office
+1795,2025-02-25,Yoga Mat,Sports,2,33.38,0.2,APAC,Consumer
+1796,2025-02-25,Leather Jacket,Clothing,3,32.71,0.0,LATAM,Consumer
+1797,2025-02-25,Sleeping Bag,Sports,4,23.26,0.0,Europe,Home Office
+1798,2025-02-25,Coffee Maker,Home,1,271.68,0.1,Europe,Corporate
+1799,2025-02-25,Bluetooth Speaker,Electronics,2,602.89,0.05,LATAM,Home Office
+1800,2025-02-25,Air Purifier,Home,3,368.9,0.0,APAC,Home Office
+1801,2025-02-25,Standing Desk,Home,4,306.24,0.0,Europe,Corporate
+1802,2025-02-25,Coffee Maker,Home,2,160.27,0.1,Europe,Home Office
+1803,2025-02-25,LED Desk Lamp,Home,2,283.47,0.0,North America,Home Office
+1804,2025-02-25,Air Purifier,Home,1,323.97,0.15,LATAM,Corporate
+1805,2025-02-25,LED Desk Lamp,Home,3,276.73,0.15,LATAM,Consumer
+1806,2025-02-25,MacBook Air,Electronics,1,521.65,0.0,North America,Corporate
+1807,2025-02-25,Smartwatch Ultra,Electronics,4,679.44,0.0,APAC,Home Office
+1808,2025-02-25,LED Desk Lamp,Home,4,163.1,0.0,North America,Home Office
+1809,2025-02-25,Sleeping Bag,Sports,4,92.99,0.2,North America,Corporate
+1810,2025-02-25,Denim Jeans,Clothing,4,125.51,0.05,LATAM,Premium
+1811,2025-02-25,MacBook Air,Electronics,4,356.95,0.0,North America,Home Office
+1812,2025-02-25,Smartwatch Ultra,Electronics,2,959.4,0.0,LATAM,Corporate
+1813,2025-02-26,Standing Desk,Home,1,96.03,0.0,North America,Corporate
+1814,2025-02-26,Running Shoes,Clothing,3,60.62,0.15,Europe,Premium
+1815,2025-02-26,Air Purifier,Home,1,211.13,0.2,Europe,Corporate
+1816,2025-02-26,iPad Pro,Electronics,1,244.28,0.0,LATAM,Premium
+1817,2025-02-26,LED Desk Lamp,Home,4,62.78,0.0,Europe,Consumer
+1818,2025-02-26,Coffee Maker,Home,4,182.49,0.0,North America,Premium
+1819,2025-02-26,Ergonomic Chair,Home,2,126.17,0.2,LATAM,Corporate
+1820,2025-02-26,iPad Pro,Electronics,1,1160.92,0.15,Europe,Home Office
+1821,2025-02-26,Standing Desk,Home,3,371.4,0.1,Europe,Consumer
+1822,2025-02-26,Smartwatch Ultra,Electronics,3,309.46,0.15,APAC,Premium
+1823,2025-02-26,Yoga Mat,Sports,1,18.08,0.0,APAC,Consumer
+1824,2025-02-26,Wool Sweater,Clothing,3,37.42,0.0,LATAM,Home Office
+1825,2025-02-26,iPad Pro,Electronics,1,1187.34,0.1,LATAM,Premium
+1826,2025-02-26,Running Shoes,Clothing,4,47.63,0.0,LATAM,Premium
+1827,2025-02-26,Camping Tent,Sports,1,189.39,0.0,North America,Premium
+1828,2025-02-26,Standing Desk,Home,1,123.46,0.15,Europe,Home Office
+1829,2025-02-26,Bluetooth Speaker,Electronics,2,396.69,0.05,APAC,Premium
+1830,2025-02-27,MacBook Air,Electronics,3,631.77,0.05,APAC,Corporate
+1831,2025-02-27,Dumbbell Set,Sports,3,193.08,0.15,LATAM,Premium
+1832,2025-02-27,Coffee Maker,Home,4,382.94,0.1,North America,Corporate
+1833,2025-02-27,Leather Jacket,Clothing,2,125.28,0.2,Europe,Home Office
+1834,2025-02-27,LED Desk Lamp,Home,4,391.68,0.15,North America,Corporate
+1835,2025-02-27,Sleeping Bag,Sports,3,71.33,0.1,North America,Premium
+1836,2025-02-27,Bluetooth Speaker,Electronics,3,932.92,0.05,North America,Home Office
+1837,2025-02-27,iPad Pro,Electronics,1,829.99,0.15,North America,Home Office
+1838,2025-02-27,Tennis Racket,Sports,4,154.35,0.2,LATAM,Premium
+1839,2025-02-27,iPhone 15,Electronics,4,684.51,0.2,Europe,Premium
+1840,2025-02-27,Dumbbell Set,Sports,2,15.09,0.05,Europe,Corporate
+1841,2025-02-28,Running Shoes,Clothing,2,87.26,0.2,APAC,Premium
+1842,2025-02-28,Wool Sweater,Clothing,1,111.19,0.0,APAC,Home Office
+1843,2025-02-28,Ergonomic Chair,Home,1,50.9,0.2,Europe,Corporate
+1844,2025-02-28,Smartwatch Ultra,Electronics,2,705.55,0.05,Europe,Corporate
+1845,2025-02-28,Yoga Mat,Sports,1,33.6,0.1,North America,Consumer
+1846,2025-02-28,Wool Sweater,Clothing,1,104.95,0.0,North America,Premium
+1847,2025-02-28,MacBook Air,Electronics,3,342.29,0.0,North America,Consumer
+1848,2025-02-28,Smartwatch Ultra,Electronics,4,235.73,0.0,Europe,Home Office
+1849,2025-02-28,Tennis Racket,Sports,4,85.51,0.0,APAC,Premium
+1850,2025-02-28,Denim Jeans,Clothing,3,107.85,0.2,LATAM,Premium
+1851,2025-02-28,Coffee Maker,Home,4,208.68,0.05,APAC,Consumer
+1852,2025-02-28,Ergonomic Chair,Home,2,174.2,0.0,APAC,Corporate
+1853,2025-02-28,iPhone 15,Electronics,1,208.72,0.1,LATAM,Premium
+1854,2025-02-28,Running Shoes,Clothing,2,59.38,0.15,Europe,Consumer
+1855,2025-02-28,Yoga Mat,Sports,3,139.92,0.0,North America,Corporate
+1856,2025-02-28,Cotton T-Shirt,Clothing,4,97.07,0.1,LATAM,Premium
+1857,2025-02-28,Smartwatch Ultra,Electronics,4,412.09,0.05,LATAM,Home Office
+1858,2025-02-28,Smartwatch Ultra,Electronics,3,326.5,0.1,Europe,Corporate
+1859,2025-02-28,Yoga Mat,Sports,2,98.67,0.2,North America,Consumer
+1860,2025-02-28,Tennis Racket,Sports,4,146.47,0.15,North America,Consumer
+1861,2025-03-01,MacBook Air,Electronics,1,649.45,0.0,LATAM,Home Office
+1862,2025-03-01,Denim Jeans,Clothing,1,129.97,0.05,Europe,Premium
+1863,2025-03-01,Running Shoes,Clothing,4,62.5,0.15,North America,Corporate
+1864,2025-03-01,Tennis Racket,Sports,4,171.63,0.1,Europe,Premium
+1865,2025-03-01,Leather Jacket,Clothing,3,57.11,0.1,APAC,Home Office
+1866,2025-03-01,Cotton T-Shirt,Clothing,1,44.14,0.0,Europe,Premium
+1867,2025-03-01,Ergonomic Chair,Home,1,135.49,0.0,LATAM,Home Office
+1868,2025-03-01,iPhone 15,Electronics,3,606.82,0.0,North America,Corporate
+1869,2025-03-01,Sleeping Bag,Sports,4,55.94,0.0,Europe,Corporate
+1870,2025-03-01,iPhone 15,Electronics,2,742.86,0.2,North America,Consumer
+1871,2025-03-01,Air Purifier,Home,2,94.36,0.0,APAC,Home Office
+1872,2025-03-01,iPad Pro,Electronics,3,1191.0,0.15,Europe,Corporate
+1873,2025-03-01,Leather Jacket,Clothing,1,149.87,0.15,North America,Premium
+1874,2025-03-01,Yoga Mat,Sports,2,180.51,0.0,APAC,Corporate
+1875,2025-03-01,LED Desk Lamp,Home,4,384.43,0.0,APAC,Home Office
+1876,2025-03-01,Cotton T-Shirt,Clothing,4,76.76,0.0,North America,Home Office
+1877,2025-03-02,Air Purifier,Home,1,84.18,0.0,LATAM,Consumer
+1878,2025-03-02,iPhone 15,Electronics,3,688.77,0.1,North America,Corporate
+1879,2025-03-02,MacBook Air,Electronics,4,1014.61,0.0,LATAM,Home Office
+1880,2025-03-02,Wool Sweater,Clothing,2,62.09,0.05,Europe,Consumer
+1881,2025-03-02,Leather Jacket,Clothing,2,134.98,0.15,LATAM,Home Office
+1882,2025-03-02,iPad Pro,Electronics,2,282.58,0.05,APAC,Premium
+1883,2025-03-02,iPad Pro,Electronics,1,810.18,0.0,North America,Corporate
+1884,2025-03-02,Running Shoes,Clothing,2,118.28,0.0,Europe,Consumer
+1885,2025-03-02,Coffee Maker,Home,1,69.4,0.2,North America,Home Office
+1886,2025-03-02,Yoga Mat,Sports,2,187.65,0.15,North America,Premium
+1887,2025-03-03,Standing Desk,Home,3,303.5,0.0,North America,Consumer
+1888,2025-03-03,Leather Jacket,Clothing,3,87.42,0.0,North America,Premium
+1889,2025-03-03,Dumbbell Set,Sports,1,47.73,0.05,Europe,Corporate
+1890,2025-03-03,Bluetooth Speaker,Electronics,1,370.15,0.15,Europe,Premium
+1891,2025-03-03,Dumbbell Set,Sports,3,152.52,0.0,Europe,Home Office
+1892,2025-03-03,Yoga Mat,Sports,3,109.42,0.0,North America,Consumer
+1893,2025-03-03,iPad Pro,Electronics,3,273.36,0.0,North America,Consumer
+1894,2025-03-03,Denim Jeans,Clothing,2,31.26,0.0,APAC,Corporate
+1895,2025-03-03,Dumbbell Set,Sports,3,185.6,0.0,APAC,Consumer
+1896,2025-03-03,Coffee Maker,Home,2,50.35,0.2,Europe,Home Office
+1897,2025-03-03,Denim Jeans,Clothing,4,93.05,0.15,LATAM,Home Office
+1898,2025-03-03,Dumbbell Set,Sports,4,100.49,0.0,LATAM,Corporate
+1899,2025-03-03,MacBook Air,Electronics,1,612.54,0.15,North America,Consumer
+1900,2025-03-03,Camping Tent,Sports,3,58.92,0.15,LATAM,Consumer
+1901,2025-03-03,MacBook Air,Electronics,4,521.94,0.0,LATAM,Premium
+1902,2025-03-03,Coffee Maker,Home,2,69.91,0.0,Europe,Consumer
+1903,2025-03-04,Running Shoes,Clothing,2,41.42,0.15,LATAM,Consumer
+1904,2025-03-04,Leather Jacket,Clothing,3,118.66,0.0,Europe,Corporate
+1905,2025-03-04,Denim Jeans,Clothing,2,107.95,0.0,APAC,Consumer
+1906,2025-03-04,Bluetooth Speaker,Electronics,4,264.29,0.0,Europe,Home Office
+1907,2025-03-04,LED Desk Lamp,Home,2,370.2,0.2,Europe,Home Office
+1908,2025-03-04,Coffee Maker,Home,3,75.73,0.2,Europe,Corporate
+1909,2025-03-04,Running Shoes,Clothing,4,99.43,0.15,Europe,Corporate
+1910,2025-03-04,Sleeping Bag,Sports,2,93.99,0.05,Europe,Consumer
+1911,2025-03-04,Coffee Maker,Home,3,51.26,0.2,Europe,Corporate
+1912,2025-03-04,Coffee Maker,Home,4,72.33,0.0,LATAM,Premium
+1913,2025-03-04,Bluetooth Speaker,Electronics,1,642.15,0.05,LATAM,Home Office
+1914,2025-03-04,iPad Pro,Electronics,1,289.54,0.0,LATAM,Premium
+1915,2025-03-04,Leather Jacket,Clothing,1,112.07,0.2,LATAM,Home Office
+1916,2025-03-04,Leather Jacket,Clothing,4,119.71,0.0,Europe,Home Office
+1917,2025-03-04,Dumbbell Set,Sports,4,30.22,0.2,APAC,Home Office
+1918,2025-03-04,Sleeping Bag,Sports,3,35.06,0.15,APAC,Corporate
+1919,2025-03-05,Ergonomic Chair,Home,3,78.22,0.1,Europe,Consumer
+1920,2025-03-05,Denim Jeans,Clothing,4,42.88,0.2,North America,Consumer
+1921,2025-03-05,Cotton T-Shirt,Clothing,1,47.21,0.0,APAC,Premium
+1922,2025-03-05,Bluetooth Speaker,Electronics,1,718.41,0.0,Europe,Home Office
+1923,2025-03-05,Standing Desk,Home,2,167.95,0.0,North America,Home Office
+1924,2025-03-05,Camping Tent,Sports,3,25.17,0.1,North America,Home Office
+1925,2025-03-05,MacBook Air,Electronics,1,918.52,0.05,North America,Premium
+1926,2025-03-05,Leather Jacket,Clothing,4,140.22,0.0,Europe,Corporate
+1927,2025-03-05,Air Purifier,Home,3,286.8,0.2,APAC,Premium
+1928,2025-03-05,LED Desk Lamp,Home,4,149.0,0.0,LATAM,Home Office
+1929,2025-03-05,Leather Jacket,Clothing,1,123.11,0.0,LATAM,Corporate
+1930,2025-03-05,Dumbbell Set,Sports,2,59.96,0.05,LATAM,Consumer
+1931,2025-03-05,Sleeping Bag,Sports,4,81.62,0.0,APAC,Corporate
+1932,2025-03-06,Running Shoes,Clothing,1,118.82,0.0,LATAM,Corporate
+1933,2025-03-06,Running Shoes,Clothing,3,95.07,0.05,North America,Corporate
+1934,2025-03-06,Running Shoes,Clothing,4,112.03,0.05,LATAM,Consumer
+1935,2025-03-06,Tennis Racket,Sports,1,184.93,0.1,North America,Home Office
+1936,2025-03-06,Ergonomic Chair,Home,3,215.16,0.0,LATAM,Corporate
+1937,2025-03-06,Smartwatch Ultra,Electronics,4,1126.75,0.0,APAC,Home Office
+1938,2025-03-06,Tennis Racket,Sports,4,110.44,0.05,North America,Consumer
+1939,2025-03-06,iPhone 15,Electronics,4,306.0,0.1,Europe,Consumer
+1940,2025-03-06,Air Purifier,Home,4,153.91,0.0,Europe,Home Office
+1941,2025-03-06,Standing Desk,Home,1,273.8,0.2,LATAM,Consumer
+1942,2025-03-06,Smartwatch Ultra,Electronics,3,833.83,0.1,Europe,Consumer
+1943,2025-03-06,Running Shoes,Clothing,4,97.86,0.0,North America,Consumer
+1944,2025-03-06,Bluetooth Speaker,Electronics,4,773.01,0.2,LATAM,Premium
+1945,2025-03-06,Yoga Mat,Sports,4,141.67,0.0,Europe,Corporate
+1946,2025-03-06,Running Shoes,Clothing,4,121.17,0.0,North America,Premium
+1947,2025-03-06,Tennis Racket,Sports,2,57.32,0.0,Europe,Consumer
+1948,2025-03-06,Coffee Maker,Home,2,255.6,0.15,APAC,Home Office
+1949,2025-03-07,Camping Tent,Sports,2,41.98,0.2,LATAM,Consumer
+1950,2025-03-07,Wool Sweater,Clothing,1,38.6,0.15,APAC,Premium
+1951,2025-03-07,Running Shoes,Clothing,2,82.94,0.2,Europe,Consumer
+1952,2025-03-07,Sleeping Bag,Sports,4,73.12,0.2,Europe,Consumer
+1953,2025-03-07,Air Purifier,Home,3,203.61,0.0,APAC,Corporate
+1954,2025-03-07,Bluetooth Speaker,Electronics,1,425.72,0.0,LATAM,Corporate
+1955,2025-03-07,Wool Sweater,Clothing,4,75.9,0.15,North America,Home Office
+1956,2025-03-07,Smartwatch Ultra,Electronics,2,394.86,0.0,LATAM,Consumer
+1957,2025-03-07,iPad Pro,Electronics,2,1011.32,0.15,LATAM,Premium
+1958,2025-03-07,Tennis Racket,Sports,4,23.39,0.0,North America,Home Office
+1959,2025-03-07,Sleeping Bag,Sports,1,198.13,0.2,North America,Corporate
+1960,2025-03-07,Running Shoes,Clothing,2,90.13,0.0,North America,Consumer
+1961,2025-03-07,iPhone 15,Electronics,3,924.8,0.0,Europe,Corporate
+1962,2025-03-07,Smartwatch Ultra,Electronics,1,468.43,0.15,Europe,Corporate
+1963,2025-03-07,Camping Tent,Sports,1,193.97,0.0,APAC,Premium
+1964,2025-03-07,Sleeping Bag,Sports,2,46.18,0.0,North America,Corporate
+1965,2025-03-07,Yoga Mat,Sports,1,117.82,0.2,APAC,Consumer
+1966,2025-03-07,LED Desk Lamp,Home,4,92.44,0.0,Europe,Consumer
+1967,2025-03-07,Air Purifier,Home,4,255.72,0.0,APAC,Corporate
+1968,2025-03-07,iPad Pro,Electronics,3,1015.95,0.15,APAC,Corporate
+1969,2025-03-08,Yoga Mat,Sports,2,137.55,0.0,Europe,Home Office
+1970,2025-03-08,Ergonomic Chair,Home,3,235.15,0.15,North America,Corporate
+1971,2025-03-08,Sleeping Bag,Sports,3,95.57,0.0,APAC,Premium
+1972,2025-03-08,Coffee Maker,Home,3,65.47,0.0,LATAM,Premium
+1973,2025-03-08,Standing Desk,Home,1,291.11,0.0,Europe,Consumer
+1974,2025-03-08,Tennis Racket,Sports,4,38.92,0.05,Europe,Premium
+1975,2025-03-08,Bluetooth Speaker,Electronics,2,1160.79,0.05,Europe,Corporate
+1976,2025-03-08,Tennis Racket,Sports,1,98.27,0.0,Europe,Home Office
+1977,2025-03-08,Wool Sweater,Clothing,3,146.39,0.1,LATAM,Home Office
+1978,2025-03-08,Tennis Racket,Sports,2,187.22,0.0,APAC,Premium
+1979,2025-03-08,Denim Jeans,Clothing,4,89.11,0.1,APAC,Premium
+1980,2025-03-08,Yoga Mat,Sports,1,181.41,0.1,LATAM,Consumer
+1981,2025-03-08,Camping Tent,Sports,2,101.86,0.2,Europe,Premium
+1982,2025-03-08,iPhone 15,Electronics,4,862.91,0.0,Europe,Corporate
+1983,2025-03-08,Standing Desk,Home,3,119.85,0.0,LATAM,Corporate
+1984,2025-03-09,Sleeping Bag,Sports,1,21.05,0.15,LATAM,Home Office
+1985,2025-03-09,Coffee Maker,Home,1,308.64,0.0,North America,Corporate
+1986,2025-03-09,Air Purifier,Home,4,272.98,0.2,North America,Premium
+1987,2025-03-09,Cotton T-Shirt,Clothing,3,39.05,0.0,LATAM,Home Office
+1988,2025-03-09,Denim Jeans,Clothing,1,123.71,0.0,North America,Home Office
+1989,2025-03-09,Standing Desk,Home,1,208.8,0.05,APAC,Consumer
+1990,2025-03-09,Coffee Maker,Home,3,332.1,0.0,LATAM,Consumer
+1991,2025-03-09,iPad Pro,Electronics,3,383.38,0.05,LATAM,Home Office
+1992,2025-03-09,MacBook Air,Electronics,4,635.9,0.0,Europe,Corporate
+1993,2025-03-09,Yoga Mat,Sports,3,100.07,0.0,Europe,Consumer
+1994,2025-03-09,iPhone 15,Electronics,3,849.35,0.0,APAC,Home Office
+1995,2025-03-10,Ergonomic Chair,Home,1,249.84,0.15,APAC,Premium
+1996,2025-03-10,Bluetooth Speaker,Electronics,4,1100.27,0.0,North America,Premium
+1997,2025-03-10,Dumbbell Set,Sports,2,154.53,0.0,APAC,Consumer
+1998,2025-03-10,Wool Sweater,Clothing,1,59.56,0.05,Europe,Premium
+1999,2025-03-10,Leather Jacket,Clothing,3,118.75,0.1,LATAM,Corporate
+2000,2025-03-10,Wool Sweater,Clothing,3,85.62,0.2,APAC,Corporate
+2001,2025-03-10,Yoga Mat,Sports,3,139.45,0.0,APAC,Premium
+2002,2025-03-10,Sleeping Bag,Sports,1,128.98,0.1,North America,Corporate
+2003,2025-03-10,Sleeping Bag,Sports,4,169.38,0.0,LATAM,Corporate
+2004,2025-03-10,LED Desk Lamp,Home,1,259.13,0.2,APAC,Corporate
+2005,2025-03-10,Tennis Racket,Sports,1,80.78,0.0,Europe,Corporate
+2006,2025-03-10,Running Shoes,Clothing,3,144.61,0.2,Europe,Home Office
+2007,2025-03-10,Dumbbell Set,Sports,3,141.37,0.0,LATAM,Premium
+2008,2025-03-10,Running Shoes,Clothing,1,140.14,0.2,LATAM,Consumer
+2009,2025-03-10,Dumbbell Set,Sports,2,110.47,0.2,APAC,Corporate
+2010,2025-03-11,Bluetooth Speaker,Electronics,3,815.77,0.0,North America,Consumer
+2011,2025-03-11,Coffee Maker,Home,1,347.63,0.1,North America,Home Office
+2012,2025-03-11,Smartwatch Ultra,Electronics,4,594.47,0.15,APAC,Premium
+2013,2025-03-11,Dumbbell Set,Sports,3,143.66,0.05,Europe,Corporate
+2014,2025-03-11,Ergonomic Chair,Home,3,245.83,0.0,North America,Premium
+2015,2025-03-11,Cotton T-Shirt,Clothing,2,99.93,0.05,APAC,Home Office
+2016,2025-03-11,Running Shoes,Clothing,4,81.95,0.2,North America,Premium
+2017,2025-03-11,Tennis Racket,Sports,4,70.92,0.2,North America,Premium
+2018,2025-03-11,Wool Sweater,Clothing,3,143.46,0.0,North America,Home Office
+2019,2025-03-11,Tennis Racket,Sports,3,139.33,0.2,Europe,Home Office
+2020,2025-03-11,Leather Jacket,Clothing,4,87.43,0.0,LATAM,Home Office
+2021,2025-03-11,Yoga Mat,Sports,4,19.44,0.0,APAC,Consumer
+2022,2025-03-11,Standing Desk,Home,3,277.63,0.0,North America,Consumer
+2023,2025-03-11,iPhone 15,Electronics,2,974.16,0.15,LATAM,Consumer
+2024,2025-03-11,LED Desk Lamp,Home,3,112.17,0.1,North America,Corporate
+2025,2025-03-12,Denim Jeans,Clothing,3,34.7,0.05,APAC,Home Office
+2026,2025-03-12,Coffee Maker,Home,3,312.23,0.05,North America,Home Office
+2027,2025-03-12,Dumbbell Set,Sports,2,40.5,0.15,Europe,Home Office
+2028,2025-03-12,Leather Jacket,Clothing,1,32.55,0.05,LATAM,Consumer
+2029,2025-03-12,LED Desk Lamp,Home,4,58.77,0.15,APAC,Home Office
+2030,2025-03-12,Yoga Mat,Sports,1,70.41,0.0,North America,Corporate
+2031,2025-03-12,Coffee Maker,Home,1,104.92,0.0,APAC,Consumer
+2032,2025-03-12,Denim Jeans,Clothing,1,107.48,0.15,North America,Consumer
+2033,2025-03-12,Denim Jeans,Clothing,1,52.55,0.0,North America,Premium
+2034,2025-03-12,LED Desk Lamp,Home,1,257.99,0.0,LATAM,Premium
+2035,2025-03-12,Camping Tent,Sports,3,107.12,0.05,North America,Corporate
+2036,2025-03-12,Sleeping Bag,Sports,1,134.17,0.1,LATAM,Home Office
+2037,2025-03-13,MacBook Air,Electronics,1,428.46,0.15,North America,Premium
+2038,2025-03-13,Air Purifier,Home,1,248.27,0.05,Europe,Corporate
+2039,2025-03-13,iPad Pro,Electronics,3,637.19,0.05,APAC,Consumer
+2040,2025-03-13,iPhone 15,Electronics,3,761.21,0.0,Europe,Consumer
+2041,2025-03-13,iPad Pro,Electronics,4,996.06,0.1,North America,Premium
+2042,2025-03-13,Coffee Maker,Home,4,88.83,0.1,LATAM,Corporate
+2043,2025-03-13,Standing Desk,Home,1,251.62,0.2,North America,Home Office
+2044,2025-03-13,Bluetooth Speaker,Electronics,4,315.44,0.0,North America,Home Office
+2045,2025-03-13,Wool Sweater,Clothing,4,117.76,0.05,LATAM,Corporate
+2046,2025-03-13,Dumbbell Set,Sports,1,172.53,0.1,LATAM,Consumer
+2047,2025-03-13,Ergonomic Chair,Home,1,355.15,0.0,LATAM,Premium
+2048,2025-03-13,Tennis Racket,Sports,4,124.2,0.0,LATAM,Consumer
+2049,2025-03-13,Wool Sweater,Clothing,3,146.48,0.15,Europe,Home Office
+2050,2025-03-13,Yoga Mat,Sports,4,16.68,0.05,LATAM,Premium
+2051,2025-03-13,iPhone 15,Electronics,2,643.9,0.0,North America,Corporate
+2052,2025-03-13,Dumbbell Set,Sports,3,167.46,0.0,North America,Consumer
+2053,2025-03-13,Yoga Mat,Sports,2,159.23,0.15,LATAM,Corporate
+2054,2025-03-13,MacBook Air,Electronics,1,569.89,0.0,LATAM,Corporate
+2055,2025-03-13,Dumbbell Set,Sports,1,83.61,0.0,Europe,Consumer
+2056,2025-03-13,Bluetooth Speaker,Electronics,3,872.63,0.15,LATAM,Premium
+2057,2025-03-14,MacBook Air,Electronics,3,417.72,0.0,LATAM,Premium
+2058,2025-03-14,MacBook Air,Electronics,4,325.06,0.0,LATAM,Consumer
+2059,2025-03-14,Dumbbell Set,Sports,4,77.62,0.1,North America,Home Office
+2060,2025-03-14,Sleeping Bag,Sports,2,49.84,0.2,Europe,Consumer
+2061,2025-03-14,Standing Desk,Home,3,168.09,0.0,Europe,Home Office
+2062,2025-03-14,Running Shoes,Clothing,2,124.16,0.0,Europe,Consumer
+2063,2025-03-14,Denim Jeans,Clothing,2,80.69,0.0,North America,Consumer
+2064,2025-03-14,Ergonomic Chair,Home,3,164.35,0.1,LATAM,Home Office
+2065,2025-03-14,Sleeping Bag,Sports,2,138.7,0.0,APAC,Corporate
+2066,2025-03-14,Denim Jeans,Clothing,2,121.77,0.0,APAC,Home Office
+2067,2025-03-14,Camping Tent,Sports,2,179.73,0.1,North America,Premium
+2068,2025-03-14,Camping Tent,Sports,1,57.09,0.0,Europe,Premium
+2069,2025-03-15,Wool Sweater,Clothing,1,93.86,0.05,North America,Home Office
+2070,2025-03-15,Air Purifier,Home,1,170.1,0.0,North America,Corporate
+2071,2025-03-15,Wool Sweater,Clothing,4,61.83,0.05,North America,Consumer
+2072,2025-03-15,Denim Jeans,Clothing,4,125.02,0.0,APAC,Corporate
+2073,2025-03-15,Standing Desk,Home,3,332.63,0.15,LATAM,Home Office
+2074,2025-03-15,iPad Pro,Electronics,1,510.1,0.15,Europe,Premium
+2075,2025-03-15,Denim Jeans,Clothing,3,120.22,0.1,North America,Premium
+2076,2025-03-15,LED Desk Lamp,Home,3,297.14,0.1,Europe,Consumer
+2077,2025-03-15,Wool Sweater,Clothing,3,144.96,0.0,Europe,Consumer
+2078,2025-03-15,Yoga Mat,Sports,1,182.09,0.2,Europe,Corporate
+2079,2025-03-16,Wool Sweater,Clothing,1,115.6,0.2,APAC,Home Office
+2080,2025-03-16,Running Shoes,Clothing,3,74.26,0.05,LATAM,Premium
+2081,2025-03-16,Tennis Racket,Sports,2,97.11,0.1,LATAM,Premium
+2082,2025-03-16,Denim Jeans,Clothing,1,130.25,0.05,Europe,Premium
+2083,2025-03-16,Wool Sweater,Clothing,1,111.36,0.05,Europe,Corporate
+2084,2025-03-16,Tennis Racket,Sports,3,24.1,0.0,Europe,Premium
+2085,2025-03-16,Air Purifier,Home,4,274.83,0.0,North America,Premium
+2086,2025-03-16,Smartwatch Ultra,Electronics,2,589.3,0.0,LATAM,Corporate
+2087,2025-03-16,Camping Tent,Sports,2,178.9,0.1,Europe,Premium
+2088,2025-03-16,Denim Jeans,Clothing,1,81.66,0.0,LATAM,Home Office
+2089,2025-03-16,Dumbbell Set,Sports,1,33.39,0.15,North America,Premium
+2090,2025-03-16,Coffee Maker,Home,2,140.07,0.1,LATAM,Corporate
+2091,2025-03-16,iPad Pro,Electronics,3,854.13,0.05,Europe,Home Office
+2092,2025-03-17,Wool Sweater,Clothing,2,98.06,0.0,LATAM,Premium
+2093,2025-03-17,Leather Jacket,Clothing,1,57.17,0.05,North America,Consumer
+2094,2025-03-17,Coffee Maker,Home,2,261.5,0.2,APAC,Premium
+2095,2025-03-17,Cotton T-Shirt,Clothing,2,143.77,0.2,North America,Premium
+2096,2025-03-17,Camping Tent,Sports,3,115.02,0.1,LATAM,Home Office
+2097,2025-03-17,Running Shoes,Clothing,4,78.26,0.1,APAC,Corporate
+2098,2025-03-17,Cotton T-Shirt,Clothing,2,58.26,0.0,LATAM,Home Office
+2099,2025-03-17,Yoga Mat,Sports,1,164.29,0.0,Europe,Corporate
+2100,2025-03-17,Sleeping Bag,Sports,2,55.83,0.2,LATAM,Corporate
+2101,2025-03-17,MacBook Air,Electronics,4,279.73,0.1,APAC,Corporate
+2102,2025-03-17,Running Shoes,Clothing,3,65.95,0.0,Europe,Home Office
+2103,2025-03-17,Denim Jeans,Clothing,4,139.62,0.1,Europe,Corporate
+2104,2025-03-17,Yoga Mat,Sports,4,163.08,0.05,APAC,Home Office
+2105,2025-03-17,Standing Desk,Home,1,365.69,0.1,APAC,Premium
+2106,2025-03-17,LED Desk Lamp,Home,2,122.76,0.0,Europe,Premium
+2107,2025-03-17,Coffee Maker,Home,1,110.16,0.0,APAC,Corporate
+2108,2025-03-17,Tennis Racket,Sports,2,72.55,0.0,APAC,Premium
+2109,2025-03-17,Air Purifier,Home,1,206.91,0.15,North America,Premium
+2110,2025-03-17,Standing Desk,Home,4,243.06,0.0,LATAM,Home Office
+2111,2025-03-18,Cotton T-Shirt,Clothing,1,59.98,0.0,LATAM,Home Office
+2112,2025-03-18,iPad Pro,Electronics,2,922.92,0.05,LATAM,Premium
+2113,2025-03-18,Air Purifier,Home,1,87.31,0.05,LATAM,Corporate
+2114,2025-03-18,Ergonomic Chair,Home,2,275.68,0.15,North America,Consumer
+2115,2025-03-18,Wool Sweater,Clothing,1,95.72,0.2,LATAM,Corporate
+2116,2025-03-18,Smartwatch Ultra,Electronics,4,760.57,0.2,North America,Premium
+2117,2025-03-18,Air Purifier,Home,1,245.93,0.2,APAC,Corporate
+2118,2025-03-18,Coffee Maker,Home,3,290.32,0.0,Europe,Corporate
+2119,2025-03-18,Dumbbell Set,Sports,1,119.9,0.2,North America,Corporate
+2120,2025-03-18,Sleeping Bag,Sports,2,22.43,0.1,LATAM,Consumer
+2121,2025-03-18,Dumbbell Set,Sports,1,136.37,0.0,APAC,Corporate
+2122,2025-03-18,Wool Sweater,Clothing,1,69.5,0.05,Europe,Home Office
+2123,2025-03-18,Denim Jeans,Clothing,4,101.49,0.05,LATAM,Home Office
+2124,2025-03-18,Coffee Maker,Home,1,394.66,0.0,North America,Premium
+2125,2025-03-19,Dumbbell Set,Sports,2,93.24,0.05,APAC,Consumer
+2126,2025-03-19,Dumbbell Set,Sports,2,140.26,0.05,North America,Consumer
+2127,2025-03-19,Leather Jacket,Clothing,2,149.18,0.0,LATAM,Consumer
+2128,2025-03-19,Standing Desk,Home,2,390.55,0.2,LATAM,Premium
+2129,2025-03-19,Sleeping Bag,Sports,3,145.94,0.15,APAC,Corporate
+2130,2025-03-19,Smartwatch Ultra,Electronics,2,698.91,0.2,Europe,Premium
+2131,2025-03-19,Smartwatch Ultra,Electronics,2,261.49,0.1,Europe,Premium
+2132,2025-03-19,Camping Tent,Sports,4,47.94,0.2,LATAM,Home Office
+2133,2025-03-19,Cotton T-Shirt,Clothing,3,95.31,0.2,LATAM,Premium
+2134,2025-03-19,Yoga Mat,Sports,2,106.03,0.15,Europe,Premium
+2135,2025-03-19,Smartwatch Ultra,Electronics,4,343.34,0.0,Europe,Consumer
+2136,2025-03-19,Coffee Maker,Home,2,169.96,0.0,APAC,Corporate
+2137,2025-03-19,Smartwatch Ultra,Electronics,1,973.36,0.2,Europe,Consumer
+2138,2025-03-19,LED Desk Lamp,Home,4,248.82,0.05,LATAM,Premium
+2139,2025-03-19,Bluetooth Speaker,Electronics,4,298.75,0.0,LATAM,Corporate
+2140,2025-03-20,Denim Jeans,Clothing,2,147.75,0.0,APAC,Consumer
+2141,2025-03-20,Wool Sweater,Clothing,1,87.65,0.0,APAC,Consumer
+2142,2025-03-20,Wool Sweater,Clothing,3,144.74,0.0,LATAM,Consumer
+2143,2025-03-20,Yoga Mat,Sports,3,146.85,0.0,Europe,Home Office
+2144,2025-03-20,Tennis Racket,Sports,1,178.51,0.0,LATAM,Corporate
+2145,2025-03-20,Tennis Racket,Sports,3,168.95,0.0,APAC,Corporate
+2146,2025-03-20,Yoga Mat,Sports,1,167.65,0.15,Europe,Consumer
+2147,2025-03-20,Air Purifier,Home,1,389.28,0.05,North America,Home Office
+2148,2025-03-20,Air Purifier,Home,2,80.68,0.0,APAC,Corporate
+2149,2025-03-20,Dumbbell Set,Sports,1,145.88,0.0,LATAM,Premium
+2150,2025-03-20,Denim Jeans,Clothing,2,91.38,0.2,APAC,Corporate
+2151,2025-03-20,Dumbbell Set,Sports,3,139.51,0.2,Europe,Corporate
+2152,2025-03-20,Ergonomic Chair,Home,2,197.45,0.1,Europe,Consumer
+2153,2025-03-20,Bluetooth Speaker,Electronics,4,633.48,0.05,North America,Premium
+2154,2025-03-20,Running Shoes,Clothing,2,68.92,0.1,LATAM,Consumer
+2155,2025-03-20,iPhone 15,Electronics,3,999.29,0.0,APAC,Consumer
+2156,2025-03-20,Sleeping Bag,Sports,1,109.67,0.2,APAC,Premium
+2157,2025-03-21,Air Purifier,Home,4,151.31,0.0,LATAM,Premium
+2158,2025-03-21,Sleeping Bag,Sports,1,111.71,0.15,LATAM,Premium
+2159,2025-03-21,Dumbbell Set,Sports,1,172.8,0.0,APAC,Consumer
+2160,2025-03-21,Denim Jeans,Clothing,3,93.25,0.1,North America,Consumer
+2161,2025-03-21,Leather Jacket,Clothing,4,105.05,0.05,LATAM,Consumer
+2162,2025-03-21,Wool Sweater,Clothing,2,64.75,0.15,APAC,Consumer
+2163,2025-03-21,Running Shoes,Clothing,1,55.59,0.05,LATAM,Home Office
+2164,2025-03-21,Sleeping Bag,Sports,4,44.0,0.15,LATAM,Premium
+2165,2025-03-21,Cotton T-Shirt,Clothing,4,58.86,0.0,North America,Home Office
+2166,2025-03-21,Ergonomic Chair,Home,3,383.02,0.0,APAC,Consumer
+2167,2025-03-21,Bluetooth Speaker,Electronics,3,766.34,0.05,North America,Home Office
+2168,2025-03-21,Yoga Mat,Sports,1,128.83,0.05,North America,Consumer
+2169,2025-03-21,Running Shoes,Clothing,2,76.67,0.2,Europe,Corporate
+2170,2025-03-21,Running Shoes,Clothing,4,99.46,0.2,North America,Premium
+2171,2025-03-21,iPad Pro,Electronics,4,1114.65,0.0,Europe,Corporate
+2172,2025-03-21,Ergonomic Chair,Home,4,197.87,0.1,North America,Premium
+2173,2025-03-21,Smartwatch Ultra,Electronics,4,615.31,0.15,APAC,Premium
+2174,2025-03-21,MacBook Air,Electronics,3,629.03,0.0,North America,Home Office
+2175,2025-03-21,Yoga Mat,Sports,4,56.05,0.15,North America,Home Office
+2176,2025-03-22,iPhone 15,Electronics,1,818.06,0.15,APAC,Consumer
+2177,2025-03-22,Standing Desk,Home,4,262.23,0.0,North America,Home Office
+2178,2025-03-22,Air Purifier,Home,2,266.74,0.1,APAC,Premium
+2179,2025-03-22,Denim Jeans,Clothing,2,127.96,0.05,LATAM,Consumer
+2180,2025-03-22,Denim Jeans,Clothing,4,82.91,0.0,Europe,Premium
+2181,2025-03-22,Leather Jacket,Clothing,4,80.83,0.0,Europe,Consumer
+2182,2025-03-22,Wool Sweater,Clothing,4,88.99,0.2,APAC,Consumer
+2183,2025-03-22,Smartwatch Ultra,Electronics,1,316.79,0.1,APAC,Corporate
+2184,2025-03-22,MacBook Air,Electronics,1,650.97,0.1,Europe,Home Office
+2185,2025-03-22,Wool Sweater,Clothing,2,90.65,0.2,Europe,Consumer
+2186,2025-03-22,Running Shoes,Clothing,3,67.88,0.2,LATAM,Home Office
+2187,2025-03-22,Wool Sweater,Clothing,1,101.7,0.1,Europe,Corporate
+2188,2025-03-22,Coffee Maker,Home,4,352.3,0.0,APAC,Premium
+2189,2025-03-22,iPhone 15,Electronics,4,879.68,0.1,LATAM,Consumer
+2190,2025-03-22,Cotton T-Shirt,Clothing,4,65.86,0.0,APAC,Home Office
+2191,2025-03-22,Denim Jeans,Clothing,2,122.03,0.0,LATAM,Corporate
+2192,2025-03-23,Tennis Racket,Sports,3,73.84,0.0,North America,Premium
+2193,2025-03-23,Running Shoes,Clothing,2,71.18,0.05,Europe,Premium
+2194,2025-03-23,Sleeping Bag,Sports,4,113.93,0.15,North America,Corporate
+2195,2025-03-23,Wool Sweater,Clothing,3,131.39,0.0,APAC,Consumer
+2196,2025-03-23,Yoga Mat,Sports,3,29.39,0.0,North America,Home Office
+2197,2025-03-23,Denim Jeans,Clothing,1,35.94,0.0,APAC,Home Office
+2198,2025-03-23,Wool Sweater,Clothing,2,66.14,0.1,APAC,Home Office
+2199,2025-03-23,Tennis Racket,Sports,2,198.05,0.0,Europe,Consumer
+2200,2025-03-23,iPad Pro,Electronics,4,1068.34,0.0,North America,Corporate
+2201,2025-03-23,Denim Jeans,Clothing,4,30.93,0.0,APAC,Premium
+2202,2025-03-23,Yoga Mat,Sports,3,132.18,0.0,LATAM,Consumer
+2203,2025-03-23,MacBook Air,Electronics,3,408.23,0.15,North America,Premium
+2204,2025-03-23,Wool Sweater,Clothing,1,43.06,0.0,Europe,Corporate
+2205,2025-03-23,iPhone 15,Electronics,1,273.94,0.0,Europe,Corporate
+2206,2025-03-23,Ergonomic Chair,Home,4,131.39,0.1,North America,Home Office
+2207,2025-03-23,MacBook Air,Electronics,2,484.59,0.0,LATAM,Premium
+2208,2025-03-23,Tennis Racket,Sports,1,171.94,0.15,LATAM,Corporate
+2209,2025-03-24,MacBook Air,Electronics,4,642.92,0.2,North America,Corporate
+2210,2025-03-24,Smartwatch Ultra,Electronics,4,379.4,0.0,Europe,Corporate
+2211,2025-03-24,Standing Desk,Home,1,285.6,0.1,North America,Premium
+2212,2025-03-24,Sleeping Bag,Sports,3,23.63,0.0,North America,Consumer
+2213,2025-03-24,Tennis Racket,Sports,2,162.16,0.0,Europe,Consumer
+2214,2025-03-24,Air Purifier,Home,2,284.25,0.0,Europe,Corporate
+2215,2025-03-24,LED Desk Lamp,Home,3,284.28,0.0,APAC,Consumer
+2216,2025-03-24,LED Desk Lamp,Home,3,293.37,0.2,Europe,Corporate
+2217,2025-03-24,Wool Sweater,Clothing,4,48.36,0.2,North America,Home Office
+2218,2025-03-24,Yoga Mat,Sports,3,193.05,0.0,LATAM,Consumer
+2219,2025-03-24,Standing Desk,Home,2,316.13,0.15,Europe,Home Office
+2220,2025-03-24,Wool Sweater,Clothing,2,146.92,0.0,APAC,Consumer
+2221,2025-03-24,Cotton T-Shirt,Clothing,1,33.23,0.0,LATAM,Consumer
+2222,2025-03-24,Dumbbell Set,Sports,3,42.19,0.0,LATAM,Home Office
+2223,2025-03-24,LED Desk Lamp,Home,1,58.61,0.2,LATAM,Consumer
+2224,2025-03-24,Denim Jeans,Clothing,4,78.08,0.2,APAC,Consumer
+2225,2025-03-24,iPad Pro,Electronics,4,477.42,0.15,Europe,Home Office
+2226,2025-03-24,Standing Desk,Home,1,61.96,0.1,Europe,Premium
+2227,2025-03-24,Ergonomic Chair,Home,4,124.06,0.0,LATAM,Corporate
+2228,2025-03-24,MacBook Air,Electronics,3,911.07,0.1,North America,Home Office
+2229,2025-03-25,iPhone 15,Electronics,3,1183.32,0.0,Europe,Consumer
+2230,2025-03-25,Coffee Maker,Home,1,138.06,0.2,LATAM,Premium
+2231,2025-03-25,Leather Jacket,Clothing,4,81.83,0.15,APAC,Corporate
+2232,2025-03-25,iPad Pro,Electronics,4,240.71,0.2,North America,Consumer
+2233,2025-03-25,Coffee Maker,Home,1,333.56,0.0,North America,Premium
+2234,2025-03-25,Yoga Mat,Sports,2,195.52,0.05,LATAM,Corporate
+2235,2025-03-25,Air Purifier,Home,1,75.22,0.1,North America,Premium
+2236,2025-03-25,Coffee Maker,Home,4,224.52,0.15,North America,Premium
+2237,2025-03-25,Tennis Racket,Sports,2,30.18,0.0,Europe,Corporate
+2238,2025-03-25,Ergonomic Chair,Home,2,336.61,0.0,APAC,Corporate
+2239,2025-03-25,iPhone 15,Electronics,3,375.2,0.0,Europe,Home Office
+2240,2025-03-25,Cotton T-Shirt,Clothing,4,56.94,0.0,North America,Corporate
+2241,2025-03-25,Denim Jeans,Clothing,3,104.13,0.1,APAC,Home Office
+2242,2025-03-25,Wool Sweater,Clothing,2,147.26,0.0,Europe,Consumer
+2243,2025-03-25,Smartwatch Ultra,Electronics,4,929.9,0.0,LATAM,Premium
+2244,2025-03-25,Air Purifier,Home,4,341.74,0.15,APAC,Home Office
+2245,2025-03-25,iPad Pro,Electronics,1,1030.86,0.0,LATAM,Consumer
+2246,2025-03-25,MacBook Air,Electronics,1,977.79,0.1,LATAM,Premium
+2247,2025-03-25,Bluetooth Speaker,Electronics,2,907.1,0.0,North America,Premium
+2248,2025-03-25,Cotton T-Shirt,Clothing,3,82.38,0.0,LATAM,Premium
+2249,2025-03-26,Cotton T-Shirt,Clothing,1,104.7,0.2,North America,Consumer
+2250,2025-03-26,Camping Tent,Sports,2,56.48,0.05,North America,Corporate
+2251,2025-03-26,LED Desk Lamp,Home,3,340.41,0.0,Europe,Premium
+2252,2025-03-26,Smartwatch Ultra,Electronics,2,494.08,0.0,Europe,Corporate
+2253,2025-03-26,Dumbbell Set,Sports,3,141.68,0.0,LATAM,Home Office
+2254,2025-03-26,Yoga Mat,Sports,3,176.11,0.0,Europe,Home Office
+2255,2025-03-26,MacBook Air,Electronics,1,1044.6,0.15,LATAM,Premium
+2256,2025-03-26,Air Purifier,Home,3,235.69,0.2,APAC,Home Office
+2257,2025-03-26,Denim Jeans,Clothing,2,105.45,0.1,Europe,Corporate
+2258,2025-03-26,Dumbbell Set,Sports,4,192.08,0.0,North America,Premium
+2259,2025-03-26,Camping Tent,Sports,1,28.03,0.05,Europe,Corporate
+2260,2025-03-26,Air Purifier,Home,4,389.88,0.15,LATAM,Corporate
+2261,2025-03-26,Leather Jacket,Clothing,2,95.73,0.1,APAC,Corporate
+2262,2025-03-26,Camping Tent,Sports,2,15.82,0.15,APAC,Home Office
+2263,2025-03-26,LED Desk Lamp,Home,4,237.11,0.0,North America,Consumer
+2264,2025-03-27,iPad Pro,Electronics,2,382.53,0.15,North America,Corporate
+2265,2025-03-27,Sleeping Bag,Sports,4,81.96,0.15,Europe,Corporate
+2266,2025-03-27,Cotton T-Shirt,Clothing,3,114.19,0.0,APAC,Home Office
+2267,2025-03-27,iPad Pro,Electronics,1,406.41,0.0,North America,Corporate
+2268,2025-03-27,Camping Tent,Sports,1,89.31,0.0,LATAM,Consumer
+2269,2025-03-27,Running Shoes,Clothing,4,68.5,0.2,North America,Premium
+2270,2025-03-27,Denim Jeans,Clothing,4,149.53,0.2,APAC,Home Office
+2271,2025-03-27,Standing Desk,Home,4,265.7,0.0,Europe,Corporate
+2272,2025-03-27,Camping Tent,Sports,4,98.75,0.15,LATAM,Premium
+2273,2025-03-27,Camping Tent,Sports,1,140.5,0.0,North America,Home Office
+2274,2025-03-27,iPad Pro,Electronics,3,755.87,0.2,North America,Premium
+2275,2025-03-27,Sleeping Bag,Sports,2,57.64,0.15,North America,Premium
+2276,2025-03-27,Smartwatch Ultra,Electronics,2,1024.13,0.15,North America,Home Office
+2277,2025-03-27,LED Desk Lamp,Home,1,350.52,0.15,LATAM,Consumer
+2278,2025-03-27,Leather Jacket,Clothing,3,98.53,0.2,LATAM,Premium
+2279,2025-03-27,MacBook Air,Electronics,3,781.13,0.1,LATAM,Consumer
+2280,2025-03-27,Smartwatch Ultra,Electronics,4,715.91,0.0,Europe,Consumer
+2281,2025-03-27,Bluetooth Speaker,Electronics,3,408.58,0.05,Europe,Consumer
+2282,2025-03-28,Running Shoes,Clothing,4,30.21,0.0,LATAM,Consumer
+2283,2025-03-28,Coffee Maker,Home,1,77.65,0.2,North America,Premium
+2284,2025-03-28,Bluetooth Speaker,Electronics,4,709.45,0.0,LATAM,Corporate
+2285,2025-03-28,Wool Sweater,Clothing,1,52.14,0.15,LATAM,Consumer
+2286,2025-03-28,Cotton T-Shirt,Clothing,1,98.03,0.0,Europe,Home Office
+2287,2025-03-28,Standing Desk,Home,3,259.96,0.15,APAC,Consumer
+2288,2025-03-28,Sleeping Bag,Sports,1,159.36,0.0,North America,Consumer
+2289,2025-03-28,Tennis Racket,Sports,1,115.02,0.2,LATAM,Consumer
+2290,2025-03-28,Running Shoes,Clothing,4,111.67,0.2,APAC,Premium
+2291,2025-03-28,LED Desk Lamp,Home,4,65.75,0.0,North America,Premium
+2292,2025-03-29,Camping Tent,Sports,1,150.14,0.0,North America,Home Office
+2293,2025-03-29,Leather Jacket,Clothing,2,87.11,0.15,Europe,Premium
+2294,2025-03-29,Leather Jacket,Clothing,2,81.84,0.0,Europe,Premium
+2295,2025-03-29,Camping Tent,Sports,3,193.18,0.05,Europe,Premium
+2296,2025-03-29,iPad Pro,Electronics,4,952.24,0.0,LATAM,Consumer
+2297,2025-03-29,Smartwatch Ultra,Electronics,3,357.87,0.05,LATAM,Premium
+2298,2025-03-29,Leather Jacket,Clothing,4,76.72,0.1,North America,Consumer
+2299,2025-03-29,Wool Sweater,Clothing,1,54.94,0.0,LATAM,Corporate
+2300,2025-03-29,Denim Jeans,Clothing,1,115.34,0.0,LATAM,Corporate
+2301,2025-03-29,Leather Jacket,Clothing,1,38.25,0.2,North America,Premium
+2302,2025-03-29,Yoga Mat,Sports,1,40.93,0.0,APAC,Premium
+2303,2025-03-29,Running Shoes,Clothing,1,106.75,0.0,LATAM,Corporate
+2304,2025-03-29,iPad Pro,Electronics,3,221.3,0.15,North America,Home Office
+2305,2025-03-29,Standing Desk,Home,2,126.05,0.15,LATAM,Corporate
+2306,2025-03-29,Air Purifier,Home,1,202.25,0.0,North America,Home Office
+2307,2025-03-29,Standing Desk,Home,1,253.02,0.2,APAC,Corporate
+2308,2025-03-29,Cotton T-Shirt,Clothing,2,85.05,0.15,APAC,Corporate
+2309,2025-03-30,Dumbbell Set,Sports,3,131.12,0.0,APAC,Premium
+2310,2025-03-30,Running Shoes,Clothing,2,72.0,0.2,North America,Home Office
+2311,2025-03-30,LED Desk Lamp,Home,3,114.05,0.0,LATAM,Consumer
+2312,2025-03-30,Leather Jacket,Clothing,3,71.87,0.05,Europe,Premium
+2313,2025-03-30,Wool Sweater,Clothing,4,92.93,0.0,North America,Corporate
+2314,2025-03-30,MacBook Air,Electronics,4,999.59,0.05,North America,Corporate
+2315,2025-03-30,Air Purifier,Home,4,355.84,0.1,Europe,Corporate
+2316,2025-03-30,Yoga Mat,Sports,4,102.09,0.0,North America,Consumer
+2317,2025-03-30,Yoga Mat,Sports,2,121.69,0.0,LATAM,Consumer
+2318,2025-03-30,Bluetooth Speaker,Electronics,3,1041.12,0.0,North America,Consumer
+2319,2025-03-30,Coffee Maker,Home,3,316.31,0.1,North America,Premium
+2320,2025-03-30,Coffee Maker,Home,3,100.21,0.0,North America,Corporate
+2321,2025-03-30,Leather Jacket,Clothing,1,54.62,0.0,LATAM,Home Office
+2322,2025-03-30,iPad Pro,Electronics,3,942.24,0.0,Europe,Corporate
+2323,2025-03-30,Sleeping Bag,Sports,1,45.56,0.0,North America,Corporate
+2324,2025-03-30,Sleeping Bag,Sports,4,31.56,0.15,Europe,Home Office
+2325,2025-03-30,Bluetooth Speaker,Electronics,2,633.63,0.0,North America,Home Office
+2326,2025-03-30,iPad Pro,Electronics,4,1191.33,0.1,APAC,Premium
+2327,2025-03-30,Smartwatch Ultra,Electronics,4,1197.85,0.0,North America,Home Office
+2328,2025-03-31,Running Shoes,Clothing,1,116.79,0.0,LATAM,Corporate
+2329,2025-03-31,Air Purifier,Home,2,375.36,0.0,North America,Premium
+2330,2025-03-31,Cotton T-Shirt,Clothing,2,87.21,0.0,LATAM,Premium
+2331,2025-03-31,Standing Desk,Home,2,126.98,0.1,North America,Corporate
+2332,2025-03-31,Ergonomic Chair,Home,1,260.56,0.1,APAC,Home Office
+2333,2025-03-31,Ergonomic Chair,Home,4,138.78,0.0,North America,Premium
+2334,2025-03-31,iPad Pro,Electronics,1,783.39,0.2,North America,Consumer
+2335,2025-03-31,Sleeping Bag,Sports,2,61.37,0.05,North America,Corporate
+2336,2025-03-31,Bluetooth Speaker,Electronics,2,425.4,0.0,Europe,Home Office
+2337,2025-03-31,Ergonomic Chair,Home,2,167.41,0.15,LATAM,Corporate
+2338,2025-03-31,Standing Desk,Home,2,232.37,0.15,LATAM,Premium
+2339,2025-03-31,Standing Desk,Home,3,125.8,0.1,Europe,Consumer
+2340,2025-03-31,Tennis Racket,Sports,1,65.68,0.2,Europe,Home Office
+2341,2025-03-31,Leather Jacket,Clothing,2,64.04,0.2,APAC,Home Office
+2342,2025-03-31,Running Shoes,Clothing,3,126.38,0.0,Europe,Consumer
+2343,2025-03-31,Yoga Mat,Sports,2,152.71,0.1,Europe,Premium
+2344,2025-03-31,MacBook Air,Electronics,1,645.19,0.05,Europe,Home Office
+2345,2025-03-31,Tennis Racket,Sports,4,141.38,0.0,LATAM,Corporate
+2346,2025-03-31,Yoga Mat,Sports,2,64.61,0.1,North America,Corporate
+2347,2025-04-01,Wool Sweater,Clothing,3,117.11,0.05,Europe,Home Office
+2348,2025-04-01,LED Desk Lamp,Home,2,253.93,0.0,North America,Premium
+2349,2025-04-01,iPad Pro,Electronics,4,310.4,0.0,North America,Premium
+2350,2025-04-01,iPad Pro,Electronics,3,1053.01,0.15,APAC,Consumer
+2351,2025-04-01,Running Shoes,Clothing,3,120.31,0.0,APAC,Consumer
+2352,2025-04-01,Yoga Mat,Sports,1,131.51,0.05,LATAM,Consumer
+2353,2025-04-01,Bluetooth Speaker,Electronics,1,1125.38,0.0,Europe,Home Office
+2354,2025-04-01,LED Desk Lamp,Home,2,140.36,0.0,Europe,Home Office
+2355,2025-04-01,LED Desk Lamp,Home,1,331.37,0.0,APAC,Home Office
+2356,2025-04-01,Air Purifier,Home,3,80.65,0.05,Europe,Home Office
+2357,2025-04-01,Air Purifier,Home,1,230.31,0.0,LATAM,Consumer
+2358,2025-04-01,Denim Jeans,Clothing,2,55.36,0.1,APAC,Corporate
+2359,2025-04-01,Cotton T-Shirt,Clothing,1,60.82,0.0,Europe,Premium
+2360,2025-04-01,iPhone 15,Electronics,2,920.43,0.0,North America,Consumer
+2361,2025-04-01,Sleeping Bag,Sports,4,58.3,0.2,LATAM,Corporate
+2362,2025-04-01,Tennis Racket,Sports,4,58.55,0.15,LATAM,Consumer
+2363,2025-04-01,iPad Pro,Electronics,4,1187.81,0.05,North America,Consumer
+2364,2025-04-01,LED Desk Lamp,Home,3,182.08,0.1,North America,Corporate
+2365,2025-04-01,Running Shoes,Clothing,2,62.99,0.2,APAC,Consumer
+2366,2025-04-02,Ergonomic Chair,Home,4,136.05,0.1,North America,Home Office
+2367,2025-04-02,Ergonomic Chair,Home,4,80.2,0.2,APAC,Home Office
+2368,2025-04-02,Denim Jeans,Clothing,2,40.65,0.0,North America,Home Office
+2369,2025-04-02,LED Desk Lamp,Home,1,269.05,0.0,APAC,Premium
+2370,2025-04-02,Running Shoes,Clothing,4,39.71,0.2,Europe,Corporate
+2371,2025-04-02,MacBook Air,Electronics,1,416.56,0.0,Europe,Consumer
+2372,2025-04-02,Bluetooth Speaker,Electronics,4,1136.83,0.0,North America,Home Office
+2373,2025-04-02,Dumbbell Set,Sports,3,100.44,0.0,Europe,Consumer
+2374,2025-04-02,Air Purifier,Home,2,378.38,0.1,North America,Corporate
+2375,2025-04-02,Yoga Mat,Sports,4,64.45,0.1,LATAM,Home Office
+2376,2025-04-02,Standing Desk,Home,1,219.62,0.15,LATAM,Corporate
+2377,2025-04-02,Air Purifier,Home,2,148.31,0.0,North America,Premium
+2378,2025-04-02,Camping Tent,Sports,4,178.02,0.2,Europe,Premium
+2379,2025-04-02,Smartwatch Ultra,Electronics,4,356.48,0.0,APAC,Premium
+2380,2025-04-02,MacBook Air,Electronics,3,377.99,0.1,Europe,Home Office
+2381,2025-04-03,iPhone 15,Electronics,1,427.72,0.2,LATAM,Premium
+2382,2025-04-03,Leather Jacket,Clothing,1,135.79,0.2,Europe,Premium
+2383,2025-04-03,MacBook Air,Electronics,4,889.61,0.0,LATAM,Home Office
+2384,2025-04-03,Yoga Mat,Sports,3,125.37,0.15,Europe,Home Office
+2385,2025-04-03,Bluetooth Speaker,Electronics,2,686.08,0.0,Europe,Premium
+2386,2025-04-03,iPad Pro,Electronics,3,1055.82,0.0,LATAM,Premium
+2387,2025-04-03,Yoga Mat,Sports,2,173.99,0.15,Europe,Corporate
+2388,2025-04-03,Bluetooth Speaker,Electronics,2,688.2,0.0,APAC,Premium
+2389,2025-04-03,Air Purifier,Home,1,356.43,0.0,LATAM,Home Office
+2390,2025-04-03,Sleeping Bag,Sports,2,74.86,0.1,LATAM,Consumer
+2391,2025-04-03,iPhone 15,Electronics,2,1018.32,0.05,North America,Home Office
+2392,2025-04-03,Dumbbell Set,Sports,1,36.0,0.0,Europe,Premium
+2393,2025-04-03,LED Desk Lamp,Home,3,114.85,0.15,LATAM,Home Office
+2394,2025-04-03,Denim Jeans,Clothing,3,124.09,0.0,North America,Corporate
+2395,2025-04-04,Bluetooth Speaker,Electronics,1,249.52,0.1,APAC,Corporate
+2396,2025-04-04,Bluetooth Speaker,Electronics,3,861.77,0.05,LATAM,Premium
+2397,2025-04-04,Air Purifier,Home,3,201.6,0.0,LATAM,Home Office
+2398,2025-04-04,Standing Desk,Home,3,361.24,0.0,LATAM,Consumer
+2399,2025-04-04,Camping Tent,Sports,3,118.95,0.0,Europe,Corporate
+2400,2025-04-04,Standing Desk,Home,2,53.79,0.05,North America,Home Office
+2401,2025-04-04,Denim Jeans,Clothing,4,135.34,0.05,North America,Premium
+2402,2025-04-04,iPad Pro,Electronics,4,888.52,0.05,APAC,Premium
+2403,2025-04-04,Ergonomic Chair,Home,3,309.44,0.1,APAC,Home Office
+2404,2025-04-04,Camping Tent,Sports,1,130.37,0.0,Europe,Consumer
+2405,2025-04-04,Air Purifier,Home,3,164.65,0.0,North America,Corporate
+2406,2025-04-05,Running Shoes,Clothing,4,97.56,0.1,LATAM,Premium
+2407,2025-04-05,Air Purifier,Home,2,50.54,0.1,Europe,Consumer
+2408,2025-04-05,Coffee Maker,Home,3,113.88,0.05,APAC,Premium
+2409,2025-04-05,Coffee Maker,Home,1,82.15,0.0,LATAM,Consumer
+2410,2025-04-05,Leather Jacket,Clothing,2,135.84,0.1,LATAM,Consumer
+2411,2025-04-05,Running Shoes,Clothing,4,120.94,0.15,LATAM,Corporate
+2412,2025-04-05,iPad Pro,Electronics,2,494.66,0.1,APAC,Premium
+2413,2025-04-05,Camping Tent,Sports,4,20.59,0.0,APAC,Consumer
+2414,2025-04-05,Tennis Racket,Sports,3,165.04,0.0,LATAM,Consumer
+2415,2025-04-05,Denim Jeans,Clothing,2,140.99,0.2,LATAM,Home Office
+2416,2025-04-05,Cotton T-Shirt,Clothing,4,96.77,0.0,Europe,Premium
+2417,2025-04-05,Sleeping Bag,Sports,1,158.44,0.15,APAC,Premium
+2418,2025-04-05,LED Desk Lamp,Home,4,398.22,0.05,LATAM,Premium
+2419,2025-04-05,iPad Pro,Electronics,2,1048.82,0.2,Europe,Consumer
+2420,2025-04-05,Cotton T-Shirt,Clothing,3,70.93,0.0,APAC,Premium
+2421,2025-04-06,Yoga Mat,Sports,4,156.18,0.2,Europe,Premium
+2422,2025-04-06,Cotton T-Shirt,Clothing,2,145.33,0.1,North America,Consumer
+2423,2025-04-06,Ergonomic Chair,Home,1,50.17,0.15,LATAM,Home Office
+2424,2025-04-06,Air Purifier,Home,2,67.58,0.0,North America,Corporate
+2425,2025-04-06,Sleeping Bag,Sports,4,130.68,0.15,Europe,Corporate
+2426,2025-04-06,Leather Jacket,Clothing,4,97.54,0.0,LATAM,Premium
+2427,2025-04-06,iPhone 15,Electronics,3,1068.75,0.0,North America,Consumer
+2428,2025-04-06,iPad Pro,Electronics,2,871.54,0.0,North America,Premium
+2429,2025-04-06,Air Purifier,Home,1,320.31,0.2,LATAM,Consumer
+2430,2025-04-06,Leather Jacket,Clothing,3,49.4,0.1,LATAM,Corporate
+2431,2025-04-06,MacBook Air,Electronics,3,781.76,0.05,APAC,Home Office
+2432,2025-04-06,Sleeping Bag,Sports,3,189.56,0.05,LATAM,Corporate
+2433,2025-04-06,iPhone 15,Electronics,3,1047.18,0.0,LATAM,Consumer
+2434,2025-04-06,Standing Desk,Home,3,325.09,0.0,Europe,Consumer
+2435,2025-04-06,Bluetooth Speaker,Electronics,1,766.17,0.05,North America,Corporate
+2436,2025-04-07,Coffee Maker,Home,2,176.6,0.0,LATAM,Home Office
+2437,2025-04-07,Bluetooth Speaker,Electronics,2,1125.6,0.15,Europe,Consumer
+2438,2025-04-07,Camping Tent,Sports,3,112.53,0.0,North America,Consumer
+2439,2025-04-07,Running Shoes,Clothing,3,94.75,0.2,North America,Corporate
+2440,2025-04-07,Smartwatch Ultra,Electronics,4,949.54,0.0,LATAM,Premium
+2441,2025-04-07,Ergonomic Chair,Home,2,346.66,0.1,North America,Consumer
+2442,2025-04-07,Standing Desk,Home,1,72.26,0.05,LATAM,Consumer
+2443,2025-04-07,Tennis Racket,Sports,1,135.58,0.1,LATAM,Home Office
+2444,2025-04-07,iPad Pro,Electronics,4,269.42,0.1,North America,Corporate
+2445,2025-04-07,MacBook Air,Electronics,3,865.74,0.15,LATAM,Home Office
+2446,2025-04-07,LED Desk Lamp,Home,1,348.06,0.0,APAC,Consumer
+2447,2025-04-08,Smartwatch Ultra,Electronics,4,584.98,0.0,LATAM,Consumer
+2448,2025-04-08,LED Desk Lamp,Home,1,119.26,0.15,APAC,Corporate
+2449,2025-04-08,iPad Pro,Electronics,3,651.93,0.0,APAC,Consumer
+2450,2025-04-08,LED Desk Lamp,Home,2,82.96,0.1,APAC,Home Office
+2451,2025-04-08,Running Shoes,Clothing,1,96.12,0.2,APAC,Consumer
+2452,2025-04-08,Air Purifier,Home,4,236.12,0.0,Europe,Corporate
+2453,2025-04-08,MacBook Air,Electronics,4,315.86,0.1,APAC,Corporate
+2454,2025-04-08,Running Shoes,Clothing,4,86.98,0.15,LATAM,Corporate
+2455,2025-04-08,Ergonomic Chair,Home,2,341.89,0.1,Europe,Premium
+2456,2025-04-08,Tennis Racket,Sports,4,178.86,0.0,North America,Premium
+2457,2025-04-08,Cotton T-Shirt,Clothing,1,50.65,0.2,LATAM,Home Office
+2458,2025-04-08,Smartwatch Ultra,Electronics,2,300.12,0.05,Europe,Consumer
+2459,2025-04-08,Dumbbell Set,Sports,4,67.37,0.05,APAC,Consumer
+2460,2025-04-08,Leather Jacket,Clothing,4,36.7,0.1,LATAM,Corporate
+2461,2025-04-08,Camping Tent,Sports,4,134.21,0.0,LATAM,Premium
+2462,2025-04-08,iPad Pro,Electronics,4,1002.48,0.1,North America,Home Office
+2463,2025-04-08,Coffee Maker,Home,1,342.55,0.0,LATAM,Home Office
+2464,2025-04-08,LED Desk Lamp,Home,4,79.53,0.0,North America,Home Office
+2465,2025-04-08,Standing Desk,Home,2,392.94,0.05,Europe,Consumer
+2466,2025-04-08,Leather Jacket,Clothing,3,122.91,0.2,APAC,Premium
+2467,2025-04-09,Coffee Maker,Home,1,389.28,0.05,Europe,Corporate
+2468,2025-04-09,iPhone 15,Electronics,2,884.3,0.15,LATAM,Premium
+2469,2025-04-09,Sleeping Bag,Sports,2,106.99,0.15,APAC,Premium
+2470,2025-04-09,Denim Jeans,Clothing,1,108.42,0.1,North America,Consumer
+2471,2025-04-09,Yoga Mat,Sports,4,120.78,0.0,North America,Consumer
+2472,2025-04-09,MacBook Air,Electronics,4,676.98,0.05,Europe,Home Office
+2473,2025-04-09,Leather Jacket,Clothing,2,50.28,0.0,LATAM,Premium
+2474,2025-04-09,Bluetooth Speaker,Electronics,4,258.81,0.05,North America,Home Office
+2475,2025-04-09,Running Shoes,Clothing,3,98.7,0.0,Europe,Premium
+2476,2025-04-09,Yoga Mat,Sports,1,80.22,0.0,LATAM,Corporate
+2477,2025-04-10,Ergonomic Chair,Home,4,152.53,0.0,North America,Home Office
+2478,2025-04-10,LED Desk Lamp,Home,2,214.94,0.0,APAC,Premium
+2479,2025-04-10,Coffee Maker,Home,1,177.44,0.1,APAC,Consumer
+2480,2025-04-10,Sleeping Bag,Sports,3,15.7,0.05,North America,Home Office
+2481,2025-04-10,LED Desk Lamp,Home,3,313.14,0.15,Europe,Consumer
+2482,2025-04-10,MacBook Air,Electronics,2,733.05,0.05,North America,Corporate
+2483,2025-04-10,Coffee Maker,Home,1,328.57,0.2,Europe,Premium
+2484,2025-04-10,Running Shoes,Clothing,2,81.27,0.05,North America,Premium
+2485,2025-04-10,Air Purifier,Home,1,269.24,0.0,LATAM,Home Office
+2486,2025-04-10,Denim Jeans,Clothing,2,72.49,0.05,APAC,Consumer
+2487,2025-04-10,MacBook Air,Electronics,1,319.57,0.15,Europe,Corporate
+2488,2025-04-10,Smartwatch Ultra,Electronics,1,472.85,0.0,North America,Consumer
+2489,2025-04-11,MacBook Air,Electronics,4,1111.35,0.2,APAC,Premium
+2490,2025-04-11,iPhone 15,Electronics,4,1047.71,0.0,Europe,Premium
+2491,2025-04-11,Dumbbell Set,Sports,4,139.34,0.2,LATAM,Premium
+2492,2025-04-11,Air Purifier,Home,2,162.09,0.1,APAC,Premium
+2493,2025-04-11,Smartwatch Ultra,Electronics,1,735.91,0.05,North America,Corporate
+2494,2025-04-11,Cotton T-Shirt,Clothing,3,146.09,0.0,APAC,Corporate
+2495,2025-04-11,Wool Sweater,Clothing,4,86.05,0.0,Europe,Home Office
+2496,2025-04-11,Bluetooth Speaker,Electronics,3,759.68,0.0,APAC,Home Office
+2497,2025-04-11,Wool Sweater,Clothing,3,42.9,0.2,APAC,Home Office
+2498,2025-04-11,MacBook Air,Electronics,3,1054.12,0.05,APAC,Consumer
+2499,2025-04-11,iPhone 15,Electronics,2,1195.58,0.0,APAC,Consumer
+2500,2025-04-11,Yoga Mat,Sports,1,65.46,0.05,LATAM,Home Office
+2501,2025-04-11,LED Desk Lamp,Home,1,288.7,0.2,North America,Premium
+2502,2025-04-11,Sleeping Bag,Sports,2,147.99,0.0,North America,Consumer
+2503,2025-04-11,Air Purifier,Home,2,390.93,0.15,Europe,Consumer
+2504,2025-04-12,Camping Tent,Sports,1,102.63,0.15,LATAM,Home Office
+2505,2025-04-12,MacBook Air,Electronics,2,837.9,0.0,APAC,Premium
+2506,2025-04-12,Ergonomic Chair,Home,3,272.09,0.1,APAC,Home Office
+2507,2025-04-12,Running Shoes,Clothing,1,143.39,0.05,North America,Consumer
+2508,2025-04-12,Cotton T-Shirt,Clothing,4,121.67,0.0,APAC,Consumer
+2509,2025-04-12,Wool Sweater,Clothing,3,143.42,0.2,Europe,Consumer
+2510,2025-04-12,LED Desk Lamp,Home,2,308.53,0.2,APAC,Premium
+2511,2025-04-12,Air Purifier,Home,1,264.12,0.15,North America,Premium
+2512,2025-04-12,MacBook Air,Electronics,2,1177.26,0.05,APAC,Home Office
+2513,2025-04-12,Smartwatch Ultra,Electronics,1,642.94,0.1,Europe,Premium
+2514,2025-04-12,LED Desk Lamp,Home,1,297.15,0.2,North America,Home Office
+2515,2025-04-12,iPhone 15,Electronics,4,489.41,0.0,LATAM,Corporate
+2516,2025-04-12,Coffee Maker,Home,4,59.48,0.0,North America,Premium
+2517,2025-04-12,Yoga Mat,Sports,3,145.86,0.0,North America,Consumer
+2518,2025-04-12,Ergonomic Chair,Home,2,84.86,0.15,North America,Home Office
+2519,2025-04-12,LED Desk Lamp,Home,1,64.15,0.15,LATAM,Corporate
+2520,2025-04-12,Smartwatch Ultra,Electronics,1,312.31,0.0,APAC,Consumer
+2521,2025-04-12,Standing Desk,Home,4,283.16,0.0,LATAM,Premium
+2522,2025-04-13,Bluetooth Speaker,Electronics,3,571.12,0.2,LATAM,Consumer
+2523,2025-04-13,Wool Sweater,Clothing,2,71.56,0.0,APAC,Home Office
+2524,2025-04-13,Wool Sweater,Clothing,2,76.39,0.2,Europe,Consumer
+2525,2025-04-13,Wool Sweater,Clothing,1,81.77,0.15,North America,Premium
+2526,2025-04-13,Ergonomic Chair,Home,2,282.37,0.1,APAC,Premium
+2527,2025-04-13,Air Purifier,Home,4,154.85,0.0,LATAM,Home Office
+2528,2025-04-13,Wool Sweater,Clothing,1,66.43,0.1,APAC,Premium
+2529,2025-04-13,Cotton T-Shirt,Clothing,2,102.91,0.0,LATAM,Premium
+2530,2025-04-13,Bluetooth Speaker,Electronics,2,998.78,0.1,APAC,Corporate
+2531,2025-04-13,Tennis Racket,Sports,4,170.94,0.0,LATAM,Premium
+2532,2025-04-13,Yoga Mat,Sports,3,53.48,0.0,Europe,Home Office
+2533,2025-04-13,iPad Pro,Electronics,4,1180.47,0.15,Europe,Premium
+2534,2025-04-13,Camping Tent,Sports,3,83.11,0.0,North America,Consumer
+2535,2025-04-14,Cotton T-Shirt,Clothing,2,89.23,0.1,APAC,Consumer
+2536,2025-04-14,Denim Jeans,Clothing,2,48.9,0.0,LATAM,Consumer
+2537,2025-04-14,Sleeping Bag,Sports,4,136.61,0.0,Europe,Premium
+2538,2025-04-14,Air Purifier,Home,3,286.1,0.0,APAC,Premium
+2539,2025-04-14,Sleeping Bag,Sports,1,159.6,0.0,LATAM,Consumer
+2540,2025-04-14,Ergonomic Chair,Home,4,226.81,0.0,North America,Home Office
+2541,2025-04-14,Denim Jeans,Clothing,2,102.31,0.2,North America,Corporate
+2542,2025-04-14,Coffee Maker,Home,1,287.16,0.0,North America,Home Office
+2543,2025-04-14,Running Shoes,Clothing,4,146.42,0.0,Europe,Consumer
+2544,2025-04-14,Cotton T-Shirt,Clothing,4,64.4,0.0,North America,Home Office
+2545,2025-04-14,Running Shoes,Clothing,4,100.87,0.05,North America,Corporate
+2546,2025-04-14,Running Shoes,Clothing,2,132.95,0.2,LATAM,Consumer
+2547,2025-04-14,MacBook Air,Electronics,1,1024.82,0.0,LATAM,Corporate
+2548,2025-04-14,Tennis Racket,Sports,3,180.03,0.2,Europe,Premium
+2549,2025-04-14,Standing Desk,Home,3,56.95,0.0,APAC,Consumer
+2550,2025-04-14,Air Purifier,Home,3,338.34,0.1,LATAM,Corporate
+2551,2025-04-15,Cotton T-Shirt,Clothing,3,84.22,0.05,APAC,Consumer
+2552,2025-04-15,Yoga Mat,Sports,3,68.38,0.05,Europe,Consumer
+2553,2025-04-15,Running Shoes,Clothing,4,116.98,0.15,North America,Premium
+2554,2025-04-15,Wool Sweater,Clothing,3,101.94,0.0,North America,Consumer
+2555,2025-04-15,Tennis Racket,Sports,1,17.99,0.2,APAC,Home Office
+2556,2025-04-15,MacBook Air,Electronics,2,878.73,0.05,APAC,Corporate
+2557,2025-04-15,Camping Tent,Sports,1,141.63,0.0,North America,Corporate
+2558,2025-04-15,Leather Jacket,Clothing,1,40.54,0.0,LATAM,Premium
+2559,2025-04-15,Smartwatch Ultra,Electronics,2,646.02,0.05,North America,Corporate
+2560,2025-04-15,Running Shoes,Clothing,1,82.06,0.15,LATAM,Consumer
+2561,2025-04-16,Air Purifier,Home,2,311.45,0.0,Europe,Home Office
+2562,2025-04-16,Tennis Racket,Sports,2,179.5,0.0,LATAM,Consumer
+2563,2025-04-16,iPad Pro,Electronics,3,426.27,0.05,LATAM,Home Office
+2564,2025-04-16,Ergonomic Chair,Home,4,136.0,0.0,North America,Consumer
+2565,2025-04-16,Standing Desk,Home,2,91.95,0.0,LATAM,Premium
+2566,2025-04-16,Sleeping Bag,Sports,1,194.88,0.0,Europe,Premium
+2567,2025-04-16,Tennis Racket,Sports,1,101.83,0.2,APAC,Home Office
+2568,2025-04-16,iPhone 15,Electronics,4,569.25,0.0,APAC,Consumer
+2569,2025-04-16,Tennis Racket,Sports,3,33.35,0.15,LATAM,Consumer
+2570,2025-04-16,Bluetooth Speaker,Electronics,3,243.73,0.05,Europe,Premium
+2571,2025-04-16,Leather Jacket,Clothing,2,55.92,0.0,APAC,Corporate
+2572,2025-04-16,Bluetooth Speaker,Electronics,2,1193.23,0.0,Europe,Premium
+2573,2025-04-16,Coffee Maker,Home,2,241.35,0.0,North America,Consumer
+2574,2025-04-16,Dumbbell Set,Sports,3,51.4,0.0,Europe,Consumer
+2575,2025-04-16,Camping Tent,Sports,3,162.81,0.0,North America,Home Office
+2576,2025-04-16,MacBook Air,Electronics,1,666.57,0.15,North America,Home Office
+2577,2025-04-17,Air Purifier,Home,1,71.57,0.05,Europe,Corporate
+2578,2025-04-17,Yoga Mat,Sports,1,76.88,0.1,LATAM,Consumer
+2579,2025-04-17,Running Shoes,Clothing,2,102.75,0.1,APAC,Home Office
+2580,2025-04-17,Coffee Maker,Home,4,81.34,0.0,LATAM,Corporate
+2581,2025-04-17,Wool Sweater,Clothing,1,148.34,0.0,Europe,Premium
+2582,2025-04-17,Dumbbell Set,Sports,2,40.96,0.2,LATAM,Consumer
+2583,2025-04-17,Air Purifier,Home,4,383.47,0.05,APAC,Consumer
+2584,2025-04-17,Running Shoes,Clothing,1,111.86,0.0,Europe,Home Office
+2585,2025-04-17,Standing Desk,Home,3,265.84,0.0,Europe,Consumer
+2586,2025-04-17,Standing Desk,Home,2,242.8,0.2,North America,Consumer
+2587,2025-04-17,Smartwatch Ultra,Electronics,3,431.37,0.1,APAC,Premium
+2588,2025-04-17,Yoga Mat,Sports,4,37.41,0.0,Europe,Home Office
+2589,2025-04-17,Yoga Mat,Sports,3,110.55,0.0,Europe,Corporate
+2590,2025-04-17,Smartwatch Ultra,Electronics,1,1090.19,0.2,APAC,Consumer
+2591,2025-04-17,Yoga Mat,Sports,2,118.08,0.05,APAC,Home Office
+2592,2025-04-17,Smartwatch Ultra,Electronics,1,390.48,0.15,Europe,Corporate
+2593,2025-04-17,Ergonomic Chair,Home,3,326.42,0.1,North America,Corporate
+2594,2025-04-17,Leather Jacket,Clothing,2,106.15,0.1,North America,Corporate
+2595,2025-04-17,Smartwatch Ultra,Electronics,1,336.83,0.0,Europe,Corporate
+2596,2025-04-18,Coffee Maker,Home,3,80.1,0.15,LATAM,Corporate
+2597,2025-04-18,Dumbbell Set,Sports,2,166.14,0.0,Europe,Corporate
+2598,2025-04-18,Bluetooth Speaker,Electronics,3,767.98,0.2,LATAM,Corporate
+2599,2025-04-18,Ergonomic Chair,Home,2,260.47,0.0,APAC,Corporate
+2600,2025-04-18,Smartwatch Ultra,Electronics,2,975.24,0.05,North America,Premium
+2601,2025-04-18,Smartwatch Ultra,Electronics,2,350.85,0.0,LATAM,Premium
+2602,2025-04-18,Smartwatch Ultra,Electronics,1,893.61,0.1,APAC,Home Office
+2603,2025-04-18,iPhone 15,Electronics,2,211.91,0.05,North America,Corporate
+2604,2025-04-18,Leather Jacket,Clothing,4,73.5,0.2,North America,Premium
+2605,2025-04-18,Denim Jeans,Clothing,1,129.86,0.15,APAC,Premium
+2606,2025-04-18,Running Shoes,Clothing,2,73.1,0.0,APAC,Corporate
+2607,2025-04-18,Wool Sweater,Clothing,4,88.12,0.1,APAC,Premium
+2608,2025-04-18,Bluetooth Speaker,Electronics,2,411.83,0.05,LATAM,Home Office
+2609,2025-04-18,LED Desk Lamp,Home,4,397.73,0.05,Europe,Premium
+2610,2025-04-18,Leather Jacket,Clothing,4,82.26,0.1,APAC,Home Office
+2611,2025-04-18,Leather Jacket,Clothing,3,109.62,0.0,North America,Premium
+2612,2025-04-19,Air Purifier,Home,4,70.18,0.0,APAC,Home Office
+2613,2025-04-19,Coffee Maker,Home,3,172.31,0.05,Europe,Premium
+2614,2025-04-19,LED Desk Lamp,Home,1,282.17,0.2,APAC,Home Office
+2615,2025-04-19,LED Desk Lamp,Home,3,267.68,0.05,LATAM,Corporate
+2616,2025-04-19,Standing Desk,Home,2,234.66,0.05,Europe,Home Office
+2617,2025-04-19,Camping Tent,Sports,3,33.24,0.15,North America,Consumer
+2618,2025-04-19,Ergonomic Chair,Home,3,305.12,0.0,LATAM,Home Office
+2619,2025-04-19,Denim Jeans,Clothing,1,38.99,0.2,LATAM,Consumer
+2620,2025-04-19,Coffee Maker,Home,4,394.84,0.1,North America,Premium
+2621,2025-04-19,Yoga Mat,Sports,2,165.61,0.0,APAC,Premium
+2622,2025-04-19,Standing Desk,Home,3,149.52,0.0,LATAM,Premium
+2623,2025-04-19,iPhone 15,Electronics,2,207.88,0.1,APAC,Consumer
+2624,2025-04-19,iPhone 15,Electronics,1,736.96,0.0,APAC,Premium
+2625,2025-04-19,LED Desk Lamp,Home,1,375.9,0.1,North America,Corporate
+2626,2025-04-19,Tennis Racket,Sports,1,186.96,0.1,Europe,Premium
+2627,2025-04-20,Dumbbell Set,Sports,4,100.63,0.2,APAC,Premium
+2628,2025-04-20,Sleeping Bag,Sports,3,49.86,0.15,North America,Premium
+2629,2025-04-20,Running Shoes,Clothing,1,48.95,0.0,APAC,Consumer
+2630,2025-04-20,Air Purifier,Home,1,355.89,0.05,North America,Consumer
+2631,2025-04-20,iPhone 15,Electronics,3,490.1,0.0,APAC,Home Office
+2632,2025-04-20,Air Purifier,Home,3,177.91,0.0,North America,Consumer
+2633,2025-04-20,Yoga Mat,Sports,3,193.76,0.1,APAC,Premium
+2634,2025-04-20,Cotton T-Shirt,Clothing,1,62.56,0.15,APAC,Consumer
+2635,2025-04-20,LED Desk Lamp,Home,4,284.31,0.2,LATAM,Consumer
+2636,2025-04-20,Wool Sweater,Clothing,2,60.61,0.05,Europe,Consumer
+2637,2025-04-20,Wool Sweater,Clothing,3,119.89,0.0,Europe,Premium
+2638,2025-04-20,Ergonomic Chair,Home,3,115.32,0.2,North America,Premium
+2639,2025-04-20,iPad Pro,Electronics,4,940.6,0.05,North America,Corporate
+2640,2025-04-20,Leather Jacket,Clothing,3,97.81,0.0,Europe,Consumer
+2641,2025-04-20,iPad Pro,Electronics,2,1107.88,0.2,Europe,Consumer
+2642,2025-04-20,iPad Pro,Electronics,2,963.76,0.15,APAC,Home Office
+2643,2025-04-20,Standing Desk,Home,3,397.42,0.2,LATAM,Corporate
+2644,2025-04-20,iPad Pro,Electronics,2,826.52,0.0,APAC,Corporate
+2645,2025-04-20,Air Purifier,Home,1,358.64,0.2,Europe,Corporate
+2646,2025-04-21,Wool Sweater,Clothing,2,96.49,0.05,North America,Consumer
+2647,2025-04-21,Standing Desk,Home,1,70.06,0.0,APAC,Consumer
+2648,2025-04-21,Ergonomic Chair,Home,4,383.09,0.0,Europe,Consumer
+2649,2025-04-21,Smartwatch Ultra,Electronics,2,471.85,0.0,LATAM,Corporate
+2650,2025-04-21,Yoga Mat,Sports,4,34.85,0.0,LATAM,Premium
+2651,2025-04-21,Coffee Maker,Home,2,294.41,0.15,APAC,Corporate
+2652,2025-04-21,Bluetooth Speaker,Electronics,4,1159.3,0.0,North America,Consumer
+2653,2025-04-21,Bluetooth Speaker,Electronics,1,1090.28,0.0,APAC,Home Office
+2654,2025-04-21,iPhone 15,Electronics,1,283.71,0.15,LATAM,Home Office
+2655,2025-04-21,Smartwatch Ultra,Electronics,1,258.49,0.0,Europe,Consumer
+2656,2025-04-22,Camping Tent,Sports,3,199.83,0.1,LATAM,Premium
+2657,2025-04-22,MacBook Air,Electronics,3,422.33,0.1,North America,Consumer
+2658,2025-04-22,Air Purifier,Home,1,102.31,0.2,LATAM,Corporate
+2659,2025-04-22,Leather Jacket,Clothing,2,114.48,0.0,Europe,Home Office
+2660,2025-04-22,Wool Sweater,Clothing,2,38.72,0.0,LATAM,Corporate
+2661,2025-04-22,Smartwatch Ultra,Electronics,4,645.69,0.05,Europe,Home Office
+2662,2025-04-22,Wool Sweater,Clothing,1,37.96,0.0,North America,Consumer
+2663,2025-04-22,Leather Jacket,Clothing,1,145.92,0.0,LATAM,Corporate
+2664,2025-04-22,Air Purifier,Home,2,248.68,0.05,Europe,Corporate
+2665,2025-04-22,Wool Sweater,Clothing,3,50.5,0.0,APAC,Premium
+2666,2025-04-22,Yoga Mat,Sports,4,159.23,0.15,Europe,Corporate
+2667,2025-04-22,Tennis Racket,Sports,3,141.92,0.0,North America,Premium
+2668,2025-04-22,Air Purifier,Home,4,79.84,0.0,Europe,Home Office
+2669,2025-04-22,Dumbbell Set,Sports,3,183.12,0.0,APAC,Corporate
+2670,2025-04-23,Wool Sweater,Clothing,4,58.93,0.0,North America,Corporate
+2671,2025-04-23,MacBook Air,Electronics,3,1066.36,0.0,Europe,Home Office
+2672,2025-04-23,Standing Desk,Home,1,60.98,0.15,Europe,Corporate
+2673,2025-04-23,Denim Jeans,Clothing,2,62.89,0.0,Europe,Consumer
+2674,2025-04-23,Air Purifier,Home,1,386.92,0.0,North America,Corporate
+2675,2025-04-23,iPad Pro,Electronics,3,302.59,0.15,APAC,Corporate
+2676,2025-04-23,Wool Sweater,Clothing,2,128.73,0.05,LATAM,Premium
+2677,2025-04-23,Leather Jacket,Clothing,2,79.5,0.1,APAC,Premium
+2678,2025-04-23,Sleeping Bag,Sports,1,130.76,0.0,North America,Corporate
+2679,2025-04-23,MacBook Air,Electronics,4,580.55,0.05,North America,Premium
+2680,2025-04-23,Leather Jacket,Clothing,1,73.79,0.1,Europe,Corporate
+2681,2025-04-23,Coffee Maker,Home,3,80.06,0.05,Europe,Premium
+2682,2025-04-23,iPad Pro,Electronics,2,709.55,0.0,LATAM,Home Office
+2683,2025-04-24,Tennis Racket,Sports,3,179.8,0.1,APAC,Premium
+2684,2025-04-24,Denim Jeans,Clothing,1,114.2,0.0,North America,Consumer
+2685,2025-04-24,Yoga Mat,Sports,2,60.32,0.1,Europe,Consumer
+2686,2025-04-24,Coffee Maker,Home,2,289.22,0.1,LATAM,Home Office
+2687,2025-04-24,Standing Desk,Home,3,302.05,0.0,North America,Premium
+2688,2025-04-24,Tennis Racket,Sports,2,34.67,0.1,North America,Home Office
+2689,2025-04-24,Wool Sweater,Clothing,2,124.5,0.0,North America,Corporate
+2690,2025-04-24,Yoga Mat,Sports,2,105.88,0.0,LATAM,Corporate
+2691,2025-04-24,Yoga Mat,Sports,4,49.0,0.0,LATAM,Consumer
+2692,2025-04-24,Camping Tent,Sports,4,42.27,0.0,North America,Home Office
+2693,2025-04-24,Denim Jeans,Clothing,4,91.57,0.1,North America,Home Office
+2694,2025-04-24,Yoga Mat,Sports,1,72.13,0.05,North America,Premium
+2695,2025-04-24,Ergonomic Chair,Home,4,231.61,0.05,Europe,Consumer
+2696,2025-04-24,Tennis Racket,Sports,2,142.51,0.15,Europe,Home Office
+2697,2025-04-24,Coffee Maker,Home,1,255.85,0.1,Europe,Home Office
+2698,2025-04-24,Cotton T-Shirt,Clothing,2,91.77,0.1,LATAM,Consumer
+2699,2025-04-24,Camping Tent,Sports,4,137.92,0.0,North America,Premium
+2700,2025-04-24,MacBook Air,Electronics,2,894.28,0.05,APAC,Consumer
+2701,2025-04-24,Bluetooth Speaker,Electronics,4,1087.91,0.2,North America,Consumer
+2702,2025-04-25,Dumbbell Set,Sports,3,68.84,0.0,Europe,Premium
+2703,2025-04-25,Yoga Mat,Sports,3,43.54,0.1,North America,Premium
+2704,2025-04-25,Tennis Racket,Sports,1,143.08,0.0,LATAM,Premium
+2705,2025-04-25,Ergonomic Chair,Home,1,185.38,0.05,North America,Home Office
+2706,2025-04-25,Denim Jeans,Clothing,3,106.88,0.05,Europe,Corporate
+2707,2025-04-25,Leather Jacket,Clothing,2,147.76,0.05,APAC,Corporate
+2708,2025-04-25,Tennis Racket,Sports,1,118.62,0.15,Europe,Home Office
+2709,2025-04-25,MacBook Air,Electronics,3,635.85,0.05,Europe,Premium
+2710,2025-04-25,Denim Jeans,Clothing,2,47.42,0.0,LATAM,Consumer
+2711,2025-04-25,Air Purifier,Home,4,197.18,0.0,Europe,Home Office
+2712,2025-04-25,Dumbbell Set,Sports,2,22.7,0.0,LATAM,Corporate
+2713,2025-04-25,MacBook Air,Electronics,3,1144.04,0.05,North America,Corporate
+2714,2025-04-25,Smartwatch Ultra,Electronics,3,281.85,0.0,North America,Home Office
+2715,2025-04-25,Coffee Maker,Home,4,357.37,0.0,APAC,Home Office
+2716,2025-04-25,Camping Tent,Sports,1,44.12,0.1,North America,Premium
+2717,2025-04-25,Ergonomic Chair,Home,3,306.02,0.1,North America,Consumer
+2718,2025-04-25,Ergonomic Chair,Home,1,133.27,0.2,LATAM,Consumer
+2719,2025-04-26,Sleeping Bag,Sports,1,148.41,0.0,APAC,Corporate
+2720,2025-04-26,Coffee Maker,Home,4,103.75,0.0,Europe,Corporate
+2721,2025-04-26,Smartwatch Ultra,Electronics,3,720.26,0.0,APAC,Home Office
+2722,2025-04-26,Bluetooth Speaker,Electronics,1,523.17,0.0,LATAM,Premium
+2723,2025-04-26,Yoga Mat,Sports,4,44.23,0.0,LATAM,Consumer
+2724,2025-04-26,Sleeping Bag,Sports,2,109.38,0.0,LATAM,Home Office
+2725,2025-04-26,Wool Sweater,Clothing,1,47.64,0.15,North America,Consumer
+2726,2025-04-26,Wool Sweater,Clothing,4,35.45,0.05,Europe,Corporate
+2727,2025-04-26,Cotton T-Shirt,Clothing,3,123.01,0.2,North America,Consumer
+2728,2025-04-26,Ergonomic Chair,Home,4,292.39,0.05,LATAM,Consumer
+2729,2025-04-26,iPad Pro,Electronics,4,1143.36,0.2,North America,Premium
+2730,2025-04-26,Running Shoes,Clothing,3,98.74,0.15,APAC,Corporate
+2731,2025-04-26,Denim Jeans,Clothing,1,91.57,0.15,Europe,Home Office
+2732,2025-04-26,iPhone 15,Electronics,1,1136.21,0.0,APAC,Consumer
+2733,2025-04-26,Bluetooth Speaker,Electronics,1,1033.76,0.05,Europe,Corporate
+2734,2025-04-26,iPhone 15,Electronics,4,391.4,0.0,Europe,Consumer
+2735,2025-04-27,Wool Sweater,Clothing,2,96.71,0.1,Europe,Home Office
+2736,2025-04-27,Denim Jeans,Clothing,1,47.57,0.0,LATAM,Premium
+2737,2025-04-27,Leather Jacket,Clothing,1,80.84,0.0,LATAM,Premium
+2738,2025-04-27,Cotton T-Shirt,Clothing,2,74.17,0.2,Europe,Premium
+2739,2025-04-27,Sleeping Bag,Sports,4,124.77,0.0,Europe,Home Office
+2740,2025-04-27,Leather Jacket,Clothing,3,73.71,0.0,LATAM,Premium
+2741,2025-04-27,Denim Jeans,Clothing,1,94.95,0.1,North America,Home Office
+2742,2025-04-27,Yoga Mat,Sports,3,88.11,0.2,LATAM,Premium
+2743,2025-04-27,Dumbbell Set,Sports,3,155.51,0.2,LATAM,Consumer
+2744,2025-04-27,LED Desk Lamp,Home,4,106.45,0.05,North America,Corporate
+2745,2025-04-27,iPhone 15,Electronics,4,269.66,0.0,Europe,Premium
+2746,2025-04-27,Yoga Mat,Sports,3,91.37,0.0,North America,Home Office
+2747,2025-04-27,MacBook Air,Electronics,1,509.81,0.2,LATAM,Premium
+2748,2025-04-27,LED Desk Lamp,Home,1,356.63,0.0,North America,Home Office
+2749,2025-04-28,Smartwatch Ultra,Electronics,1,641.8,0.2,APAC,Home Office
+2750,2025-04-28,iPhone 15,Electronics,3,641.25,0.15,LATAM,Corporate
+2751,2025-04-28,LED Desk Lamp,Home,4,390.5,0.05,LATAM,Premium
+2752,2025-04-28,Camping Tent,Sports,4,186.65,0.05,LATAM,Corporate
+2753,2025-04-28,Coffee Maker,Home,4,371.33,0.05,APAC,Consumer
+2754,2025-04-28,Coffee Maker,Home,3,271.76,0.15,North America,Home Office
+2755,2025-04-28,Standing Desk,Home,3,348.14,0.1,North America,Home Office
+2756,2025-04-28,Yoga Mat,Sports,1,193.98,0.2,APAC,Consumer
+2757,2025-04-28,Running Shoes,Clothing,2,126.3,0.0,APAC,Consumer
+2758,2025-04-28,Ergonomic Chair,Home,3,211.31,0.1,LATAM,Consumer
+2759,2025-04-28,Air Purifier,Home,2,375.72,0.0,APAC,Consumer
+2760,2025-04-28,Leather Jacket,Clothing,2,105.47,0.15,North America,Home Office
+2761,2025-04-28,iPad Pro,Electronics,3,1028.29,0.2,North America,Corporate
+2762,2025-04-28,Dumbbell Set,Sports,3,105.42,0.0,APAC,Home Office
+2763,2025-04-28,Tennis Racket,Sports,2,70.45,0.0,APAC,Premium
+2764,2025-04-28,MacBook Air,Electronics,3,1118.79,0.0,LATAM,Premium
+2765,2025-04-28,Tennis Racket,Sports,2,34.48,0.0,APAC,Premium
+2766,2025-04-28,Ergonomic Chair,Home,1,329.56,0.2,North America,Consumer
+2767,2025-04-28,iPad Pro,Electronics,3,555.66,0.15,North America,Home Office
+2768,2025-04-29,iPhone 15,Electronics,2,209.39,0.0,LATAM,Corporate
+2769,2025-04-29,Yoga Mat,Sports,1,114.62,0.2,Europe,Corporate
+2770,2025-04-29,Camping Tent,Sports,3,172.08,0.05,APAC,Premium
+2771,2025-04-29,Denim Jeans,Clothing,4,103.74,0.2,Europe,Consumer
+2772,2025-04-29,MacBook Air,Electronics,1,831.37,0.0,LATAM,Premium
+2773,2025-04-29,iPhone 15,Electronics,4,567.79,0.1,Europe,Home Office
+2774,2025-04-29,Air Purifier,Home,1,244.87,0.0,APAC,Consumer
+2775,2025-04-29,LED Desk Lamp,Home,4,262.81,0.1,North America,Corporate
+2776,2025-04-29,Denim Jeans,Clothing,2,39.96,0.0,APAC,Premium
+2777,2025-04-29,Coffee Maker,Home,1,53.37,0.05,LATAM,Home Office
+2778,2025-04-29,Running Shoes,Clothing,1,57.41,0.0,LATAM,Home Office
+2779,2025-04-29,Tennis Racket,Sports,4,129.58,0.1,APAC,Premium
+2780,2025-04-29,Air Purifier,Home,1,258.14,0.2,Europe,Corporate
+2781,2025-04-29,Coffee Maker,Home,1,309.97,0.2,LATAM,Consumer
+2782,2025-04-29,Dumbbell Set,Sports,4,82.57,0.1,APAC,Consumer
+2783,2025-04-29,Yoga Mat,Sports,3,19.7,0.0,North America,Consumer
+2784,2025-04-29,Smartwatch Ultra,Electronics,3,478.89,0.05,North America,Premium
+2785,2025-04-29,Camping Tent,Sports,4,23.99,0.0,APAC,Corporate
+2786,2025-04-29,Tennis Racket,Sports,3,126.58,0.0,APAC,Premium
+2787,2025-04-30,Standing Desk,Home,2,278.03,0.1,APAC,Consumer
+2788,2025-04-30,iPhone 15,Electronics,2,993.96,0.2,Europe,Corporate
+2789,2025-04-30,Smartwatch Ultra,Electronics,2,920.91,0.05,Europe,Premium
+2790,2025-04-30,Dumbbell Set,Sports,3,95.38,0.2,LATAM,Premium
+2791,2025-04-30,iPad Pro,Electronics,3,344.27,0.0,North America,Consumer
+2792,2025-04-30,Dumbbell Set,Sports,4,32.05,0.0,APAC,Premium
+2793,2025-04-30,Smartwatch Ultra,Electronics,3,986.64,0.1,APAC,Consumer
+2794,2025-04-30,iPhone 15,Electronics,2,474.46,0.0,North America,Home Office
+2795,2025-04-30,Air Purifier,Home,1,367.87,0.05,LATAM,Corporate
+2796,2025-04-30,Dumbbell Set,Sports,3,188.31,0.0,APAC,Home Office
+2797,2025-04-30,Sleeping Bag,Sports,1,65.0,0.0,North America,Corporate
+2798,2025-04-30,iPhone 15,Electronics,3,1195.9,0.0,North America,Corporate
+2799,2025-04-30,Standing Desk,Home,1,344.25,0.0,LATAM,Premium
+2800,2025-04-30,Tennis Racket,Sports,1,131.79,0.0,North America,Premium
+2801,2025-04-30,MacBook Air,Electronics,1,464.14,0.0,APAC,Consumer
+2802,2025-05-01,Coffee Maker,Home,3,59.48,0.0,APAC,Corporate
+2803,2025-05-01,Standing Desk,Home,2,57.5,0.0,North America,Corporate
+2804,2025-05-01,LED Desk Lamp,Home,4,342.75,0.15,LATAM,Consumer
+2805,2025-05-01,Standing Desk,Home,2,278.99,0.05,LATAM,Home Office
+2806,2025-05-01,Denim Jeans,Clothing,3,48.05,0.0,LATAM,Consumer
+2807,2025-05-01,Camping Tent,Sports,4,103.03,0.15,APAC,Premium
+2808,2025-05-01,Bluetooth Speaker,Electronics,3,862.15,0.0,North America,Corporate
+2809,2025-05-01,Leather Jacket,Clothing,3,54.09,0.2,LATAM,Home Office
+2810,2025-05-01,Ergonomic Chair,Home,2,299.01,0.15,Europe,Corporate
+2811,2025-05-01,Air Purifier,Home,4,270.91,0.0,Europe,Home Office
+2812,2025-05-01,Leather Jacket,Clothing,1,42.68,0.2,Europe,Home Office
+2813,2025-05-02,Ergonomic Chair,Home,3,98.1,0.0,LATAM,Consumer
+2814,2025-05-02,Bluetooth Speaker,Electronics,1,530.88,0.2,APAC,Premium
+2815,2025-05-02,Bluetooth Speaker,Electronics,2,874.96,0.0,LATAM,Home Office
+2816,2025-05-02,Standing Desk,Home,3,277.01,0.0,Europe,Corporate
+2817,2025-05-02,Dumbbell Set,Sports,4,93.27,0.05,Europe,Consumer
+2818,2025-05-02,Bluetooth Speaker,Electronics,1,372.34,0.05,Europe,Consumer
+2819,2025-05-02,Tennis Racket,Sports,1,170.21,0.2,North America,Corporate
+2820,2025-05-02,Ergonomic Chair,Home,2,79.96,0.0,Europe,Home Office
+2821,2025-05-02,Dumbbell Set,Sports,2,175.71,0.0,North America,Consumer
+2822,2025-05-02,Dumbbell Set,Sports,2,132.56,0.05,North America,Corporate
+2823,2025-05-02,iPad Pro,Electronics,4,712.37,0.0,APAC,Consumer
+2824,2025-05-02,Denim Jeans,Clothing,1,58.98,0.15,North America,Consumer
+2825,2025-05-02,iPad Pro,Electronics,3,700.0,0.05,North America,Home Office
+2826,2025-05-03,Running Shoes,Clothing,1,110.79,0.1,APAC,Premium
+2827,2025-05-03,Dumbbell Set,Sports,4,20.77,0.0,APAC,Consumer
+2828,2025-05-03,iPhone 15,Electronics,3,218.84,0.0,Europe,Consumer
+2829,2025-05-03,Running Shoes,Clothing,1,118.43,0.05,Europe,Premium
+2830,2025-05-03,iPad Pro,Electronics,2,502.32,0.1,North America,Premium
+2831,2025-05-03,LED Desk Lamp,Home,3,255.1,0.0,LATAM,Consumer
+2832,2025-05-03,Cotton T-Shirt,Clothing,1,66.17,0.1,Europe,Consumer
+2833,2025-05-03,LED Desk Lamp,Home,2,167.33,0.0,APAC,Home Office
+2834,2025-05-03,Dumbbell Set,Sports,4,95.78,0.0,APAC,Consumer
+2835,2025-05-03,Sleeping Bag,Sports,3,78.44,0.1,LATAM,Consumer
+2836,2025-05-03,Cotton T-Shirt,Clothing,1,84.34,0.0,LATAM,Consumer
+2837,2025-05-03,Ergonomic Chair,Home,2,193.71,0.15,Europe,Corporate
+2838,2025-05-03,Smartwatch Ultra,Electronics,3,596.05,0.15,APAC,Home Office
+2839,2025-05-03,Leather Jacket,Clothing,3,133.63,0.2,LATAM,Home Office
+2840,2025-05-03,iPad Pro,Electronics,3,936.46,0.05,LATAM,Corporate
+2841,2025-05-03,Wool Sweater,Clothing,4,36.38,0.05,Europe,Consumer
+2842,2025-05-03,Denim Jeans,Clothing,3,147.05,0.1,APAC,Home Office
+2843,2025-05-03,Ergonomic Chair,Home,3,167.34,0.2,APAC,Premium
+2844,2025-05-03,Coffee Maker,Home,4,128.37,0.05,APAC,Corporate
+2845,2025-05-04,Camping Tent,Sports,3,184.08,0.0,North America,Corporate
+2846,2025-05-04,Wool Sweater,Clothing,2,101.8,0.05,LATAM,Consumer
+2847,2025-05-04,Air Purifier,Home,1,88.99,0.05,North America,Premium
+2848,2025-05-04,LED Desk Lamp,Home,1,166.34,0.2,LATAM,Corporate
+2849,2025-05-04,Dumbbell Set,Sports,1,101.82,0.2,North America,Home Office
+2850,2025-05-04,Standing Desk,Home,2,289.56,0.15,Europe,Corporate
+2851,2025-05-04,Running Shoes,Clothing,2,84.75,0.1,APAC,Consumer
+2852,2025-05-04,Dumbbell Set,Sports,4,173.76,0.2,LATAM,Consumer
+2853,2025-05-04,Dumbbell Set,Sports,2,127.42,0.0,North America,Premium
+2854,2025-05-04,LED Desk Lamp,Home,2,364.37,0.15,Europe,Consumer
+2855,2025-05-04,Camping Tent,Sports,3,149.66,0.05,North America,Corporate
+2856,2025-05-05,Air Purifier,Home,1,71.15,0.2,North America,Premium
+2857,2025-05-05,Dumbbell Set,Sports,4,24.71,0.1,Europe,Corporate
+2858,2025-05-05,Leather Jacket,Clothing,1,102.19,0.0,North America,Home Office
+2859,2025-05-05,Coffee Maker,Home,3,187.07,0.1,APAC,Home Office
+2860,2025-05-05,Ergonomic Chair,Home,2,122.58,0.0,Europe,Corporate
+2861,2025-05-05,Smartwatch Ultra,Electronics,2,921.14,0.1,North America,Corporate
+2862,2025-05-05,Camping Tent,Sports,4,71.37,0.0,North America,Premium
+2863,2025-05-05,LED Desk Lamp,Home,1,145.46,0.0,LATAM,Home Office
+2864,2025-05-05,LED Desk Lamp,Home,3,185.39,0.05,North America,Corporate
+2865,2025-05-05,Yoga Mat,Sports,2,65.64,0.2,Europe,Corporate
+2866,2025-05-05,Ergonomic Chair,Home,2,144.96,0.0,North America,Corporate
+2867,2025-05-05,Standing Desk,Home,3,147.95,0.0,Europe,Home Office
+2868,2025-05-05,iPad Pro,Electronics,2,391.13,0.05,North America,Corporate
+2869,2025-05-05,Standing Desk,Home,3,203.18,0.15,LATAM,Home Office
+2870,2025-05-06,LED Desk Lamp,Home,2,71.56,0.0,APAC,Consumer
+2871,2025-05-06,iPad Pro,Electronics,3,1031.82,0.0,Europe,Home Office
+2872,2025-05-06,Running Shoes,Clothing,4,36.7,0.0,LATAM,Consumer
+2873,2025-05-06,Coffee Maker,Home,4,168.17,0.1,APAC,Consumer
+2874,2025-05-06,Dumbbell Set,Sports,1,118.72,0.0,LATAM,Corporate
+2875,2025-05-06,Tennis Racket,Sports,4,176.64,0.0,LATAM,Consumer
+2876,2025-05-06,Cotton T-Shirt,Clothing,3,86.87,0.2,Europe,Premium
+2877,2025-05-06,Camping Tent,Sports,4,110.01,0.0,North America,Premium
+2878,2025-05-06,Yoga Mat,Sports,2,118.44,0.0,North America,Home Office
+2879,2025-05-06,Wool Sweater,Clothing,1,139.56,0.15,LATAM,Corporate
+2880,2025-05-06,Ergonomic Chair,Home,3,154.93,0.0,North America,Premium
+2881,2025-05-06,Coffee Maker,Home,1,201.24,0.2,APAC,Corporate
+2882,2025-05-06,Bluetooth Speaker,Electronics,4,1160.89,0.1,North America,Consumer
+2883,2025-05-06,iPhone 15,Electronics,4,508.97,0.05,LATAM,Consumer
+2884,2025-05-06,Wool Sweater,Clothing,2,60.96,0.2,North America,Consumer
+2885,2025-05-06,Dumbbell Set,Sports,3,178.86,0.05,APAC,Consumer
+2886,2025-05-06,Yoga Mat,Sports,1,197.62,0.05,Europe,Home Office
+2887,2025-05-06,Tennis Racket,Sports,1,146.9,0.15,Europe,Premium
+2888,2025-05-07,Cotton T-Shirt,Clothing,3,136.35,0.2,APAC,Premium
+2889,2025-05-07,MacBook Air,Electronics,2,709.06,0.0,LATAM,Consumer
+2890,2025-05-07,Yoga Mat,Sports,2,39.69,0.0,APAC,Consumer
+2891,2025-05-07,iPad Pro,Electronics,2,1099.36,0.0,North America,Consumer
+2892,2025-05-07,Sleeping Bag,Sports,2,26.45,0.15,LATAM,Consumer
+2893,2025-05-07,Camping Tent,Sports,3,151.78,0.1,APAC,Home Office
+2894,2025-05-07,Sleeping Bag,Sports,1,140.55,0.0,LATAM,Consumer
+2895,2025-05-07,iPad Pro,Electronics,4,1104.24,0.1,Europe,Corporate
+2896,2025-05-07,Leather Jacket,Clothing,3,107.75,0.15,LATAM,Home Office
+2897,2025-05-07,Running Shoes,Clothing,1,143.58,0.0,APAC,Consumer
+2898,2025-05-07,Wool Sweater,Clothing,4,90.11,0.0,Europe,Premium
+2899,2025-05-07,MacBook Air,Electronics,4,863.13,0.2,Europe,Premium
+2900,2025-05-07,LED Desk Lamp,Home,3,204.26,0.15,North America,Home Office
+2901,2025-05-07,Air Purifier,Home,4,325.57,0.05,Europe,Premium
+2902,2025-05-07,Wool Sweater,Clothing,1,146.86,0.15,North America,Corporate
+2903,2025-05-07,Yoga Mat,Sports,2,179.45,0.0,LATAM,Consumer
+2904,2025-05-07,Tennis Racket,Sports,1,57.31,0.1,APAC,Consumer
+2905,2025-05-07,Yoga Mat,Sports,3,140.14,0.2,North America,Premium
+2906,2025-05-07,Wool Sweater,Clothing,3,31.65,0.0,Europe,Home Office
+2907,2025-05-07,Ergonomic Chair,Home,2,219.75,0.0,Europe,Premium
+2908,2025-05-08,Leather Jacket,Clothing,4,101.74,0.15,APAC,Consumer
+2909,2025-05-08,Cotton T-Shirt,Clothing,4,42.32,0.0,LATAM,Corporate
+2910,2025-05-08,Running Shoes,Clothing,1,81.32,0.15,Europe,Premium
+2911,2025-05-08,iPad Pro,Electronics,4,390.98,0.0,Europe,Consumer
+2912,2025-05-08,Running Shoes,Clothing,4,91.35,0.05,Europe,Consumer
+2913,2025-05-08,LED Desk Lamp,Home,2,379.73,0.0,Europe,Corporate
+2914,2025-05-08,Wool Sweater,Clothing,2,87.74,0.15,LATAM,Consumer
+2915,2025-05-08,LED Desk Lamp,Home,1,398.24,0.0,APAC,Corporate
+2916,2025-05-08,Standing Desk,Home,1,64.52,0.0,APAC,Premium
+2917,2025-05-08,Standing Desk,Home,1,216.17,0.2,Europe,Home Office
+2918,2025-05-08,iPad Pro,Electronics,1,639.78,0.0,LATAM,Home Office
+2919,2025-05-08,LED Desk Lamp,Home,2,134.07,0.0,LATAM,Premium
+2920,2025-05-08,Leather Jacket,Clothing,2,89.45,0.2,Europe,Consumer
+2921,2025-05-08,Wool Sweater,Clothing,1,76.53,0.0,North America,Corporate
+2922,2025-05-09,Camping Tent,Sports,1,39.55,0.1,North America,Home Office
+2923,2025-05-09,Bluetooth Speaker,Electronics,3,1077.35,0.2,Europe,Consumer
+2924,2025-05-09,Ergonomic Chair,Home,4,382.02,0.1,APAC,Consumer
+2925,2025-05-09,Camping Tent,Sports,1,80.7,0.0,LATAM,Home Office
+2926,2025-05-09,Standing Desk,Home,3,345.61,0.2,North America,Consumer
+2927,2025-05-09,Sleeping Bag,Sports,2,125.56,0.0,North America,Home Office
+2928,2025-05-09,Dumbbell Set,Sports,2,73.2,0.2,North America,Premium
+2929,2025-05-09,Coffee Maker,Home,4,296.82,0.0,LATAM,Consumer
+2930,2025-05-09,LED Desk Lamp,Home,4,314.81,0.0,North America,Corporate
+2931,2025-05-09,Leather Jacket,Clothing,2,48.91,0.15,LATAM,Corporate
+2932,2025-05-09,Air Purifier,Home,1,101.5,0.15,Europe,Corporate
+2933,2025-05-09,iPad Pro,Electronics,4,989.14,0.05,LATAM,Home Office
+2934,2025-05-09,LED Desk Lamp,Home,1,200.01,0.0,APAC,Home Office
+2935,2025-05-09,Smartwatch Ultra,Electronics,4,743.36,0.15,APAC,Premium
+2936,2025-05-09,Smartwatch Ultra,Electronics,4,295.06,0.15,North America,Premium
+2937,2025-05-09,Camping Tent,Sports,3,158.8,0.0,North America,Consumer
+2938,2025-05-09,Yoga Mat,Sports,2,49.0,0.05,APAC,Corporate
+2939,2025-05-09,Yoga Mat,Sports,2,107.22,0.0,North America,Premium
+2940,2025-05-09,Tennis Racket,Sports,2,189.89,0.0,Europe,Home Office
+2941,2025-05-09,Camping Tent,Sports,3,195.57,0.2,North America,Home Office
+2942,2025-05-10,Leather Jacket,Clothing,4,50.07,0.15,LATAM,Consumer
+2943,2025-05-10,Running Shoes,Clothing,3,134.61,0.05,Europe,Corporate
+2944,2025-05-10,Denim Jeans,Clothing,1,70.74,0.2,North America,Corporate
+2945,2025-05-10,Standing Desk,Home,4,208.15,0.1,Europe,Corporate
+2946,2025-05-10,Leather Jacket,Clothing,4,79.63,0.2,North America,Premium
+2947,2025-05-10,iPad Pro,Electronics,2,573.82,0.1,LATAM,Premium
+2948,2025-05-10,Coffee Maker,Home,4,55.91,0.0,APAC,Consumer
+2949,2025-05-10,Ergonomic Chair,Home,2,166.45,0.1,LATAM,Corporate
+2950,2025-05-10,Leather Jacket,Clothing,3,34.39,0.0,North America,Corporate
+2951,2025-05-10,Standing Desk,Home,4,258.87,0.1,Europe,Premium
+2952,2025-05-10,Wool Sweater,Clothing,2,65.76,0.15,Europe,Corporate
+2953,2025-05-10,Cotton T-Shirt,Clothing,1,148.47,0.15,Europe,Premium
+2954,2025-05-10,Running Shoes,Clothing,4,119.64,0.0,North America,Corporate
+2955,2025-05-10,Tennis Racket,Sports,1,61.99,0.05,North America,Home Office
+2956,2025-05-11,Smartwatch Ultra,Electronics,4,1067.26,0.0,North America,Corporate
+2957,2025-05-11,Tennis Racket,Sports,3,39.14,0.1,APAC,Home Office
+2958,2025-05-11,Ergonomic Chair,Home,3,324.26,0.2,Europe,Home Office
+2959,2025-05-11,Denim Jeans,Clothing,1,43.48,0.05,APAC,Consumer
+2960,2025-05-11,Smartwatch Ultra,Electronics,4,508.27,0.1,Europe,Home Office
+2961,2025-05-11,Cotton T-Shirt,Clothing,3,145.41,0.2,APAC,Corporate
+2962,2025-05-11,Denim Jeans,Clothing,3,108.64,0.0,APAC,Home Office
+2963,2025-05-11,iPad Pro,Electronics,3,538.43,0.1,North America,Premium
+2964,2025-05-11,Wool Sweater,Clothing,4,38.3,0.1,North America,Consumer
+2965,2025-05-11,Sleeping Bag,Sports,4,109.61,0.15,LATAM,Corporate
+2966,2025-05-11,Dumbbell Set,Sports,4,196.01,0.05,North America,Consumer
+2967,2025-05-11,MacBook Air,Electronics,2,870.38,0.0,Europe,Premium
+2968,2025-05-11,iPhone 15,Electronics,2,813.87,0.0,North America,Home Office
+2969,2025-05-11,Dumbbell Set,Sports,2,155.97,0.0,LATAM,Corporate
+2970,2025-05-12,Leather Jacket,Clothing,4,79.57,0.15,LATAM,Consumer
+2971,2025-05-12,iPhone 15,Electronics,3,361.3,0.15,North America,Consumer
+2972,2025-05-12,iPad Pro,Electronics,3,351.14,0.2,North America,Premium
+2973,2025-05-12,Dumbbell Set,Sports,1,127.83,0.0,Europe,Consumer
+2974,2025-05-12,iPhone 15,Electronics,1,239.83,0.2,Europe,Corporate
+2975,2025-05-12,Air Purifier,Home,2,331.26,0.05,Europe,Home Office
+2976,2025-05-12,Bluetooth Speaker,Electronics,2,752.55,0.05,LATAM,Premium
+2977,2025-05-12,Cotton T-Shirt,Clothing,2,111.09,0.2,LATAM,Corporate
+2978,2025-05-12,LED Desk Lamp,Home,1,135.03,0.1,APAC,Consumer
+2979,2025-05-12,Air Purifier,Home,2,342.95,0.1,Europe,Corporate
+2980,2025-05-13,Running Shoes,Clothing,3,44.38,0.0,LATAM,Home Office
+2981,2025-05-13,Ergonomic Chair,Home,2,327.12,0.05,LATAM,Consumer
+2982,2025-05-13,Leather Jacket,Clothing,2,101.85,0.0,LATAM,Home Office
+2983,2025-05-13,LED Desk Lamp,Home,3,83.14,0.1,North America,Consumer
+2984,2025-05-13,LED Desk Lamp,Home,3,181.15,0.0,Europe,Premium
+2985,2025-05-13,Standing Desk,Home,3,291.72,0.0,Europe,Home Office
+2986,2025-05-13,Leather Jacket,Clothing,3,59.4,0.0,Europe,Premium
+2987,2025-05-13,Sleeping Bag,Sports,1,103.49,0.0,APAC,Premium
+2988,2025-05-13,Wool Sweater,Clothing,4,147.16,0.1,LATAM,Consumer
+2989,2025-05-13,LED Desk Lamp,Home,3,176.43,0.0,LATAM,Consumer
+2990,2025-05-13,MacBook Air,Electronics,3,398.65,0.0,North America,Home Office
+2991,2025-05-14,MacBook Air,Electronics,2,386.3,0.15,Europe,Corporate
+2992,2025-05-14,Air Purifier,Home,1,153.97,0.15,LATAM,Consumer
+2993,2025-05-14,Sleeping Bag,Sports,1,161.93,0.05,LATAM,Premium
+2994,2025-05-14,Standing Desk,Home,4,356.9,0.0,North America,Consumer
+2995,2025-05-14,Leather Jacket,Clothing,3,85.43,0.1,North America,Consumer
+2996,2025-05-14,Yoga Mat,Sports,4,48.54,0.05,North America,Home Office
+2997,2025-05-14,Standing Desk,Home,4,165.01,0.15,LATAM,Consumer
+2998,2025-05-14,Smartwatch Ultra,Electronics,4,771.57,0.0,APAC,Home Office
+2999,2025-05-14,Air Purifier,Home,1,231.68,0.0,North America,Corporate
+3000,2025-05-14,MacBook Air,Electronics,3,276.7,0.0,APAC,Premium
+3001,2025-05-14,Ergonomic Chair,Home,1,110.62,0.0,Europe,Premium
+3002,2025-05-14,Cotton T-Shirt,Clothing,1,106.13,0.0,Europe,Premium
+3003,2025-05-14,Running Shoes,Clothing,4,52.97,0.1,Europe,Premium
+3004,2025-05-14,Ergonomic Chair,Home,4,388.55,0.1,APAC,Corporate
+3005,2025-05-14,LED Desk Lamp,Home,1,194.92,0.2,APAC,Home Office
+3006,2025-05-15,Cotton T-Shirt,Clothing,1,130.39,0.2,LATAM,Home Office
+3007,2025-05-15,LED Desk Lamp,Home,3,118.06,0.0,North America,Corporate
+3008,2025-05-15,Dumbbell Set,Sports,2,109.07,0.1,North America,Premium
+3009,2025-05-15,LED Desk Lamp,Home,3,216.51,0.0,North America,Home Office
+3010,2025-05-15,Smartwatch Ultra,Electronics,2,857.23,0.15,APAC,Corporate
+3011,2025-05-15,iPad Pro,Electronics,3,624.52,0.0,Europe,Premium
+3012,2025-05-15,Leather Jacket,Clothing,4,106.32,0.0,LATAM,Home Office
+3013,2025-05-15,Air Purifier,Home,2,351.34,0.0,LATAM,Consumer
+3014,2025-05-15,Running Shoes,Clothing,4,39.13,0.2,Europe,Home Office
+3015,2025-05-15,Denim Jeans,Clothing,4,142.78,0.0,LATAM,Consumer
+3016,2025-05-15,Running Shoes,Clothing,4,55.45,0.2,APAC,Home Office
+3017,2025-05-15,Running Shoes,Clothing,3,85.52,0.05,APAC,Home Office
+3018,2025-05-15,Ergonomic Chair,Home,4,280.72,0.15,North America,Premium
+3019,2025-05-15,Yoga Mat,Sports,2,188.75,0.0,APAC,Premium
+3020,2025-05-15,LED Desk Lamp,Home,4,296.45,0.2,LATAM,Home Office
+3021,2025-05-15,Ergonomic Chair,Home,4,80.99,0.05,APAC,Consumer
+3022,2025-05-15,LED Desk Lamp,Home,1,360.18,0.0,LATAM,Home Office
+3023,2025-05-16,Running Shoes,Clothing,1,40.28,0.0,Europe,Corporate
+3024,2025-05-16,Ergonomic Chair,Home,2,305.66,0.0,North America,Premium
+3025,2025-05-16,Leather Jacket,Clothing,3,89.91,0.0,LATAM,Premium
+3026,2025-05-16,Standing Desk,Home,3,234.97,0.2,North America,Home Office
+3027,2025-05-16,iPhone 15,Electronics,2,815.98,0.05,LATAM,Consumer
+3028,2025-05-16,Standing Desk,Home,4,366.24,0.1,LATAM,Corporate
+3029,2025-05-16,Yoga Mat,Sports,3,78.9,0.15,North America,Consumer
+3030,2025-05-16,Yoga Mat,Sports,1,53.29,0.15,APAC,Consumer
+3031,2025-05-16,Coffee Maker,Home,1,62.93,0.0,North America,Premium
+3032,2025-05-16,Bluetooth Speaker,Electronics,2,853.76,0.2,Europe,Home Office
+3033,2025-05-16,iPad Pro,Electronics,2,926.36,0.0,Europe,Premium
+3034,2025-05-16,Yoga Mat,Sports,1,164.11,0.05,LATAM,Consumer
+3035,2025-05-16,Leather Jacket,Clothing,4,144.33,0.1,North America,Corporate
+3036,2025-05-16,Dumbbell Set,Sports,2,15.68,0.15,APAC,Premium
+3037,2025-05-16,Smartwatch Ultra,Electronics,2,887.88,0.15,LATAM,Consumer
+3038,2025-05-17,LED Desk Lamp,Home,4,100.78,0.0,LATAM,Corporate
+3039,2025-05-17,LED Desk Lamp,Home,4,339.04,0.0,LATAM,Consumer
+3040,2025-05-17,Coffee Maker,Home,3,208.59,0.1,Europe,Consumer
+3041,2025-05-17,Dumbbell Set,Sports,4,153.51,0.0,North America,Corporate
+3042,2025-05-17,Cotton T-Shirt,Clothing,4,87.12,0.05,North America,Premium
+3043,2025-05-17,Smartwatch Ultra,Electronics,1,882.55,0.0,APAC,Consumer
+3044,2025-05-17,Leather Jacket,Clothing,2,56.6,0.0,North America,Home Office
+3045,2025-05-17,Ergonomic Chair,Home,4,326.92,0.1,Europe,Home Office
+3046,2025-05-17,Denim Jeans,Clothing,1,101.25,0.05,North America,Corporate
+3047,2025-05-17,Cotton T-Shirt,Clothing,4,149.94,0.0,APAC,Consumer
+3048,2025-05-17,Wool Sweater,Clothing,2,83.23,0.15,LATAM,Consumer
+3049,2025-05-17,Ergonomic Chair,Home,1,71.86,0.0,LATAM,Corporate
+3050,2025-05-17,Camping Tent,Sports,2,177.44,0.0,North America,Home Office
+3051,2025-05-17,iPad Pro,Electronics,2,786.29,0.2,Europe,Consumer
+3052,2025-05-17,Smartwatch Ultra,Electronics,2,810.97,0.0,LATAM,Premium
+3053,2025-05-17,Tennis Racket,Sports,2,183.36,0.15,LATAM,Corporate
+3054,2025-05-17,Coffee Maker,Home,3,136.67,0.0,APAC,Consumer
+3055,2025-05-17,Running Shoes,Clothing,3,93.98,0.15,LATAM,Premium
+3056,2025-05-17,Ergonomic Chair,Home,4,194.11,0.2,Europe,Corporate
+3057,2025-05-17,Cotton T-Shirt,Clothing,3,116.32,0.15,APAC,Home Office
+3058,2025-05-18,Cotton T-Shirt,Clothing,4,49.91,0.0,Europe,Premium
+3059,2025-05-18,Yoga Mat,Sports,3,15.41,0.1,Europe,Premium
+3060,2025-05-18,Tennis Racket,Sports,4,33.2,0.0,LATAM,Consumer
+3061,2025-05-18,LED Desk Lamp,Home,1,234.15,0.0,APAC,Premium
+3062,2025-05-18,Yoga Mat,Sports,1,139.64,0.15,APAC,Home Office
+3063,2025-05-18,Coffee Maker,Home,4,53.56,0.0,Europe,Corporate
+3064,2025-05-18,Bluetooth Speaker,Electronics,3,832.63,0.0,Europe,Premium
+3065,2025-05-18,Ergonomic Chair,Home,4,323.1,0.0,APAC,Home Office
+3066,2025-05-18,Leather Jacket,Clothing,4,103.23,0.2,LATAM,Home Office
+3067,2025-05-18,Dumbbell Set,Sports,1,133.98,0.0,APAC,Consumer
+3068,2025-05-18,Running Shoes,Clothing,1,100.85,0.2,North America,Corporate
+3069,2025-05-18,iPad Pro,Electronics,2,1068.92,0.0,APAC,Corporate
+3070,2025-05-18,Yoga Mat,Sports,4,30.71,0.1,APAC,Home Office
+3071,2025-05-18,MacBook Air,Electronics,1,930.92,0.1,Europe,Consumer
+3072,2025-05-18,iPhone 15,Electronics,1,268.06,0.2,APAC,Corporate
+3073,2025-05-19,Tennis Racket,Sports,3,94.29,0.1,APAC,Corporate
+3074,2025-05-19,Wool Sweater,Clothing,4,60.77,0.15,APAC,Premium
+3075,2025-05-19,Ergonomic Chair,Home,2,279.8,0.0,North America,Home Office
+3076,2025-05-19,Cotton T-Shirt,Clothing,3,122.51,0.0,LATAM,Home Office
+3077,2025-05-19,Denim Jeans,Clothing,3,111.76,0.0,LATAM,Home Office
+3078,2025-05-19,LED Desk Lamp,Home,1,300.17,0.0,LATAM,Home Office
+3079,2025-05-19,Running Shoes,Clothing,1,95.85,0.0,North America,Consumer
+3080,2025-05-19,Leather Jacket,Clothing,1,57.08,0.05,LATAM,Home Office
+3081,2025-05-19,Running Shoes,Clothing,3,67.1,0.0,North America,Home Office
+3082,2025-05-19,Ergonomic Chair,Home,4,215.25,0.0,LATAM,Consumer
+3083,2025-05-19,Wool Sweater,Clothing,2,135.87,0.2,North America,Consumer
+3084,2025-05-19,Smartwatch Ultra,Electronics,3,971.55,0.1,LATAM,Consumer
+3085,2025-05-19,Denim Jeans,Clothing,2,51.08,0.0,Europe,Corporate
+3086,2025-05-20,LED Desk Lamp,Home,4,364.79,0.0,North America,Premium
+3087,2025-05-20,Tennis Racket,Sports,2,149.48,0.0,LATAM,Home Office
+3088,2025-05-20,Leather Jacket,Clothing,3,49.9,0.0,North America,Corporate
+3089,2025-05-20,Dumbbell Set,Sports,3,90.26,0.0,LATAM,Consumer
+3090,2025-05-20,Air Purifier,Home,2,347.93,0.05,APAC,Corporate
+3091,2025-05-20,MacBook Air,Electronics,4,544.59,0.1,LATAM,Consumer
+3092,2025-05-20,Ergonomic Chair,Home,3,346.17,0.0,North America,Premium
+3093,2025-05-20,Camping Tent,Sports,4,109.53,0.0,Europe,Premium
+3094,2025-05-20,Tennis Racket,Sports,4,74.86,0.1,Europe,Corporate
+3095,2025-05-20,Running Shoes,Clothing,3,59.27,0.0,Europe,Corporate
+3096,2025-05-20,Air Purifier,Home,1,65.41,0.1,APAC,Consumer
+3097,2025-05-21,iPad Pro,Electronics,3,1079.36,0.0,Europe,Corporate
+3098,2025-05-21,Running Shoes,Clothing,3,100.36,0.2,Europe,Premium
+3099,2025-05-21,iPhone 15,Electronics,1,983.77,0.1,APAC,Premium
+3100,2025-05-21,Tennis Racket,Sports,3,99.36,0.0,North America,Home Office
+3101,2025-05-21,Air Purifier,Home,4,286.36,0.05,LATAM,Premium
+3102,2025-05-21,LED Desk Lamp,Home,1,368.65,0.1,LATAM,Consumer
+3103,2025-05-21,Standing Desk,Home,4,201.44,0.0,Europe,Home Office
+3104,2025-05-21,Denim Jeans,Clothing,3,136.5,0.05,APAC,Premium
+3105,2025-05-21,Cotton T-Shirt,Clothing,1,33.99,0.1,Europe,Home Office
+3106,2025-05-21,Yoga Mat,Sports,4,100.86,0.0,APAC,Consumer
+3107,2025-05-22,Running Shoes,Clothing,3,93.82,0.0,APAC,Consumer
+3108,2025-05-22,Smartwatch Ultra,Electronics,1,658.9,0.1,Europe,Corporate
+3109,2025-05-22,Bluetooth Speaker,Electronics,3,789.39,0.1,LATAM,Consumer
+3110,2025-05-22,Smartwatch Ultra,Electronics,4,213.41,0.05,LATAM,Consumer
+3111,2025-05-22,Yoga Mat,Sports,2,18.33,0.0,Europe,Home Office
+3112,2025-05-22,Dumbbell Set,Sports,3,31.55,0.2,LATAM,Home Office
+3113,2025-05-22,Ergonomic Chair,Home,3,124.13,0.0,North America,Home Office
+3114,2025-05-22,LED Desk Lamp,Home,1,239.29,0.1,APAC,Premium
+3115,2025-05-22,Cotton T-Shirt,Clothing,1,91.38,0.2,Europe,Consumer
+3116,2025-05-22,Camping Tent,Sports,1,175.95,0.2,Europe,Corporate
+3117,2025-05-22,Yoga Mat,Sports,1,78.17,0.15,Europe,Corporate
+3118,2025-05-22,LED Desk Lamp,Home,2,63.34,0.0,LATAM,Premium
+3119,2025-05-22,Sleeping Bag,Sports,3,37.58,0.2,LATAM,Premium
+3120,2025-05-22,MacBook Air,Electronics,3,1149.78,0.0,Europe,Corporate
+3121,2025-05-22,Wool Sweater,Clothing,2,128.91,0.1,APAC,Premium
+3122,2025-05-22,Cotton T-Shirt,Clothing,4,43.46,0.1,LATAM,Corporate
+3123,2025-05-22,Standing Desk,Home,3,389.76,0.05,Europe,Home Office
+3124,2025-05-22,Standing Desk,Home,1,275.0,0.0,Europe,Home Office
+3125,2025-05-23,Camping Tent,Sports,3,109.38,0.0,Europe,Consumer
+3126,2025-05-23,Ergonomic Chair,Home,2,208.16,0.1,North America,Corporate
+3127,2025-05-23,Coffee Maker,Home,4,122.58,0.15,APAC,Corporate
+3128,2025-05-23,Camping Tent,Sports,2,174.0,0.0,APAC,Corporate
+3129,2025-05-23,Sleeping Bag,Sports,4,105.31,0.0,North America,Consumer
+3130,2025-05-23,Smartwatch Ultra,Electronics,1,834.89,0.0,North America,Home Office
+3131,2025-05-23,iPad Pro,Electronics,2,427.81,0.05,Europe,Home Office
+3132,2025-05-23,Standing Desk,Home,3,270.04,0.1,Europe,Consumer
+3133,2025-05-23,Sleeping Bag,Sports,2,59.06,0.2,APAC,Home Office
+3134,2025-05-23,Smartwatch Ultra,Electronics,3,717.15,0.1,Europe,Consumer
+3135,2025-05-23,Denim Jeans,Clothing,3,93.89,0.0,Europe,Premium
+3136,2025-05-23,Leather Jacket,Clothing,2,56.66,0.0,North America,Premium
+3137,2025-05-23,Yoga Mat,Sports,3,113.59,0.05,Europe,Premium
+3138,2025-05-23,iPad Pro,Electronics,2,1054.25,0.05,LATAM,Premium
+3139,2025-05-24,Denim Jeans,Clothing,4,123.36,0.0,Europe,Premium
+3140,2025-05-24,Air Purifier,Home,4,109.86,0.0,Europe,Premium
+3141,2025-05-24,Ergonomic Chair,Home,1,139.26,0.0,APAC,Consumer
+3142,2025-05-24,Standing Desk,Home,1,205.19,0.15,APAC,Premium
+3143,2025-05-24,Coffee Maker,Home,2,261.59,0.1,LATAM,Home Office
+3144,2025-05-24,Ergonomic Chair,Home,2,367.26,0.1,North America,Home Office
+3145,2025-05-24,Camping Tent,Sports,4,97.95,0.0,APAC,Premium
+3146,2025-05-24,Running Shoes,Clothing,4,131.37,0.2,APAC,Corporate
+3147,2025-05-24,Yoga Mat,Sports,4,75.77,0.15,North America,Premium
+3148,2025-05-24,Leather Jacket,Clothing,3,122.96,0.0,Europe,Premium
+3149,2025-05-24,LED Desk Lamp,Home,1,237.35,0.0,Europe,Consumer
+3150,2025-05-24,Wool Sweater,Clothing,3,138.26,0.05,APAC,Home Office
+3151,2025-05-24,Cotton T-Shirt,Clothing,3,117.46,0.15,APAC,Corporate
+3152,2025-05-24,LED Desk Lamp,Home,4,111.13,0.05,North America,Premium
+3153,2025-05-24,iPhone 15,Electronics,1,800.46,0.0,North America,Consumer
+3154,2025-05-24,Ergonomic Chair,Home,1,169.34,0.1,North America,Premium
+3155,2025-05-24,Ergonomic Chair,Home,3,74.46,0.0,LATAM,Corporate
+3156,2025-05-24,Denim Jeans,Clothing,4,39.19,0.0,North America,Home Office
+3157,2025-05-24,Smartwatch Ultra,Electronics,3,327.15,0.0,APAC,Premium
+3158,2025-05-25,Coffee Maker,Home,3,87.25,0.0,APAC,Corporate
+3159,2025-05-25,Denim Jeans,Clothing,1,35.11,0.15,North America,Consumer
+3160,2025-05-25,Coffee Maker,Home,4,299.25,0.0,North America,Consumer
+3161,2025-05-25,Tennis Racket,Sports,3,108.9,0.0,North America,Premium
+3162,2025-05-25,MacBook Air,Electronics,3,633.93,0.0,North America,Consumer
+3163,2025-05-25,Standing Desk,Home,3,295.51,0.0,LATAM,Home Office
+3164,2025-05-25,Running Shoes,Clothing,2,51.02,0.05,APAC,Consumer
+3165,2025-05-25,LED Desk Lamp,Home,1,61.23,0.1,LATAM,Premium
+3166,2025-05-25,Dumbbell Set,Sports,2,40.21,0.0,Europe,Home Office
+3167,2025-05-25,Air Purifier,Home,2,352.56,0.0,APAC,Premium
+3168,2025-05-25,Ergonomic Chair,Home,4,318.5,0.0,APAC,Home Office
+3169,2025-05-25,Leather Jacket,Clothing,4,141.78,0.0,LATAM,Consumer
+3170,2025-05-25,Bluetooth Speaker,Electronics,4,1165.31,0.1,LATAM,Home Office
+3171,2025-05-25,iPad Pro,Electronics,1,369.33,0.1,North America,Premium
+3172,2025-05-26,MacBook Air,Electronics,2,517.16,0.0,LATAM,Home Office
+3173,2025-05-26,MacBook Air,Electronics,2,254.73,0.05,North America,Corporate
+3174,2025-05-26,Smartwatch Ultra,Electronics,2,215.98,0.0,LATAM,Premium
+3175,2025-05-26,LED Desk Lamp,Home,3,396.68,0.1,APAC,Consumer
+3176,2025-05-26,Cotton T-Shirt,Clothing,4,130.32,0.0,LATAM,Home Office
+3177,2025-05-26,Cotton T-Shirt,Clothing,2,71.85,0.2,APAC,Corporate
+3178,2025-05-26,Camping Tent,Sports,1,162.94,0.15,North America,Home Office
+3179,2025-05-26,Running Shoes,Clothing,2,68.5,0.0,APAC,Corporate
+3180,2025-05-26,Leather Jacket,Clothing,4,114.36,0.0,Europe,Premium
+3181,2025-05-26,Dumbbell Set,Sports,1,35.88,0.15,APAC,Consumer
+3182,2025-05-26,iPad Pro,Electronics,4,706.54,0.2,LATAM,Home Office
+3183,2025-05-26,Sleeping Bag,Sports,2,194.25,0.0,Europe,Home Office
+3184,2025-05-26,Air Purifier,Home,1,166.68,0.1,LATAM,Corporate
+3185,2025-05-26,MacBook Air,Electronics,1,1146.12,0.0,North America,Premium
+3186,2025-05-26,Cotton T-Shirt,Clothing,2,99.35,0.0,North America,Consumer
+3187,2025-05-26,Dumbbell Set,Sports,3,147.31,0.05,LATAM,Home Office
+3188,2025-05-26,iPad Pro,Electronics,3,800.19,0.15,LATAM,Consumer
+3189,2025-05-26,Smartwatch Ultra,Electronics,3,424.65,0.0,North America,Premium
+3190,2025-05-27,Wool Sweater,Clothing,2,114.51,0.0,North America,Corporate
+3191,2025-05-27,Bluetooth Speaker,Electronics,2,809.22,0.05,APAC,Consumer
+3192,2025-05-27,iPad Pro,Electronics,2,672.57,0.0,Europe,Home Office
+3193,2025-05-27,Yoga Mat,Sports,4,94.27,0.05,LATAM,Corporate
+3194,2025-05-27,Tennis Racket,Sports,2,184.4,0.0,Europe,Home Office
+3195,2025-05-27,Camping Tent,Sports,3,25.1,0.05,APAC,Home Office
+3196,2025-05-27,Standing Desk,Home,4,198.12,0.05,LATAM,Consumer
+3197,2025-05-27,iPad Pro,Electronics,1,771.94,0.2,LATAM,Corporate
+3198,2025-05-27,Yoga Mat,Sports,1,159.16,0.0,Europe,Premium
+3199,2025-05-27,LED Desk Lamp,Home,1,273.68,0.0,LATAM,Home Office
+3200,2025-05-27,Bluetooth Speaker,Electronics,3,870.71,0.0,North America,Home Office
+3201,2025-05-27,iPhone 15,Electronics,3,507.78,0.15,Europe,Home Office
+3202,2025-05-27,Yoga Mat,Sports,1,148.74,0.0,APAC,Premium
+3203,2025-05-27,Denim Jeans,Clothing,4,113.99,0.15,Europe,Corporate
+3204,2025-05-27,Standing Desk,Home,4,290.94,0.05,Europe,Corporate
+3205,2025-05-27,Tennis Racket,Sports,1,74.52,0.0,Europe,Home Office
+3206,2025-05-27,Sleeping Bag,Sports,1,103.74,0.0,LATAM,Consumer
+3207,2025-05-28,Denim Jeans,Clothing,3,45.94,0.0,North America,Corporate
+3208,2025-05-28,Bluetooth Speaker,Electronics,3,711.27,0.0,LATAM,Corporate
+3209,2025-05-28,Running Shoes,Clothing,1,80.39,0.05,LATAM,Corporate
+3210,2025-05-28,Sleeping Bag,Sports,2,131.57,0.2,North America,Premium
+3211,2025-05-28,Camping Tent,Sports,4,132.76,0.0,APAC,Home Office
+3212,2025-05-28,Standing Desk,Home,4,243.17,0.2,APAC,Consumer
+3213,2025-05-28,Tennis Racket,Sports,3,190.83,0.0,APAC,Consumer
+3214,2025-05-28,iPad Pro,Electronics,1,1184.61,0.1,Europe,Corporate
+3215,2025-05-28,Ergonomic Chair,Home,1,350.45,0.05,LATAM,Premium
+3216,2025-05-28,iPhone 15,Electronics,2,521.28,0.0,North America,Premium
+3217,2025-05-28,Coffee Maker,Home,4,315.47,0.0,LATAM,Corporate
+3218,2025-05-28,Sleeping Bag,Sports,4,108.16,0.05,LATAM,Premium
+3219,2025-05-28,Leather Jacket,Clothing,1,66.46,0.2,LATAM,Consumer
+3220,2025-05-28,Air Purifier,Home,4,330.15,0.0,APAC,Home Office
+3221,2025-05-28,Cotton T-Shirt,Clothing,2,130.96,0.05,APAC,Home Office
+3222,2025-05-28,Camping Tent,Sports,1,161.99,0.1,Europe,Premium
+3223,2025-05-28,Air Purifier,Home,1,285.78,0.0,Europe,Corporate
+3224,2025-05-28,Coffee Maker,Home,1,140.41,0.0,LATAM,Consumer
+3225,2025-05-28,Camping Tent,Sports,3,166.04,0.15,Europe,Home Office
+3226,2025-05-29,Sleeping Bag,Sports,2,81.94,0.1,APAC,Corporate
+3227,2025-05-29,Ergonomic Chair,Home,2,384.51,0.0,LATAM,Home Office
+3228,2025-05-29,iPad Pro,Electronics,2,894.99,0.0,Europe,Corporate
+3229,2025-05-29,Leather Jacket,Clothing,2,142.21,0.05,North America,Home Office
+3230,2025-05-29,Sleeping Bag,Sports,2,35.91,0.0,APAC,Corporate
+3231,2025-05-29,Wool Sweater,Clothing,1,43.73,0.2,APAC,Consumer
+3232,2025-05-29,Camping Tent,Sports,1,22.39,0.0,Europe,Home Office
+3233,2025-05-29,Camping Tent,Sports,1,62.18,0.1,North America,Corporate
+3234,2025-05-29,Ergonomic Chair,Home,3,381.47,0.2,North America,Premium
+3235,2025-05-29,Bluetooth Speaker,Electronics,1,833.73,0.1,APAC,Home Office
+3236,2025-05-29,LED Desk Lamp,Home,3,53.68,0.05,Europe,Consumer
+3237,2025-05-29,Running Shoes,Clothing,4,54.67,0.0,LATAM,Home Office
+3238,2025-05-29,Yoga Mat,Sports,3,97.82,0.0,North America,Corporate
+3239,2025-05-29,Wool Sweater,Clothing,4,108.58,0.05,North America,Home Office
+3240,2025-05-30,Bluetooth Speaker,Electronics,1,1067.13,0.0,APAC,Premium
+3241,2025-05-30,MacBook Air,Electronics,2,504.23,0.0,North America,Premium
+3242,2025-05-30,Dumbbell Set,Sports,1,86.92,0.0,Europe,Premium
+3243,2025-05-30,Coffee Maker,Home,4,330.96,0.0,North America,Consumer
+3244,2025-05-30,Dumbbell Set,Sports,2,34.18,0.0,APAC,Consumer
+3245,2025-05-30,Bluetooth Speaker,Electronics,2,1126.79,0.0,North America,Corporate
+3246,2025-05-30,Yoga Mat,Sports,4,176.22,0.05,Europe,Corporate
+3247,2025-05-30,Air Purifier,Home,2,85.82,0.0,APAC,Home Office
+3248,2025-05-30,LED Desk Lamp,Home,4,340.06,0.15,LATAM,Corporate
+3249,2025-05-30,Denim Jeans,Clothing,1,138.77,0.05,North America,Consumer
+3250,2025-05-30,Sleeping Bag,Sports,2,46.26,0.0,North America,Premium
+3251,2025-05-30,Leather Jacket,Clothing,2,122.35,0.05,APAC,Home Office
+3252,2025-05-30,Dumbbell Set,Sports,3,34.22,0.0,LATAM,Premium
+3253,2025-05-30,iPhone 15,Electronics,3,219.11,0.0,North America,Consumer
+3254,2025-05-30,iPad Pro,Electronics,1,931.55,0.05,APAC,Premium
+3255,2025-05-31,Cotton T-Shirt,Clothing,4,145.27,0.15,Europe,Consumer
+3256,2025-05-31,Cotton T-Shirt,Clothing,3,110.02,0.0,APAC,Premium
+3257,2025-05-31,Air Purifier,Home,2,277.88,0.0,LATAM,Consumer
+3258,2025-05-31,Running Shoes,Clothing,4,36.46,0.0,North America,Corporate
+3259,2025-05-31,Bluetooth Speaker,Electronics,2,615.83,0.05,LATAM,Consumer
+3260,2025-05-31,Wool Sweater,Clothing,3,61.78,0.0,APAC,Consumer
+3261,2025-05-31,Air Purifier,Home,3,212.46,0.1,LATAM,Consumer
+3262,2025-05-31,Running Shoes,Clothing,1,45.55,0.0,LATAM,Corporate
+3263,2025-05-31,Camping Tent,Sports,3,140.56,0.0,Europe,Corporate
+3264,2025-05-31,Standing Desk,Home,2,94.93,0.15,LATAM,Consumer
+3265,2025-05-31,Air Purifier,Home,4,159.15,0.05,LATAM,Home Office
+3266,2025-05-31,Bluetooth Speaker,Electronics,2,1001.97,0.0,North America,Premium
+3267,2025-05-31,Running Shoes,Clothing,4,108.45,0.05,Europe,Consumer
+3268,2025-05-31,Smartwatch Ultra,Electronics,4,594.46,0.05,North America,Home Office
+3269,2025-05-31,Cotton T-Shirt,Clothing,1,66.66,0.15,North America,Consumer
+3270,2025-05-31,iPhone 15,Electronics,3,688.76,0.0,APAC,Premium
+3271,2025-06-01,iPhone 15,Electronics,2,721.21,0.1,North America,Premium
+3272,2025-06-01,Wool Sweater,Clothing,4,50.97,0.1,LATAM,Home Office
+3273,2025-06-01,Coffee Maker,Home,1,87.99,0.05,North America,Premium
+3274,2025-06-01,Coffee Maker,Home,1,127.74,0.0,APAC,Premium
+3275,2025-06-01,Bluetooth Speaker,Electronics,1,1177.38,0.0,North America,Corporate
+3276,2025-06-01,Standing Desk,Home,3,269.87,0.0,Europe,Corporate
+3277,2025-06-01,MacBook Air,Electronics,3,1091.2,0.0,Europe,Corporate
+3278,2025-06-01,Standing Desk,Home,2,246.63,0.15,APAC,Consumer
+3279,2025-06-01,Running Shoes,Clothing,4,122.06,0.0,Europe,Corporate
+3280,2025-06-01,Leather Jacket,Clothing,4,147.6,0.0,APAC,Corporate
+3281,2025-06-01,Bluetooth Speaker,Electronics,3,509.24,0.2,Europe,Consumer
+3282,2025-06-02,Running Shoes,Clothing,3,133.49,0.0,APAC,Premium
+3283,2025-06-02,Dumbbell Set,Sports,1,178.88,0.0,APAC,Corporate
+3284,2025-06-02,MacBook Air,Electronics,2,272.78,0.0,Europe,Home Office
+3285,2025-06-02,Sleeping Bag,Sports,3,125.91,0.0,LATAM,Premium
+3286,2025-06-02,Wool Sweater,Clothing,3,61.8,0.0,APAC,Premium
+3287,2025-06-02,Standing Desk,Home,4,149.94,0.15,APAC,Home Office
+3288,2025-06-02,Ergonomic Chair,Home,3,153.43,0.05,LATAM,Premium
+3289,2025-06-02,Sleeping Bag,Sports,1,97.6,0.2,LATAM,Corporate
+3290,2025-06-02,Sleeping Bag,Sports,2,40.04,0.15,North America,Premium
+3291,2025-06-02,Wool Sweater,Clothing,3,72.89,0.0,APAC,Home Office
+3292,2025-06-02,Ergonomic Chair,Home,3,295.62,0.0,North America,Consumer
+3293,2025-06-03,Standing Desk,Home,4,124.44,0.15,Europe,Home Office
+3294,2025-06-03,Ergonomic Chair,Home,3,245.84,0.1,North America,Corporate
+3295,2025-06-03,LED Desk Lamp,Home,4,182.2,0.0,APAC,Home Office
+3296,2025-06-03,Coffee Maker,Home,4,328.22,0.2,Europe,Corporate
+3297,2025-06-03,Running Shoes,Clothing,1,80.9,0.0,Europe,Premium
+3298,2025-06-03,LED Desk Lamp,Home,1,130.46,0.0,APAC,Premium
+3299,2025-06-03,iPad Pro,Electronics,2,746.34,0.0,North America,Corporate
+3300,2025-06-03,Coffee Maker,Home,3,105.44,0.2,LATAM,Corporate
+3301,2025-06-03,Leather Jacket,Clothing,3,76.07,0.05,APAC,Corporate
+3302,2025-06-03,iPhone 15,Electronics,4,741.26,0.0,LATAM,Consumer
+3303,2025-06-03,Bluetooth Speaker,Electronics,3,886.85,0.0,North America,Home Office
+3304,2025-06-03,Running Shoes,Clothing,4,119.88,0.1,Europe,Consumer
+3305,2025-06-03,Wool Sweater,Clothing,4,122.41,0.0,APAC,Premium
+3306,2025-06-03,Sleeping Bag,Sports,3,66.31,0.0,North America,Corporate
+3307,2025-06-03,Wool Sweater,Clothing,4,148.8,0.05,LATAM,Consumer
+3308,2025-06-03,Smartwatch Ultra,Electronics,1,575.99,0.05,North America,Corporate
+3309,2025-06-03,Yoga Mat,Sports,2,147.4,0.05,APAC,Consumer
+3310,2025-06-04,Ergonomic Chair,Home,1,181.24,0.1,LATAM,Premium
+3311,2025-06-04,Yoga Mat,Sports,3,95.29,0.05,North America,Premium
+3312,2025-06-04,LED Desk Lamp,Home,1,387.19,0.0,APAC,Corporate
+3313,2025-06-04,Tennis Racket,Sports,2,166.35,0.05,APAC,Premium
+3314,2025-06-04,iPad Pro,Electronics,2,305.58,0.05,Europe,Home Office
+3315,2025-06-04,Air Purifier,Home,4,337.26,0.0,LATAM,Consumer
+3316,2025-06-04,Standing Desk,Home,3,134.17,0.2,LATAM,Home Office
+3317,2025-06-04,Running Shoes,Clothing,1,95.2,0.2,Europe,Consumer
+3318,2025-06-04,Sleeping Bag,Sports,4,177.98,0.0,LATAM,Home Office
+3319,2025-06-04,Yoga Mat,Sports,4,170.8,0.0,North America,Corporate
+3320,2025-06-04,MacBook Air,Electronics,1,555.62,0.0,Europe,Premium
+3321,2025-06-05,Yoga Mat,Sports,3,187.3,0.0,North America,Corporate
+3322,2025-06-05,Coffee Maker,Home,4,74.64,0.2,APAC,Corporate
+3323,2025-06-05,Dumbbell Set,Sports,1,136.33,0.05,APAC,Premium
+3324,2025-06-05,Running Shoes,Clothing,4,74.0,0.2,North America,Corporate
+3325,2025-06-05,Denim Jeans,Clothing,1,43.71,0.05,APAC,Corporate
+3326,2025-06-05,Tennis Racket,Sports,3,56.0,0.05,APAC,Consumer
+3327,2025-06-05,LED Desk Lamp,Home,3,240.15,0.05,North America,Consumer
+3328,2025-06-05,Coffee Maker,Home,1,337.9,0.15,LATAM,Premium
+3329,2025-06-05,LED Desk Lamp,Home,1,371.79,0.1,LATAM,Corporate
+3330,2025-06-05,Yoga Mat,Sports,1,67.56,0.05,APAC,Premium
+3331,2025-06-05,Leather Jacket,Clothing,2,140.62,0.0,LATAM,Consumer
+3332,2025-06-05,Ergonomic Chair,Home,4,86.6,0.15,Europe,Consumer
+3333,2025-06-05,Standing Desk,Home,1,67.41,0.0,LATAM,Corporate
+3334,2025-06-06,iPad Pro,Electronics,2,902.63,0.2,Europe,Premium
+3335,2025-06-06,Smartwatch Ultra,Electronics,2,1010.31,0.0,North America,Premium
+3336,2025-06-06,Camping Tent,Sports,4,55.4,0.15,LATAM,Consumer
+3337,2025-06-06,Camping Tent,Sports,3,149.13,0.15,Europe,Corporate
+3338,2025-06-06,LED Desk Lamp,Home,2,162.49,0.0,LATAM,Home Office
+3339,2025-06-06,Camping Tent,Sports,1,177.52,0.0,Europe,Premium
+3340,2025-06-06,Smartwatch Ultra,Electronics,1,1150.88,0.2,Europe,Corporate
+3341,2025-06-06,Air Purifier,Home,3,145.04,0.1,APAC,Home Office
+3342,2025-06-06,Tennis Racket,Sports,2,127.47,0.15,LATAM,Home Office
+3343,2025-06-06,Coffee Maker,Home,1,258.59,0.0,LATAM,Corporate
+3344,2025-06-06,Running Shoes,Clothing,3,136.39,0.05,North America,Corporate
+3345,2025-06-06,Tennis Racket,Sports,3,191.59,0.05,APAC,Corporate
+3346,2025-06-06,iPad Pro,Electronics,2,1135.64,0.1,North America,Consumer
+3347,2025-06-06,Standing Desk,Home,2,301.43,0.2,APAC,Consumer
+3348,2025-06-06,Tennis Racket,Sports,4,41.71,0.0,LATAM,Corporate
+3349,2025-06-06,Standing Desk,Home,2,52.72,0.05,APAC,Consumer
+3350,2025-06-06,Running Shoes,Clothing,4,49.13,0.0,LATAM,Corporate
+3351,2025-06-06,iPhone 15,Electronics,1,873.56,0.1,North America,Consumer
+3352,2025-06-07,iPhone 15,Electronics,3,934.54,0.2,Europe,Premium
+3353,2025-06-07,LED Desk Lamp,Home,2,260.94,0.0,Europe,Home Office
+3354,2025-06-07,MacBook Air,Electronics,4,1169.68,0.0,North America,Corporate
+3355,2025-06-07,Standing Desk,Home,3,385.58,0.1,APAC,Home Office
+3356,2025-06-07,Standing Desk,Home,4,148.57,0.0,APAC,Home Office
+3357,2025-06-07,Standing Desk,Home,3,319.08,0.2,North America,Consumer
+3358,2025-06-07,Tennis Racket,Sports,4,32.28,0.0,LATAM,Home Office
+3359,2025-06-07,Leather Jacket,Clothing,3,102.15,0.15,LATAM,Home Office
+3360,2025-06-07,Standing Desk,Home,1,258.1,0.1,APAC,Corporate
+3361,2025-06-08,Running Shoes,Clothing,3,80.58,0.0,LATAM,Consumer
+3362,2025-06-08,Air Purifier,Home,4,327.0,0.2,North America,Corporate
+3363,2025-06-08,Bluetooth Speaker,Electronics,4,713.71,0.1,North America,Consumer
+3364,2025-06-08,Standing Desk,Home,1,393.53,0.0,LATAM,Home Office
+3365,2025-06-08,Leather Jacket,Clothing,2,84.02,0.0,LATAM,Premium
+3366,2025-06-08,Coffee Maker,Home,3,210.38,0.0,North America,Home Office
+3367,2025-06-08,LED Desk Lamp,Home,3,385.67,0.0,Europe,Premium
+3368,2025-06-08,Wool Sweater,Clothing,2,149.83,0.05,Europe,Home Office
+3369,2025-06-08,iPad Pro,Electronics,2,893.33,0.2,North America,Corporate
+3370,2025-06-08,Standing Desk,Home,1,53.48,0.2,Europe,Home Office
+3371,2025-06-08,Running Shoes,Clothing,3,47.65,0.0,APAC,Home Office
+3372,2025-06-08,Coffee Maker,Home,2,178.09,0.0,LATAM,Corporate
+3373,2025-06-08,Yoga Mat,Sports,4,94.05,0.15,Europe,Premium
+3374,2025-06-08,Coffee Maker,Home,2,84.27,0.1,APAC,Corporate
+3375,2025-06-08,Yoga Mat,Sports,1,141.86,0.0,LATAM,Corporate
+3376,2025-06-08,Dumbbell Set,Sports,2,99.34,0.1,LATAM,Consumer
+3377,2025-06-08,Sleeping Bag,Sports,1,75.81,0.0,LATAM,Premium
+3378,2025-06-08,Standing Desk,Home,3,104.87,0.2,North America,Premium
+3379,2025-06-09,Sleeping Bag,Sports,4,69.59,0.05,LATAM,Home Office
+3380,2025-06-09,Leather Jacket,Clothing,4,143.38,0.15,APAC,Consumer
+3381,2025-06-09,Yoga Mat,Sports,2,114.05,0.05,North America,Home Office
+3382,2025-06-09,Wool Sweater,Clothing,1,105.64,0.0,LATAM,Consumer
+3383,2025-06-09,Bluetooth Speaker,Electronics,3,799.68,0.2,APAC,Home Office
+3384,2025-06-09,iPad Pro,Electronics,3,509.01,0.05,APAC,Premium
+3385,2025-06-09,LED Desk Lamp,Home,4,96.67,0.0,LATAM,Corporate
+3386,2025-06-09,Denim Jeans,Clothing,1,52.2,0.0,LATAM,Premium
+3387,2025-06-09,Wool Sweater,Clothing,3,71.07,0.0,APAC,Premium
+3388,2025-06-09,Running Shoes,Clothing,1,32.74,0.0,North America,Corporate
+3389,2025-06-09,Cotton T-Shirt,Clothing,3,72.7,0.1,North America,Premium
+3390,2025-06-09,Denim Jeans,Clothing,3,97.47,0.05,LATAM,Consumer
+3391,2025-06-09,iPhone 15,Electronics,1,468.58,0.0,North America,Premium
+3392,2025-06-10,Denim Jeans,Clothing,1,61.55,0.05,North America,Corporate
+3393,2025-06-10,Ergonomic Chair,Home,3,219.54,0.2,LATAM,Consumer
+3394,2025-06-10,Camping Tent,Sports,4,108.93,0.0,APAC,Consumer
+3395,2025-06-10,Coffee Maker,Home,1,182.77,0.2,North America,Consumer
+3396,2025-06-10,Leather Jacket,Clothing,4,46.24,0.0,APAC,Home Office
+3397,2025-06-10,Dumbbell Set,Sports,3,178.87,0.2,LATAM,Premium
+3398,2025-06-10,Yoga Mat,Sports,2,32.67,0.15,Europe,Corporate
+3399,2025-06-10,Air Purifier,Home,2,154.55,0.2,APAC,Home Office
+3400,2025-06-10,Leather Jacket,Clothing,3,145.29,0.0,LATAM,Corporate
+3401,2025-06-10,Denim Jeans,Clothing,1,84.86,0.1,North America,Home Office
+3402,2025-06-10,Dumbbell Set,Sports,2,48.06,0.0,Europe,Premium
+3403,2025-06-10,Camping Tent,Sports,3,187.47,0.05,LATAM,Consumer
+3404,2025-06-11,Air Purifier,Home,2,346.38,0.05,Europe,Corporate
+3405,2025-06-11,Dumbbell Set,Sports,1,77.65,0.1,APAC,Corporate
+3406,2025-06-11,Yoga Mat,Sports,1,157.84,0.0,Europe,Premium
+3407,2025-06-11,Yoga Mat,Sports,1,190.49,0.2,APAC,Corporate
+3408,2025-06-11,Denim Jeans,Clothing,1,135.59,0.2,Europe,Premium
+3409,2025-06-11,iPad Pro,Electronics,2,1159.06,0.1,LATAM,Consumer
+3410,2025-06-11,Dumbbell Set,Sports,1,18.27,0.0,LATAM,Corporate
+3411,2025-06-11,Denim Jeans,Clothing,4,35.47,0.0,Europe,Corporate
+3412,2025-06-11,Camping Tent,Sports,4,92.69,0.15,LATAM,Home Office
+3413,2025-06-11,iPad Pro,Electronics,4,265.18,0.0,LATAM,Corporate
+3414,2025-06-11,Sleeping Bag,Sports,2,135.73,0.0,LATAM,Consumer
+3415,2025-06-11,Tennis Racket,Sports,4,103.46,0.2,APAC,Home Office
+3416,2025-06-11,Denim Jeans,Clothing,1,98.57,0.1,APAC,Consumer
+3417,2025-06-11,Cotton T-Shirt,Clothing,3,114.14,0.15,Europe,Premium
+3418,2025-06-11,Camping Tent,Sports,3,101.28,0.0,North America,Premium
+3419,2025-06-11,Standing Desk,Home,2,362.3,0.1,LATAM,Premium
+3420,2025-06-11,MacBook Air,Electronics,2,431.2,0.1,Europe,Home Office
+3421,2025-06-11,Leather Jacket,Clothing,4,83.24,0.15,LATAM,Consumer
+3422,2025-06-12,Running Shoes,Clothing,4,77.25,0.05,North America,Corporate
+3423,2025-06-12,Air Purifier,Home,2,183.43,0.0,LATAM,Consumer
+3424,2025-06-12,Wool Sweater,Clothing,2,71.86,0.05,APAC,Corporate
+3425,2025-06-12,Camping Tent,Sports,3,188.27,0.0,APAC,Consumer
+3426,2025-06-12,MacBook Air,Electronics,2,802.77,0.15,LATAM,Corporate
+3427,2025-06-12,MacBook Air,Electronics,2,1017.55,0.0,North America,Consumer
+3428,2025-06-12,Denim Jeans,Clothing,1,57.32,0.1,Europe,Premium
+3429,2025-06-12,Camping Tent,Sports,2,104.88,0.0,APAC,Home Office
+3430,2025-06-12,Denim Jeans,Clothing,1,93.44,0.2,LATAM,Home Office
+3431,2025-06-12,Bluetooth Speaker,Electronics,3,664.53,0.0,North America,Home Office
+3432,2025-06-12,iPhone 15,Electronics,2,306.22,0.0,LATAM,Corporate
+3433,2025-06-13,Yoga Mat,Sports,1,27.77,0.0,APAC,Corporate
+3434,2025-06-13,Smartwatch Ultra,Electronics,1,534.76,0.2,North America,Home Office
+3435,2025-06-13,Ergonomic Chair,Home,3,239.99,0.2,North America,Home Office
+3436,2025-06-13,Coffee Maker,Home,4,315.13,0.0,North America,Home Office
+3437,2025-06-13,Coffee Maker,Home,4,264.8,0.05,Europe,Home Office
+3438,2025-06-13,Air Purifier,Home,4,299.98,0.05,Europe,Premium
+3439,2025-06-13,Ergonomic Chair,Home,3,94.75,0.1,North America,Premium
+3440,2025-06-13,Standing Desk,Home,2,55.72,0.2,APAC,Premium
+3441,2025-06-13,MacBook Air,Electronics,3,202.81,0.0,Europe,Premium
+3442,2025-06-13,MacBook Air,Electronics,3,826.4,0.05,North America,Premium
+3443,2025-06-13,Ergonomic Chair,Home,1,255.94,0.0,LATAM,Corporate
+3444,2025-06-13,Wool Sweater,Clothing,1,124.23,0.0,LATAM,Home Office
+3445,2025-06-13,Coffee Maker,Home,3,235.19,0.2,North America,Corporate
+3446,2025-06-13,iPad Pro,Electronics,4,1011.37,0.2,Europe,Home Office
+3447,2025-06-13,Smartwatch Ultra,Electronics,2,718.25,0.0,APAC,Home Office
+3448,2025-06-13,Cotton T-Shirt,Clothing,4,49.62,0.2,LATAM,Corporate
+3449,2025-06-13,Wool Sweater,Clothing,4,123.04,0.0,LATAM,Home Office
+3450,2025-06-14,Bluetooth Speaker,Electronics,4,1132.56,0.0,North America,Consumer
+3451,2025-06-14,Camping Tent,Sports,1,181.72,0.0,North America,Home Office
+3452,2025-06-14,iPad Pro,Electronics,2,424.59,0.0,Europe,Corporate
+3453,2025-06-14,iPhone 15,Electronics,3,247.86,0.0,APAC,Consumer
+3454,2025-06-14,Ergonomic Chair,Home,1,218.03,0.0,LATAM,Premium
+3455,2025-06-14,Cotton T-Shirt,Clothing,3,66.9,0.0,Europe,Consumer
+3456,2025-06-14,Wool Sweater,Clothing,2,34.8,0.0,Europe,Corporate
+3457,2025-06-14,MacBook Air,Electronics,1,217.23,0.0,Europe,Consumer
+3458,2025-06-14,iPad Pro,Electronics,2,1190.27,0.0,LATAM,Home Office
+3459,2025-06-14,Yoga Mat,Sports,2,39.07,0.0,Europe,Consumer
+3460,2025-06-15,Sleeping Bag,Sports,2,150.83,0.1,LATAM,Home Office
+3461,2025-06-15,Tennis Racket,Sports,1,186.83,0.2,LATAM,Corporate
+3462,2025-06-15,Standing Desk,Home,2,385.22,0.1,APAC,Consumer
+3463,2025-06-15,Yoga Mat,Sports,1,19.11,0.0,LATAM,Premium
+3464,2025-06-15,Wool Sweater,Clothing,2,94.5,0.0,Europe,Home Office
+3465,2025-06-15,Running Shoes,Clothing,3,102.32,0.2,APAC,Corporate
+3466,2025-06-15,Camping Tent,Sports,3,174.99,0.0,APAC,Consumer
+3467,2025-06-15,iPad Pro,Electronics,3,223.61,0.05,LATAM,Premium
+3468,2025-06-15,iPhone 15,Electronics,2,462.13,0.0,LATAM,Home Office
+3469,2025-06-15,Yoga Mat,Sports,2,172.9,0.05,LATAM,Home Office
+3470,2025-06-16,Wool Sweater,Clothing,2,57.69,0.2,Europe,Corporate
+3471,2025-06-16,Standing Desk,Home,2,167.75,0.15,North America,Premium
+3472,2025-06-16,iPad Pro,Electronics,2,364.75,0.1,North America,Corporate
+3473,2025-06-16,Yoga Mat,Sports,1,196.49,0.1,North America,Home Office
+3474,2025-06-16,Leather Jacket,Clothing,3,140.14,0.2,LATAM,Corporate
+3475,2025-06-16,Dumbbell Set,Sports,2,106.97,0.0,APAC,Consumer
+3476,2025-06-16,Denim Jeans,Clothing,1,69.44,0.0,LATAM,Home Office
+3477,2025-06-16,LED Desk Lamp,Home,1,84.44,0.0,North America,Premium
+3478,2025-06-16,Sleeping Bag,Sports,4,131.83,0.0,North America,Home Office
+3479,2025-06-16,Tennis Racket,Sports,1,23.53,0.05,APAC,Consumer
+3480,2025-06-17,iPhone 15,Electronics,3,528.37,0.1,LATAM,Consumer
+3481,2025-06-17,Bluetooth Speaker,Electronics,4,728.66,0.2,North America,Home Office
+3482,2025-06-17,Tennis Racket,Sports,2,94.49,0.05,Europe,Home Office
+3483,2025-06-17,Camping Tent,Sports,4,181.67,0.0,North America,Home Office
+3484,2025-06-17,Running Shoes,Clothing,4,86.01,0.1,APAC,Premium
+3485,2025-06-17,Cotton T-Shirt,Clothing,2,132.92,0.0,APAC,Premium
+3486,2025-06-17,Air Purifier,Home,3,258.08,0.05,North America,Corporate
+3487,2025-06-17,Yoga Mat,Sports,4,111.9,0.0,APAC,Home Office
+3488,2025-06-17,iPhone 15,Electronics,3,572.83,0.2,North America,Premium
+3489,2025-06-17,Yoga Mat,Sports,2,17.07,0.0,LATAM,Home Office
+3490,2025-06-17,Wool Sweater,Clothing,1,122.63,0.15,Europe,Premium
+3491,2025-06-17,Running Shoes,Clothing,1,107.53,0.0,North America,Consumer
+3492,2025-06-17,Camping Tent,Sports,1,105.18,0.1,Europe,Premium
+3493,2025-06-17,Wool Sweater,Clothing,2,136.09,0.0,Europe,Corporate
+3494,2025-06-17,Cotton T-Shirt,Clothing,4,67.01,0.2,North America,Corporate
+3495,2025-06-18,Sleeping Bag,Sports,1,135.09,0.0,LATAM,Consumer
+3496,2025-06-18,iPhone 15,Electronics,2,982.31,0.05,Europe,Premium
+3497,2025-06-18,iPhone 15,Electronics,3,306.26,0.0,LATAM,Consumer
+3498,2025-06-18,Cotton T-Shirt,Clothing,4,61.41,0.15,APAC,Consumer
+3499,2025-06-18,Cotton T-Shirt,Clothing,2,130.43,0.05,APAC,Home Office
+3500,2025-06-18,Leather Jacket,Clothing,1,143.02,0.0,APAC,Home Office
+3501,2025-06-18,Camping Tent,Sports,4,45.63,0.05,LATAM,Consumer
+3502,2025-06-18,Wool Sweater,Clothing,2,90.42,0.0,APAC,Consumer
+3503,2025-06-18,Tennis Racket,Sports,4,175.45,0.0,LATAM,Home Office
+3504,2025-06-18,Air Purifier,Home,1,382.43,0.15,APAC,Consumer
+3505,2025-06-18,Cotton T-Shirt,Clothing,4,105.11,0.2,Europe,Corporate
+3506,2025-06-18,Air Purifier,Home,4,179.35,0.0,APAC,Corporate
+3507,2025-06-18,Coffee Maker,Home,3,153.32,0.0,Europe,Corporate
+3508,2025-06-19,Leather Jacket,Clothing,3,111.84,0.15,APAC,Home Office
+3509,2025-06-19,Sleeping Bag,Sports,2,67.02,0.15,Europe,Premium
+3510,2025-06-19,LED Desk Lamp,Home,3,224.49,0.0,Europe,Home Office
+3511,2025-06-19,Dumbbell Set,Sports,1,127.29,0.15,North America,Premium
+3512,2025-06-19,Ergonomic Chair,Home,3,340.15,0.05,APAC,Consumer
+3513,2025-06-19,Standing Desk,Home,2,338.23,0.0,North America,Home Office
+3514,2025-06-19,MacBook Air,Electronics,2,431.56,0.0,LATAM,Premium
+3515,2025-06-19,Air Purifier,Home,3,290.17,0.05,APAC,Premium
+3516,2025-06-19,Wool Sweater,Clothing,2,120.1,0.05,LATAM,Home Office
+3517,2025-06-19,Tennis Racket,Sports,3,112.69,0.2,LATAM,Premium
+3518,2025-06-19,Sleeping Bag,Sports,3,85.85,0.0,APAC,Home Office
+3519,2025-06-19,MacBook Air,Electronics,3,254.53,0.0,LATAM,Premium
+3520,2025-06-19,iPhone 15,Electronics,2,454.37,0.0,LATAM,Corporate
+3521,2025-06-19,iPad Pro,Electronics,3,578.52,0.0,LATAM,Home Office
+3522,2025-06-19,Air Purifier,Home,1,135.03,0.1,North America,Consumer
+3523,2025-06-19,LED Desk Lamp,Home,1,159.11,0.0,North America,Home Office
+3524,2025-06-19,Standing Desk,Home,1,238.71,0.2,North America,Corporate
+3525,2025-06-20,Wool Sweater,Clothing,3,50.04,0.1,LATAM,Consumer
+3526,2025-06-20,Tennis Racket,Sports,2,88.44,0.1,Europe,Premium
+3527,2025-06-20,Tennis Racket,Sports,3,150.8,0.0,APAC,Consumer
+3528,2025-06-20,Cotton T-Shirt,Clothing,1,137.09,0.2,APAC,Corporate
+3529,2025-06-20,Coffee Maker,Home,2,289.7,0.0,North America,Consumer
+3530,2025-06-20,Camping Tent,Sports,4,183.84,0.2,Europe,Premium
+3531,2025-06-20,Running Shoes,Clothing,2,44.95,0.1,APAC,Corporate
+3532,2025-06-20,iPad Pro,Electronics,1,1089.99,0.0,Europe,Consumer
+3533,2025-06-20,Dumbbell Set,Sports,4,47.33,0.15,North America,Consumer
+3534,2025-06-20,Standing Desk,Home,3,235.08,0.1,North America,Consumer
+3535,2025-06-20,Camping Tent,Sports,1,72.09,0.2,Europe,Premium
+3536,2025-06-20,MacBook Air,Electronics,2,696.77,0.0,Europe,Premium
+3537,2025-06-20,Coffee Maker,Home,3,344.7,0.05,Europe,Consumer
+3538,2025-06-20,Camping Tent,Sports,2,40.1,0.2,Europe,Consumer
+3539,2025-06-20,Dumbbell Set,Sports,4,33.99,0.05,North America,Consumer
+3540,2025-06-20,Leather Jacket,Clothing,1,45.04,0.1,LATAM,Home Office
+3541,2025-06-20,Air Purifier,Home,2,144.63,0.0,LATAM,Consumer
+3542,2025-06-21,LED Desk Lamp,Home,2,390.09,0.05,North America,Corporate
+3543,2025-06-21,Tennis Racket,Sports,3,48.17,0.05,APAC,Consumer
+3544,2025-06-21,Ergonomic Chair,Home,4,116.25,0.0,APAC,Corporate
+3545,2025-06-21,Standing Desk,Home,3,175.91,0.2,North America,Corporate
+3546,2025-06-21,Sleeping Bag,Sports,4,138.16,0.0,LATAM,Corporate
+3547,2025-06-21,iPhone 15,Electronics,3,723.81,0.0,Europe,Consumer
+3548,2025-06-21,Air Purifier,Home,2,390.97,0.05,APAC,Home Office
+3549,2025-06-21,iPhone 15,Electronics,1,455.07,0.1,North America,Home Office
+3550,2025-06-21,iPhone 15,Electronics,2,441.56,0.15,LATAM,Consumer
+3551,2025-06-21,Yoga Mat,Sports,3,144.93,0.0,LATAM,Consumer
+3552,2025-06-22,MacBook Air,Electronics,2,550.28,0.05,North America,Corporate
+3553,2025-06-22,Running Shoes,Clothing,1,93.16,0.0,North America,Home Office
+3554,2025-06-22,Sleeping Bag,Sports,1,163.37,0.05,Europe,Corporate
+3555,2025-06-22,Ergonomic Chair,Home,2,162.56,0.15,North America,Home Office
+3556,2025-06-22,iPhone 15,Electronics,2,897.42,0.05,Europe,Corporate
+3557,2025-06-22,Coffee Maker,Home,1,286.42,0.1,Europe,Home Office
+3558,2025-06-22,Sleeping Bag,Sports,1,179.5,0.0,Europe,Home Office
+3559,2025-06-22,MacBook Air,Electronics,1,805.26,0.05,Europe,Corporate
+3560,2025-06-22,Wool Sweater,Clothing,1,54.16,0.1,LATAM,Premium
+3561,2025-06-22,LED Desk Lamp,Home,2,366.59,0.15,Europe,Consumer
+3562,2025-06-23,LED Desk Lamp,Home,2,282.59,0.0,North America,Corporate
+3563,2025-06-23,iPhone 15,Electronics,1,452.8,0.2,North America,Premium
+3564,2025-06-23,MacBook Air,Electronics,3,239.85,0.0,Europe,Home Office
+3565,2025-06-23,Smartwatch Ultra,Electronics,2,913.12,0.05,North America,Premium
+3566,2025-06-23,Bluetooth Speaker,Electronics,1,1057.72,0.0,Europe,Premium
+3567,2025-06-23,Yoga Mat,Sports,3,176.35,0.0,North America,Home Office
+3568,2025-06-23,Running Shoes,Clothing,3,136.67,0.15,LATAM,Corporate
+3569,2025-06-23,Leather Jacket,Clothing,4,84.53,0.15,North America,Premium
+3570,2025-06-23,Running Shoes,Clothing,2,123.48,0.0,APAC,Premium
+3571,2025-06-23,Tennis Racket,Sports,4,79.02,0.0,LATAM,Premium
+3572,2025-06-23,Cotton T-Shirt,Clothing,3,59.7,0.0,LATAM,Corporate
+3573,2025-06-23,Dumbbell Set,Sports,1,124.37,0.0,Europe,Consumer
+3574,2025-06-23,Wool Sweater,Clothing,4,143.03,0.1,LATAM,Consumer
+3575,2025-06-23,LED Desk Lamp,Home,3,358.28,0.0,APAC,Premium
+3576,2025-06-23,Sleeping Bag,Sports,4,95.85,0.15,Europe,Consumer
+3577,2025-06-24,iPhone 15,Electronics,4,701.36,0.0,Europe,Home Office
+3578,2025-06-24,LED Desk Lamp,Home,4,319.11,0.0,LATAM,Consumer
+3579,2025-06-24,Standing Desk,Home,1,285.21,0.0,North America,Premium
+3580,2025-06-24,Cotton T-Shirt,Clothing,3,45.87,0.0,LATAM,Home Office
+3581,2025-06-24,iPad Pro,Electronics,4,411.05,0.0,Europe,Premium
+3582,2025-06-24,Camping Tent,Sports,1,63.97,0.05,North America,Corporate
+3583,2025-06-24,LED Desk Lamp,Home,3,59.0,0.0,North America,Home Office
+3584,2025-06-24,Leather Jacket,Clothing,1,34.0,0.0,Europe,Consumer
+3585,2025-06-24,Running Shoes,Clothing,2,120.28,0.0,LATAM,Home Office
+3586,2025-06-24,Bluetooth Speaker,Electronics,2,1097.74,0.2,Europe,Consumer
+3587,2025-06-24,Camping Tent,Sports,2,49.64,0.15,LATAM,Premium
+3588,2025-06-24,Leather Jacket,Clothing,1,59.35,0.0,Europe,Corporate
+3589,2025-06-24,Standing Desk,Home,3,248.92,0.15,North America,Corporate
+3590,2025-06-25,iPad Pro,Electronics,3,893.04,0.1,Europe,Consumer
+3591,2025-06-25,Dumbbell Set,Sports,3,94.74,0.15,LATAM,Consumer
+3592,2025-06-25,Ergonomic Chair,Home,4,365.66,0.1,North America,Home Office
+3593,2025-06-25,Coffee Maker,Home,3,189.44,0.15,Europe,Premium
+3594,2025-06-25,MacBook Air,Electronics,4,638.78,0.05,North America,Consumer
+3595,2025-06-25,Wool Sweater,Clothing,3,125.14,0.05,APAC,Consumer
+3596,2025-06-25,Denim Jeans,Clothing,1,87.89,0.2,Europe,Corporate
+3597,2025-06-25,Air Purifier,Home,3,113.32,0.0,LATAM,Consumer
+3598,2025-06-25,Standing Desk,Home,1,182.78,0.1,APAC,Corporate
+3599,2025-06-25,iPhone 15,Electronics,4,1009.24,0.2,North America,Corporate
+3600,2025-06-25,Standing Desk,Home,4,190.14,0.2,North America,Home Office
+3601,2025-06-25,Sleeping Bag,Sports,3,186.34,0.2,APAC,Home Office
+3602,2025-06-25,iPhone 15,Electronics,2,1165.79,0.2,North America,Consumer
+3603,2025-06-26,Dumbbell Set,Sports,4,185.45,0.1,Europe,Corporate
+3604,2025-06-26,Standing Desk,Home,3,293.36,0.0,Europe,Home Office
+3605,2025-06-26,Denim Jeans,Clothing,4,59.8,0.1,North America,Consumer
+3606,2025-06-26,Standing Desk,Home,2,51.25,0.05,North America,Consumer
+3607,2025-06-26,Wool Sweater,Clothing,1,142.0,0.2,North America,Premium
+3608,2025-06-26,Leather Jacket,Clothing,3,65.84,0.05,APAC,Home Office
+3609,2025-06-26,iPhone 15,Electronics,2,874.86,0.0,LATAM,Premium
+3610,2025-06-26,Air Purifier,Home,1,361.7,0.2,LATAM,Corporate
+3611,2025-06-26,Wool Sweater,Clothing,3,67.45,0.0,APAC,Premium
+3612,2025-06-26,Smartwatch Ultra,Electronics,4,739.91,0.0,LATAM,Corporate
+3613,2025-06-26,Leather Jacket,Clothing,1,109.16,0.2,Europe,Home Office
+3614,2025-06-26,iPhone 15,Electronics,3,251.19,0.2,LATAM,Consumer
+3615,2025-06-26,LED Desk Lamp,Home,4,330.87,0.0,APAC,Consumer
+3616,2025-06-26,iPad Pro,Electronics,4,318.72,0.0,LATAM,Corporate
+3617,2025-06-26,Camping Tent,Sports,3,142.67,0.0,Europe,Home Office
+3618,2025-06-26,Wool Sweater,Clothing,1,137.34,0.0,North America,Corporate
+3619,2025-06-26,Ergonomic Chair,Home,3,150.92,0.0,North America,Consumer
+3620,2025-06-26,Dumbbell Set,Sports,2,105.62,0.15,APAC,Consumer
+3621,2025-06-26,Yoga Mat,Sports,2,190.65,0.0,APAC,Premium
+3622,2025-06-27,Wool Sweater,Clothing,4,132.24,0.0,Europe,Home Office
+3623,2025-06-27,Leather Jacket,Clothing,3,106.35,0.15,APAC,Home Office
+3624,2025-06-27,Tennis Racket,Sports,3,17.14,0.2,North America,Corporate
+3625,2025-06-27,Leather Jacket,Clothing,3,36.02,0.05,APAC,Consumer
+3626,2025-06-27,Camping Tent,Sports,3,143.19,0.0,North America,Corporate
+3627,2025-06-27,Tennis Racket,Sports,4,87.63,0.0,LATAM,Home Office
+3628,2025-06-27,Smartwatch Ultra,Electronics,2,516.49,0.0,Europe,Home Office
+3629,2025-06-27,Running Shoes,Clothing,1,98.41,0.0,North America,Consumer
+3630,2025-06-27,Air Purifier,Home,4,290.3,0.1,LATAM,Consumer
+3631,2025-06-27,Ergonomic Chair,Home,3,111.5,0.05,North America,Premium
+3632,2025-06-27,Leather Jacket,Clothing,1,35.48,0.15,LATAM,Corporate
+3633,2025-06-27,Standing Desk,Home,2,208.98,0.0,North America,Corporate
+3634,2025-06-28,Smartwatch Ultra,Electronics,3,999.57,0.0,LATAM,Corporate
+3635,2025-06-28,Tennis Racket,Sports,4,48.7,0.2,APAC,Consumer
+3636,2025-06-28,Cotton T-Shirt,Clothing,2,111.91,0.0,North America,Corporate
+3637,2025-06-28,iPad Pro,Electronics,2,1142.51,0.0,LATAM,Consumer
+3638,2025-06-28,Denim Jeans,Clothing,4,43.76,0.0,Europe,Home Office
+3639,2025-06-28,Bluetooth Speaker,Electronics,3,359.2,0.1,Europe,Home Office
+3640,2025-06-28,Sleeping Bag,Sports,4,197.61,0.2,APAC,Consumer
+3641,2025-06-28,Denim Jeans,Clothing,2,85.54,0.05,LATAM,Premium
+3642,2025-06-28,Sleeping Bag,Sports,1,100.11,0.05,Europe,Consumer
+3643,2025-06-28,Leather Jacket,Clothing,3,131.69,0.0,APAC,Corporate
+3644,2025-06-28,Cotton T-Shirt,Clothing,4,112.98,0.2,LATAM,Corporate
+3645,2025-06-28,Tennis Racket,Sports,3,196.04,0.15,Europe,Consumer
+3646,2025-06-29,Yoga Mat,Sports,2,104.01,0.15,APAC,Corporate
+3647,2025-06-29,Bluetooth Speaker,Electronics,3,452.27,0.05,LATAM,Home Office
+3648,2025-06-29,LED Desk Lamp,Home,2,260.95,0.0,LATAM,Premium
+3649,2025-06-29,LED Desk Lamp,Home,3,377.99,0.15,APAC,Corporate
+3650,2025-06-29,iPhone 15,Electronics,2,425.47,0.15,Europe,Consumer
+3651,2025-06-29,Smartwatch Ultra,Electronics,4,616.8,0.1,LATAM,Consumer
+3652,2025-06-29,Coffee Maker,Home,3,240.93,0.0,LATAM,Consumer
+3653,2025-06-29,Leather Jacket,Clothing,1,70.0,0.2,North America,Corporate
+3654,2025-06-29,Tennis Racket,Sports,3,74.18,0.0,North America,Consumer
+3655,2025-06-29,Ergonomic Chair,Home,1,278.0,0.2,LATAM,Home Office
+3656,2025-06-29,LED Desk Lamp,Home,2,111.05,0.2,Europe,Home Office
+3657,2025-06-29,Dumbbell Set,Sports,2,166.41,0.15,Europe,Home Office
+3658,2025-06-29,Sleeping Bag,Sports,4,131.92,0.0,APAC,Corporate
+3659,2025-06-29,Air Purifier,Home,4,246.52,0.15,LATAM,Corporate
