@@ -34,7 +34,11 @@ RUN pip install --no-cache-dir --upgrade pip && \
     "openpyxl>=3.1.5" \
     "pymongo>=4.17.0" \
     "sqlalchemy>=2.0.50" \
-    "httpx>=0.24.0"
+    "httpx>=0.24.0" \
+    "openai>=1.0.0" \
+    "matplotlib>=3.7.0" \
+    "seaborn>=0.12.0" \
+    "python-multipart>=0.0.6"
 
 # Copy the rest of the application files
 COPY . /app/

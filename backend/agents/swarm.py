@@ -65,6 +65,8 @@ Write a standard SQL SELECT query compatible with PostgreSQL/DuckDB.
 - Use standard SQL syntax.
 - Ensure only SELECT queries are generated.
 - For limiting results or finding the top record, ALWAYS use standard "LIMIT N" (e.g. "ORDER BY revenue DESC LIMIT 1"). NEVER use "TOP N" or "SELECT TOP 1" which are syntax errors in PostgreSQL/DuckDB.
+- STRICT GROUP BY RULES: If your SELECT clause contains aggregate functions (e.g., COUNT, SUM, AVG, MIN, MAX), you CANNOT select individual un-aggregated columns (like unit_price, discount) unless those columns are explicitly listed in a GROUP BY clause, or you turn the aggregates into window functions using "OVER ()" (e.g., "AVG(val) OVER ()").
+- STRICT QUANTILE RULES: When calculating percentiles/quantiles, DuckDB's "QUANTILE" or "QUANTILE_CONT" functions require a fraction between 0 and 1. Use 0.9 for 90th percentile, 0.5 for median/50th percentile, etc. NEVER pass values like 90 or 50.
 - Limit the query to return at most 50 rows.
 - Return ONLY the raw SQL string, with no markdown code blocks or explanations.
 """

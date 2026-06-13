@@ -61,6 +61,13 @@ from backend.agents.swarm import SwarmOrchestrator
 
 app = FastAPI(title="Enterprise SQL Data Analyst Swarm API")
 
+@app.get("/")
+@app.head("/")
+@app.get("/healthz")
+@app.head("/healthz")
+async def health_check():
+    return {"status": "healthy", "service": "SwarmAnalyst API"}
+
 SERVICE_NAME = "SwarmAnalyst"
 KEY_USER = "NvidiaNimApiKey"
 KEY_TIMESTAMP_USER = "NvidiaNimApiKeyTimestamp"
@@ -352,6 +359,13 @@ async def websocket_swarm_endpoint(websocket: WebSocket):
                 chat_history=chat_history
             )
             
+            # Resolve dashboard URL dynamically matching client connection host
+            dashboard_url = result.get("dashboard_url", "")
+            if dashboard_url and "localhost:8002" in dashboard_url:
+                scheme = "https" if websocket.url.scheme == "wss" else "http"
+                base_url = f"{scheme}://{websocket.url.netloc}"
+                dashboard_url = dashboard_url.replace("http://localhost:8002", base_url)
+
             # 4. Return success result
             from fastapi.encoders import jsonable_encoder
             await websocket.send_json(jsonable_encoder({
@@ -359,7 +373,7 @@ async def websocket_swarm_endpoint(websocket: WebSocket):
                 "report": result["report"],
                 "visualization": result["visualization"],
                 "history": result["history"],
-                "dashboard_url": result.get("dashboard_url", "")
+                "dashboard_url": dashboard_url
             }))
             
         except Exception as e:
