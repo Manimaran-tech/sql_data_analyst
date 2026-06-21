@@ -1,12 +1,12 @@
 import json
 import logging
 from typing import List, Dict, Any, Callable, Tuple, Optional
-from backend.agents.nim_client import NimClient
+from backend.agents.llm_client import LLMClient
 from backend.adapters.base import BaseDbAdapter
 
 class SwarmAgent:
     """Base class for all Swarm Agents."""
-    def __init__(self, nim_client: NimClient):
+    def __init__(self, nim_client: LLMClient):
         self.nim = nim_client
 
 class SchemaAnalystAgent(SwarmAgent):
@@ -222,6 +222,8 @@ Formulate investigative sub-tasks or hypotheses to explore the data. The NUMBER 
 Each sub-task should target a DIFFERENT analytical dimension — avoid redundant queries. Consider dimensions like:
   trends over time, category breakdowns, correlations, distributions, outliers, comparisons, top/bottom rankings, segment analysis.
 
+CRITICAL: DO NOT break a single query down into logical steps (e.g. do not output "1. filter", "2. group", "3. sort"). Each sub-task MUST be a fully independent business question that can be answered with a single standalone query.
+
 Only include sub-tasks that the database schema can actually support. Do NOT generate sub-tasks for data that doesn't exist in the schema.
 
 Provide these hypotheses as a JSON list of strings.
@@ -379,7 +381,7 @@ class SwarmOrchestrator:
     """
     Main Orchestrator to execute the Swarm workflow.
     """
-    def __init__(self, nim_client: NimClient):
+    def __init__(self, nim_client: LLMClient):
         self.schema_agent = SchemaAnalystAgent(nim_client)
         self.writer_agent = QueryWriterAgent(nim_client)
         self.qa_agent = QAEvaluatorAgent(nim_client)

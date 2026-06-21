@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { API_BASE_URL } from '../config';
-import { Settings as SettingsIcon, ShieldCheck, Cpu, Sliders, Zap, Lock } from 'lucide-react';
+import { Settings as SettingsIcon, ShieldCheck, Cpu, Sliders, Zap, Lock, Globe } from 'lucide-react';
 
 interface SettingsProps {
   activeModel: string;
@@ -9,7 +9,65 @@ interface SettingsProps {
   setTemperature: (temp: number) => void;
   pacing: 'instant' | 'normal' | 'fast';
   setPacing: (pacing: 'instant' | 'normal' | 'fast') => void;
+  llmProvider: string;
+  setLlmProvider: (provider: string) => void;
 }
+
+// Provider definitions with their default models
+const LLM_PROVIDERS = [
+  {
+    id: 'nvidia',
+    name: 'NVIDIA NIM',
+    badge: 'DEFAULT',
+    badgeColor: 'bg-emerald-50 dark:bg-emerald-950/25 text-emerald-600 dark:text-emerald-400 border-emerald-200 dark:border-emerald-900/40',
+    description: 'NVIDIA Inference Microservices — optimized Llama and Nemotron models with enterprise-grade inference.',
+    keyPlaceholder: 'nvapi-...',
+    models: [
+      { id: 'nvidia/llama-3.3-nemotron-super-49b-v1', name: 'nemotron-super-49b', badge: 'RECOMMENDED', badgeColor: 'bg-emerald-50 dark:bg-emerald-950/25 text-emerald-600 dark:text-emerald-400 border-emerald-200 dark:border-emerald-900/40', description: 'Active Nemotron-powered model. Superior business logic with high-speed query synthesis.' },
+      { id: 'meta/llama-3.3-70b-instruct', name: 'llama-3.3-70b', badge: 'PRO_POWER', badgeColor: 'bg-blue-50 dark:bg-blue-950/25 text-blue-600 dark:text-blue-400 border-blue-200 dark:border-blue-900/40', description: 'Maximizes cognitive capability and reasoning depth on larger datasets.' },
+      { id: 'nvidia/llama-3.1-nemotron-nano-8b-v1', name: 'nemotron-nano-8b', badge: 'LIGHTWEIGHT', badgeColor: 'bg-slate-100 dark:bg-zinc-800 text-slate-600 dark:text-zinc-400 border-slate-200 dark:border-zinc-800', description: 'Sub-second response processing. Fast reasoning and low credit consumption.' },
+    ]
+  },
+  {
+    id: 'openai',
+    name: 'OpenAI',
+    badge: 'POPULAR',
+    badgeColor: 'bg-blue-50 dark:bg-blue-950/25 text-blue-600 dark:text-blue-400 border-blue-200 dark:border-blue-900/40',
+    description: 'GPT-4o, GPT-4.1, and o-series reasoning models from OpenAI.',
+    keyPlaceholder: 'sk-...',
+    models: [
+      { id: 'gpt-4o', name: 'GPT-4o', badge: 'RECOMMENDED', badgeColor: 'bg-emerald-50 dark:bg-emerald-950/25 text-emerald-600 dark:text-emerald-400 border-emerald-200 dark:border-emerald-900/40', description: 'Best balance of speed, intelligence, and cost. Ideal for data analysis tasks.' },
+      { id: 'gpt-4.1', name: 'GPT-4.1', badge: 'LATEST', badgeColor: 'bg-violet-50 dark:bg-violet-950/25 text-violet-600 dark:text-violet-400 border-violet-200 dark:border-violet-900/40', description: 'Latest generation model with improved instruction following and coding.' },
+      { id: 'gpt-4o-mini', name: 'GPT-4o Mini', badge: 'LIGHTWEIGHT', badgeColor: 'bg-slate-100 dark:bg-zinc-800 text-slate-600 dark:text-zinc-400 border-slate-200 dark:border-zinc-800', description: 'Cost-efficient mini model for simpler analytical queries.' },
+    ]
+  },
+  {
+    id: 'anthropic',
+    name: 'Anthropic',
+    badge: 'ADVANCED',
+    badgeColor: 'bg-amber-50 dark:bg-amber-950/25 text-amber-600 dark:text-amber-400 border-amber-200 dark:border-amber-900/40',
+    description: 'Claude 4 and Claude 3.5 models — strong reasoning and nuanced analysis.',
+    keyPlaceholder: 'sk-ant-api...',
+    models: [
+      { id: 'claude-sonnet-4-20250514', name: 'Claude Sonnet 4', badge: 'RECOMMENDED', badgeColor: 'bg-emerald-50 dark:bg-emerald-950/25 text-emerald-600 dark:text-emerald-400 border-emerald-200 dark:border-emerald-900/40', description: 'Latest Claude model. Exceptional analytical reasoning and structured output.' },
+      { id: 'claude-3-5-sonnet-20241022', name: 'Claude 3.5 Sonnet', badge: 'PROVEN', badgeColor: 'bg-blue-50 dark:bg-blue-950/25 text-blue-600 dark:text-blue-400 border-blue-200 dark:border-blue-900/40', description: 'Battle-tested Sonnet model with strong SQL generation capabilities.' },
+      { id: 'claude-3-5-haiku-20241022', name: 'Claude 3.5 Haiku', badge: 'LIGHTWEIGHT', badgeColor: 'bg-slate-100 dark:bg-zinc-800 text-slate-600 dark:text-zinc-400 border-slate-200 dark:border-zinc-800', description: 'Fastest Claude model. Great for high-throughput analytical pipelines.' },
+    ]
+  },
+  {
+    id: 'groq',
+    name: 'Groq',
+    badge: 'ULTRA-FAST',
+    badgeColor: 'bg-rose-50 dark:bg-rose-950/25 text-rose-600 dark:text-rose-400 border-rose-200 dark:border-rose-900/40',
+    description: 'LPU-powered inference — blazing fast Llama and Mixtral models.',
+    keyPlaceholder: 'gsk_...',
+    models: [
+      { id: 'llama-3.3-70b-versatile', name: 'Llama 3.3 70B', badge: 'RECOMMENDED', badgeColor: 'bg-emerald-50 dark:bg-emerald-950/25 text-emerald-600 dark:text-emerald-400 border-emerald-200 dark:border-emerald-900/40', description: 'Most capable Groq model. Strong SQL reasoning at lightning speed.' },
+      { id: 'llama-3.1-8b-instant', name: 'Llama 3.1 8B', badge: 'INSTANT', badgeColor: 'bg-rose-50 dark:bg-rose-950/25 text-rose-600 dark:text-rose-400 border-rose-200 dark:border-rose-900/40', description: 'Near-instant responses. Great for rapid iteration and prototyping.' },
+      { id: 'mixtral-8x7b-32768', name: 'Mixtral 8x7B', badge: 'MoE', badgeColor: 'bg-slate-100 dark:bg-zinc-800 text-slate-600 dark:text-zinc-400 border-slate-200 dark:border-zinc-800', description: 'Mixture-of-Experts architecture. 32K context window for complex analysis.' },
+    ]
+  },
+];
 
 export default function Settings({
   activeModel,
@@ -17,19 +75,19 @@ export default function Settings({
   temperature,
   setTemperature,
   pacing,
-  setPacing
+  setPacing,
+  llmProvider,
+  setLlmProvider
 }: SettingsProps) {
   const [apiKey, setApiKey] = useState('');
   const [hasKey, setHasKey] = useState(false);
   const [expiresInHours, setExpiresInHours] = useState(0);
+
+  const currentProvider = LLM_PROVIDERS.find(p => p.id === llmProvider) || LLM_PROVIDERS[0];
+  const providerModels = currentProvider.models;
+
   const [isCustomMode, setIsCustomMode] = useState(() => {
-    const defaultModels = [
-      'nvidia/llama-3.3-nemotron-super-49b-v1',
-      'meta/llama-3.3-70b-instruct',
-      'nvidia/llama-3.1-nemotron-nano-8b-v1',
-      'meta/llama-3.1-8b-instruct'
-    ];
-    return !defaultModels.includes(activeModel);
+    return !providerModels.some(m => m.id === activeModel);
   });
   const [customModelId, setCustomModelId] = useState(isCustomMode ? activeModel : '');
 
@@ -54,6 +112,17 @@ export default function Settings({
     loadKeyStatus();
   }, []);
 
+  // When provider changes, update the selected model to that provider's default
+  useEffect(() => {
+    const provider = LLM_PROVIDERS.find(p => p.id === llmProvider);
+    if (provider) {
+      const isModelInProvider = provider.models.some(m => m.id === activeModel);
+      if (!isModelInProvider && !isCustomMode) {
+        setActiveModel(provider.models[0].id);
+      }
+    }
+  }, [llmProvider]);
+
   const handleSaveApiKey = async (e: React.MouseEvent) => {
     e.preventDefault();
     if (!apiKey.trim()) return;
@@ -65,7 +134,7 @@ export default function Settings({
       });
       const data = await res.json();
       if (res.ok && data.success) {
-        alert('NVIDIA NIM API Key securely saved in your OS Keyring!');
+        alert(`${currentProvider.name} API Key securely saved in your OS Keyring!`);
         setApiKey('');
         loadKeyStatus();
       } else {
@@ -126,12 +195,46 @@ export default function Settings({
           </div>
         </div>
 
+        {/* LLM Provider Selector */}
+        <div className="space-y-2">
+          <label className="flex items-center gap-1.5 text-[10px] font-extrabold text-slate-700 dark:text-zinc-300 uppercase tracking-widest font-mono">
+            <Globe className="h-3.5 w-3.5 text-slate-400 dark:text-zinc-500" />
+            LLM Provider
+          </label>
+          <p className="text-[10px] text-slate-500 dark:text-zinc-400 font-sans leading-normal">
+            Select your preferred AI inference provider. Each provider requires its own API key.
+          </p>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-2 pt-1">
+            {LLM_PROVIDERS.map((provider) => (
+              <button
+                key={provider.id}
+                onClick={() => setLlmProvider(provider.id)}
+                className={`flex flex-col items-start p-3 rounded-sm border text-left transition-all cursor-pointer ${
+                  llmProvider === provider.id
+                    ? 'border-blue-600 dark:border-blue-500 bg-blue-50/20 dark:bg-blue-950/20 font-bold text-slate-800 dark:text-white'
+                    : 'border-slate-200 dark:border-zinc-800 bg-white dark:bg-zinc-900 hover:bg-slate-50 dark:hover:bg-zinc-800 text-slate-600 dark:text-zinc-300'
+                }`}
+              >
+                <div className="flex items-center gap-2 mb-1">
+                  <span className="text-[10px] font-bold font-mono">{provider.name}</span>
+                  <span className={`text-[8px] font-mono font-bold border px-1 py-0.5 rounded-sm ${provider.badgeColor}`}>
+                    {provider.badge}
+                  </span>
+                </div>
+                <span className="text-[10px] text-slate-500 dark:text-zinc-400 font-sans leading-normal line-clamp-2">
+                  {provider.description}
+                </span>
+              </button>
+            ))}
+          </div>
+        </div>
+
         {/* Credentials Status Message */}
         <div className="bg-slate-50 dark:bg-zinc-950/40 border border-slate-200 dark:border-zinc-800 rounded-sm p-4 space-y-4 text-slate-700 dark:text-zinc-300 transition-colors duration-200">
           <div className="flex justify-between items-center gap-2.5 pb-2 border-b border-slate-200/50 dark:border-zinc-800/50">
             <div className="flex items-center gap-2.5">
               <Lock className="h-4.5 w-4.5 text-blue-600 dark:text-blue-500" />
-              <h4 className="font-bold text-slate-900 dark:text-white uppercase tracking-tight text-[10px]">NVIDIA NIM Credentials Configuration</h4>
+              <h4 className="font-bold text-slate-900 dark:text-white uppercase tracking-tight text-[10px]">{currentProvider.name} API Key</h4>
             </div>
             <div>
               {hasKey ? (
@@ -148,13 +251,13 @@ export default function Settings({
           <div className="space-y-3.5">
             <div className="space-y-1">
               <label className="text-[10px] font-extrabold text-slate-600 dark:text-zinc-400 uppercase tracking-widest font-mono">
-                NVIDIA NIM API Key
+                {currentProvider.name} API Key
               </label>
               <input
                 type="password"
                 value={apiKey}
                 onChange={(e) => setApiKey(e.target.value)}
-                placeholder={hasKey ? `•••••••••••••••••••••••••••••••• (Expires in ${expiresInHours}h)` : "nvapi-..."}
+                placeholder={hasKey ? `•••••••••••••••••••••••••••••••• (Expires in ${expiresInHours}h)` : currentProvider.keyPlaceholder}
                 className="w-full bg-white dark:bg-zinc-950 border border-slate-300 dark:border-zinc-800 hover:border-slate-400 dark:hover:border-zinc-700 focus:border-blue-600 dark:focus:border-blue-500 rounded-sm p-2 text-[11px] outline-none font-mono text-slate-950 dark:text-white transition-all"
               />
             </div>
@@ -192,74 +295,34 @@ export default function Settings({
             Cognitive Language Engine
           </label>
           <p className="text-[10px] text-slate-500 dark:text-zinc-400 font-sans leading-normal">
-            Choose the specific analytical core architecture for Swarm agents.
+            Choose the specific analytical core architecture for Swarm agents via {currentProvider.name}.
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-3 pt-1">
-            {/* option 1: nvidia/llama-3.3-nemotron-super-49b-v1 */}
-            <button
-              onClick={() => handleModelSelect('nvidia/llama-3.3-nemotron-super-49b-v1')}
-              className={`flex flex-col items-start p-3 rounded-sm border text-left transition-all cursor-pointer ${
-                !isCustomMode && activeModel === 'nvidia/llama-3.3-nemotron-super-49b-v1'
-                  ? 'border-blue-600 dark:border-blue-500 bg-blue-50/20 dark:bg-blue-950/20 font-bold text-slate-800 dark:text-white'
-                  : 'border-slate-200 dark:border-zinc-800 bg-white dark:bg-zinc-900 hover:bg-slate-50 dark:hover:bg-zinc-800 text-slate-600 dark:text-zinc-300'
-              }`}
-            >
-              <div className="flex items-center gap-2 mb-1">
-                <Zap className={`h-3.5 w-3.5 ${!isCustomMode && activeModel === 'nvidia/llama-3.3-nemotron-super-49b-v1' ? 'text-blue-600 dark:text-blue-400' : 'text-slate-400 dark:text-zinc-500'}`} />
-                <span className="text-[10px] font-bold font-mono">llama-3.3-nemotron-super-49b</span>
-                <span className="text-[8px] font-mono font-bold bg-emerald-50 dark:bg-emerald-950/25 text-emerald-600 dark:text-emerald-400 border border-emerald-200 dark:border-emerald-900/40 px-1 py-0.5 rounded-sm">
-                  RECOMMENDED
+            {providerModels.map((model) => (
+              <button
+                key={model.id}
+                onClick={() => handleModelSelect(model.id)}
+                className={`flex flex-col items-start p-3 rounded-sm border text-left transition-all cursor-pointer ${
+                  !isCustomMode && activeModel === model.id
+                    ? 'border-blue-600 dark:border-blue-500 bg-blue-50/20 dark:bg-blue-950/20 font-bold text-slate-800 dark:text-white'
+                    : 'border-slate-200 dark:border-zinc-800 bg-white dark:bg-zinc-900 hover:bg-slate-50 dark:hover:bg-zinc-800 text-slate-600 dark:text-zinc-300'
+                }`}
+              >
+                <div className="flex items-center gap-2 mb-1">
+                  <Zap className={`h-3.5 w-3.5 ${!isCustomMode && activeModel === model.id ? 'text-blue-600 dark:text-blue-400' : 'text-slate-400 dark:text-zinc-500'}`} />
+                  <span className="text-[10px] font-bold font-mono">{model.name}</span>
+                  <span className={`text-[8px] font-mono font-bold border px-1 py-0.5 rounded-sm ${model.badgeColor}`}>
+                    {model.badge}
+                  </span>
+                </div>
+                <span className="text-[10px] text-slate-500 dark:text-zinc-400 font-sans leading-normal">
+                  {model.description}
                 </span>
-              </div>
-              <span className="text-[10px] text-slate-500 dark:text-zinc-400 font-sans leading-normal">
-                Active Nemotron-powered model. Blends superior business logic with high-speed query synthesis and evaluation accuracy.
-              </span>
-            </button>
+              </button>
+            ))}
 
-            {/* option 2: meta/llama-3.3-70b-instruct */}
-            <button
-              onClick={() => handleModelSelect('meta/llama-3.3-70b-instruct')}
-              className={`flex flex-col items-start p-3 rounded-sm border text-left transition-all cursor-pointer ${
-                !isCustomMode && activeModel === 'meta/llama-3.3-70b-instruct'
-                  ? 'border-blue-600 dark:border-blue-500 bg-blue-50/20 dark:bg-blue-950/20 font-bold text-slate-800 dark:text-white'
-                  : 'border-slate-200 dark:border-zinc-800 bg-white dark:bg-zinc-900 hover:bg-slate-50 dark:hover:bg-zinc-800 text-slate-600 dark:text-zinc-300'
-              }`}
-            >
-              <div className="flex items-center gap-2 mb-1">
-                <Cpu className={`h-3.5 w-3.5 ${!isCustomMode && activeModel === 'meta/llama-3.3-70b-instruct' ? 'text-blue-600 dark:text-blue-400' : 'text-slate-400 dark:text-zinc-500'}`} />
-                <span className="text-[10px] font-bold font-mono">llama-3.3-70b-instruct</span>
-                <span className="text-[8px] font-mono font-bold bg-blue-50 dark:bg-blue-950/25 text-blue-600 dark:text-blue-400 border border-blue-200 dark:border-blue-900/40 px-1 py-0.5 rounded-sm">
-                  PRO_POWER
-                </span>
-              </div>
-              <span className="text-[10px] text-slate-500 dark:text-zinc-400 font-sans leading-normal">
-                Maximizes cognitive capability and reasoning depth. Superior mathematical parsing on larger datasets.
-              </span>
-            </button>
-
-            {/* option 3: nvidia/llama-3.1-nemotron-nano-8b-v1 */}
-            <button
-              onClick={() => handleModelSelect('nvidia/llama-3.1-nemotron-nano-8b-v1')}
-              className={`flex flex-col items-start p-3 rounded-sm border text-left transition-all cursor-pointer ${
-                !isCustomMode && activeModel === 'nvidia/llama-3.1-nemotron-nano-8b-v1'
-                  ? 'border-blue-600 dark:border-blue-500 bg-blue-50/20 dark:bg-blue-950/20 font-bold text-slate-800 dark:text-white'
-                  : 'border-slate-200 dark:border-zinc-800 bg-white dark:bg-zinc-900 hover:bg-slate-50 dark:hover:bg-zinc-800 text-slate-600 dark:text-zinc-300'
-              }`}
-            >
-              <div className="flex items-center gap-2 mb-1">
-                <Zap className={`h-3.5 w-3.5 ${!isCustomMode && activeModel === 'nvidia/llama-3.1-nemotron-nano-8b-v1' ? 'text-blue-600 dark:text-blue-400' : 'text-slate-400 dark:text-zinc-500'}`} />
-                <span className="text-[10px] font-bold font-mono">nemotron-nano-8b</span>
-                <span className="text-[8px] font-mono font-bold bg-slate-100 dark:bg-zinc-800 text-slate-600 dark:text-zinc-400 border border-slate-200 dark:border-zinc-800 px-1 py-0.5 rounded-sm">
-                  LIGHTWEIGHT
-                </span>
-              </div>
-              <span className="text-[10px] text-slate-500 dark:text-zinc-400 font-sans leading-normal">
-                Sub-second response processing. Lightweight model configured for fast reasoning cycles and low credits consumption.
-              </span>
-            </button>
-
-            {/* option 4: Custom Model */}
+            {/* Custom Model Option */}
             <button
               onClick={handleCustomModelSelect}
               className={`flex flex-col items-start p-3 rounded-sm border text-left transition-all cursor-pointer ${
@@ -276,7 +339,7 @@ export default function Settings({
                 </span>
               </div>
               <span className="text-[10px] text-slate-500 dark:text-zinc-400 font-sans leading-normal">
-                Type in any custom model ID supported by build.nvidia.com to test dynamic LLM behaviors.
+                Type in any custom model ID supported by {currentProvider.name}.
               </span>
             </button>
           </div>
@@ -284,13 +347,13 @@ export default function Settings({
           {isCustomMode && (
             <div className="pt-2 animate-fade-in">
               <label className="text-[10px] font-extrabold text-slate-600 dark:text-zinc-400 uppercase tracking-widest font-mono block mb-1">
-                Custom NIM Model ID
+                Custom Model ID
               </label>
               <input
                 type="text"
                 value={customModelId}
                 onChange={handleCustomModelIdChange}
-                placeholder="e.g. google/gemma-2-2b-it"
+                placeholder={`e.g. ${providerModels[0]?.id || 'model-name'}`}
                 className="w-full max-w-md bg-white dark:bg-zinc-950 border border-slate-300 dark:border-zinc-800 hover:border-slate-400 dark:hover:border-zinc-700 focus:border-blue-600 dark:focus:border-blue-500 rounded-sm p-2 text-[11px] outline-none font-mono text-slate-950 dark:text-white transition-all"
               />
             </div>

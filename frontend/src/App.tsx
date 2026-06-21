@@ -50,6 +50,9 @@ export default function App() {
   const [activeModel, setActiveModel] = useState<string>(() => {
     return localStorage.getItem('swarm_analyst_model') || 'nvidia/llama-3.3-nemotron-super-49b-v1';
   });
+  const [llmProvider, setLlmProvider] = useState<string>(() => {
+    return localStorage.getItem('swarm_analyst_provider') || 'nvidia';
+  });
   const [temperature, setTemperature] = useState<number>(0.35);
   const [pacing, setPacing] = useState<'instant' | 'fast' | 'normal'>('fast');
 
@@ -76,6 +79,10 @@ export default function App() {
   useEffect(() => {
     localStorage.setItem('swarm_analyst_model', activeModel);
   }, [activeModel]);
+
+  useEffect(() => {
+    localStorage.setItem('swarm_analyst_provider', llmProvider);
+  }, [llmProvider]);
 
   // Listen to menu navigation events from Tauri Rust backend
   useEffect(() => {
@@ -186,6 +193,7 @@ export default function App() {
                 <Workspace
                   dataset={dataset}
                   activeModel={activeModel}
+                  llmProvider={llmProvider}
                   selectedDbType={selectedDbType}
                   postgresCreds={postgresCreds}
                   mongoCreds={mongoCreds}
@@ -248,6 +256,8 @@ export default function App() {
                   setTemperature={setTemperature}
                   pacing={pacing}
                   setPacing={setPacing}
+                  llmProvider={llmProvider}
+                  setLlmProvider={setLlmProvider}
                 />
               </div>
             </div>

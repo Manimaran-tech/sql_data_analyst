@@ -31,6 +31,7 @@ RUN pip install --no-cache-dir --upgrade pip && \
     "duckdb>=1.5.3" \
     "firebase-admin>=7.4.0" \
     "motor>=3.7.1" \
+    "litellm>=1.0.0" \
     "openpyxl>=3.1.5" \
     "pymongo>=4.17.0" \
     "sqlalchemy>=2.0.50" \

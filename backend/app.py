@@ -56,7 +56,7 @@ from backend.adapters.postgres import PostgresAdapter
 from backend.adapters.mongo import MongoAdapter
 from backend.adapters.flatfile import FlatFileAdapter
 from backend.adapters.firebase import FirebaseAdapter
-from backend.agents.nim_client import NimClient
+from backend.agents.llm_client import LLMClient
 from backend.agents.swarm import SwarmOrchestrator
 
 app = FastAPI(title="Enterprise SQL Data Analyst Swarm API")
@@ -69,8 +69,8 @@ async def health_check():
     return {"status": "healthy", "service": "SwarmAnalyst API"}
 
 SERVICE_NAME = "SwarmAnalyst"
-KEY_USER = "NvidiaNimApiKey"
-KEY_TIMESTAMP_USER = "NvidiaNimApiKeyTimestamp"
+KEY_USER = "SwarmAnalystApiKey"
+KEY_TIMESTAMP_USER = "SwarmAnalystApiKeyTimestamp"
 KEY_TTL_SECONDS = 12 * 60 * 60  # 12 hours
 
 # ----- Encryption Utilities -----
@@ -333,11 +333,14 @@ async def websocket_swarm_endpoint(websocket: WebSocket):
         # 3. Instantiate NIM client & Swarm Orchestrator
         try:
             model = config.get("model")
+            llm_provider = config.get("llm_provider", "nvidia")
+            
+            client_kwargs = {"api_key": api_key, "provider": llm_provider}
             if model:
-                nim_client = NimClient(api_key=api_key, default_model=model)
-            else:
-                nim_client = NimClient(api_key=api_key)
-            orchestrator = SwarmOrchestrator(nim_client)
+                client_kwargs["default_model"] = model
+            
+            llm_client = LLMClient(**client_kwargs)
+            orchestrator = SwarmOrchestrator(llm_client)
             
             # Helper function mapper
             def sync_log_callback(agent: str, message: str):

@@ -13,6 +13,7 @@ dependencies = [
     # Core OpenEnv runtime (provides FastAPI server + HTTP client types)
     "firebase-admin>=7.4.0",
     "motor>=3.7.1",
+    "litellm>=1.0.0",
     "openenv-core[core]>=0.2.1",
     # SQLite is built into Python stdlib — no extra DB deps needed
     "openpyxl>=3.1.5",
