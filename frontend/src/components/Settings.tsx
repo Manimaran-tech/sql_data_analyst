@@ -11,6 +11,8 @@ interface SettingsProps {
   setPacing: (pacing: 'instant' | 'normal' | 'fast') => void;
   llmProvider: string;
   setLlmProvider: (provider: string) => void;
+  apiBaseUrl: string;
+  setApiBaseUrl: (url: string) => void;
 }
 
 // Provider definitions with their default models
@@ -77,7 +79,9 @@ export default function Settings({
   pacing,
   setPacing,
   llmProvider,
-  setLlmProvider
+  setLlmProvider,
+  apiBaseUrl,
+  setApiBaseUrl
 }: SettingsProps) {
   const [apiKey, setApiKey] = useState('');
   const [hasKey, setHasKey] = useState(false);
@@ -356,6 +360,19 @@ export default function Settings({
                 placeholder={`e.g. ${providerModels[0]?.id || 'model-name'}`}
                 className="w-full max-w-md bg-white dark:bg-zinc-950 border border-slate-300 dark:border-zinc-800 hover:border-slate-400 dark:hover:border-zinc-700 focus:border-blue-600 dark:focus:border-blue-500 rounded-sm p-2 text-[11px] outline-none font-mono text-slate-950 dark:text-white transition-all"
               />
+              <label className="text-[10px] font-extrabold text-slate-600 dark:text-zinc-400 uppercase tracking-widest font-mono block mt-3 mb-1">
+                API Base URL (Optional, for Local LLMs)
+              </label>
+              <input
+                type="text"
+                value={apiBaseUrl}
+                onChange={(e) => setApiBaseUrl(e.target.value)}
+                placeholder="e.g. http://localhost:1234/v1 or http://localhost:11434"
+                className="w-full max-w-md bg-white dark:bg-zinc-950 border border-slate-300 dark:border-zinc-800 hover:border-slate-400 dark:hover:border-zinc-700 focus:border-blue-600 dark:focus:border-blue-500 rounded-sm p-2 text-[11px] outline-none font-mono text-slate-950 dark:text-white transition-all"
+              />
+              <p className="text-[10px] text-slate-500 dark:text-zinc-400 mt-1 font-sans">
+                Leave blank to use the provider's default cloud API. Set this to point to LM Studio, Ollama, vLLM, etc.
+              </p>
             </div>
           )}
         </div>

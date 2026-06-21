@@ -55,6 +55,9 @@ export default function App() {
   });
   const [temperature, setTemperature] = useState<number>(0.35);
   const [pacing, setPacing] = useState<'instant' | 'fast' | 'normal'>('fast');
+  const [apiBaseUrl, setApiBaseUrl] = useState<string>(() => {
+    return localStorage.getItem('swarm_analyst_api_base') || '';
+  });
 
   // Database Connections State
   const [selectedDbType, setSelectedDbType] = useState<'postgres' | 'mongodb' | 'firebase' | 'flatfile'>('flatfile');
@@ -83,6 +86,10 @@ export default function App() {
   useEffect(() => {
     localStorage.setItem('swarm_analyst_provider', llmProvider);
   }, [llmProvider]);
+
+  useEffect(() => {
+    localStorage.setItem('swarm_analyst_api_base', apiBaseUrl);
+  }, [apiBaseUrl]);
 
   // Listen to menu navigation events from Tauri Rust backend
   useEffect(() => {
@@ -194,6 +201,7 @@ export default function App() {
                   dataset={dataset}
                   activeModel={activeModel}
                   llmProvider={llmProvider}
+                  apiBaseUrl={apiBaseUrl}
                   selectedDbType={selectedDbType}
                   postgresCreds={postgresCreds}
                   mongoCreds={mongoCreds}
@@ -258,6 +266,8 @@ export default function App() {
                   setPacing={setPacing}
                   llmProvider={llmProvider}
                   setLlmProvider={setLlmProvider}
+                  apiBaseUrl={apiBaseUrl}
+                  setApiBaseUrl={setApiBaseUrl}
                 />
               </div>
             </div>

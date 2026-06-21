@@ -19,10 +19,12 @@ class LLMClient:
         api_key: str,
         provider: str = "nvidia",
         default_model: str = "nvidia/llama-3.3-nemotron-super-49b-v1",
+        api_base: Optional[str] = None,
     ):
         self.api_key = api_key
         self.provider = provider.lower()
         self.default_model = default_model
+        self.api_base = api_base
 
         # Set environment variables that litellm reads for each provider
         if self.provider == "nvidia":
@@ -82,8 +84,10 @@ class LLMClient:
             "max_tokens": max_tokens,
         }
 
-        # Set the API base URL for providers that need it
-        if self.provider in PROVIDER_BASE_URLS:
+        # Set the API base URL for providers that need it, or if overridden by the user
+        if self.api_base:
+            kwargs["api_base"] = self.api_base
+        elif self.provider in PROVIDER_BASE_URLS:
             kwargs["api_base"] = PROVIDER_BASE_URLS[self.provider]
 
         # Set the API key explicitly

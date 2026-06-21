@@ -334,10 +334,13 @@ async def websocket_swarm_endpoint(websocket: WebSocket):
         try:
             model = config.get("model")
             llm_provider = config.get("llm_provider", "nvidia")
+            api_base_url = config.get("api_base_url", "")
             
             client_kwargs = {"api_key": api_key, "provider": llm_provider}
             if model:
                 client_kwargs["default_model"] = model
+            if api_base_url and api_base_url.strip():
+                client_kwargs["api_base"] = api_base_url.strip()
             
             llm_client = LLMClient(**client_kwargs)
             orchestrator = SwarmOrchestrator(llm_client)

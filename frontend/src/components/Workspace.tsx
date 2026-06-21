@@ -193,6 +193,7 @@ interface WorkspaceProps {
   dataset: SaleRecord[];
   activeModel: string;
   llmProvider: string;
+  apiBaseUrl: string;
   selectedDbType: 'postgres' | 'mongodb' | 'firebase' | 'flatfile';
   postgresCreds: any;
   mongoCreds: any;
@@ -212,6 +213,7 @@ export default function Workspace({
   dataset,
   activeModel,
   llmProvider,
+  apiBaseUrl,
   selectedDbType,
   postgresCreds,
   mongoCreds,
@@ -299,6 +301,7 @@ export default function Workspace({
         question: trimmedQuery,
         model: activeModel,
         llm_provider: llmProvider,
+        api_base_url: apiBaseUrl,
         chat_history: chatHistory.map(h => ({
           sender: h.sender,
           text: h.text
