@@ -14,6 +14,29 @@ dotenv.config();
 const app = express();
 const PORT = 3000;
 
+// Simple in-memory rate limiting middleware to prevent uncontrolled resource consumption (CWE-400)
+const rateLimitStore = new Map<string, { count: number; resetTime: number }>();
+const RATE_LIMIT_WINDOW_MS = 15 * 60 * 1000; // 15 minutes
+const MAX_REQUESTS = 100;
+
+const rateLimiter = (req: express.Request, res: express.Response, next: express.NextFunction) => {
+  const ip = req.ip || req.headers['x-forwarded-for'] || req.socket.remoteAddress || 'unknown';
+  const ipStr = Array.isArray(ip) ? ip[0] : ip;
+  const now = Date.now();
+
+  const record = rateLimitStore.get(ipStr);
+  if (!record || now > record.resetTime) {
+    rateLimitStore.set(ipStr, { count: 1, resetTime: now + RATE_LIMIT_WINDOW_MS });
+    next();
+  } else if (record.count < MAX_REQUESTS) {
+    record.count++;
+    next();
+  } else {
+    res.status(429).json({ error: 'Too many requests, please try again later.' });
+  }
+};
+
+app.use(rateLimiter);
 app.use(express.json());
 
 // Lazy-initialize GoogleGenAI client to avoid crashing on startup

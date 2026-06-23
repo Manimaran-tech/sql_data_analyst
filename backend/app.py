@@ -262,10 +262,16 @@ async def upload_dataset(file: UploadFile = File(...), userId: str = Form("defau
     # Handle duplicates by adding a short uuid
     table_name = f"{table_name}_{uuid.uuid4().hex[:4]}"
 
-    # Save to user-scoped uploads folder
-    user_upload_dir = os.path.join(UPLOAD_DIR, userId)
+    # Save to user-scoped uploads folder safely preventing path injection (CWE-22)
+    user_upload_dir = os.path.abspath(os.path.join(UPLOAD_DIR, userId))
+    if not user_upload_dir.startswith(UPLOAD_DIR):
+        raise HTTPException(status_code=400, detail="Invalid userId")
     os.makedirs(user_upload_dir, exist_ok=True)
-    file_path = os.path.join(user_upload_dir, f"{table_name}{ext}")
+    
+    file_path = os.path.abspath(os.path.join(user_upload_dir, f"{table_name}{ext}"))
+    if not file_path.startswith(user_upload_dir):
+        raise HTTPException(status_code=400, detail="Invalid filename")
+
     try:
         with open(file_path, "wb") as buffer:
             shutil.copyfileobj(file.file, buffer)

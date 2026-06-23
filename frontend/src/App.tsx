@@ -115,10 +115,10 @@ export default function App() {
     }
   };
 
-  // Generate session UUID for offline fallback
+  // Generate session UUID for offline fallback using cryptographically secure UUID (CWE-338)
   useEffect(() => {
     if (!localStorage.getItem('swarm_session_id')) {
-      localStorage.setItem('swarm_session_id', 'session_' + Math.random().toString(36).substring(2, 15));
+      localStorage.setItem('swarm_session_id', 'session_' + window.crypto.randomUUID());
     }
   }, []);
 
