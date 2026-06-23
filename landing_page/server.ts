@@ -8,35 +8,21 @@ import path from 'path';
 import { createServer as createViteServer } from 'vite';
 import { GoogleGenAI, Type } from '@google/genai';
 import dotenv from 'dotenv';
+import { rateLimit } from 'express-rate-limit';
 
 dotenv.config();
 
 const app = express();
 const PORT = 3000;
 
-// Simple in-memory rate limiting middleware to prevent uncontrolled resource consumption (CWE-400)
-const rateLimitStore = new Map<string, { count: number; resetTime: number }>();
-const RATE_LIMIT_WINDOW_MS = 15 * 60 * 1000; // 15 minutes
-const MAX_REQUESTS = 100;
+const limiter = rateLimit({
+  windowMs: 15 * 60 * 1000, // 15 minutes
+  max: 100, // Limit each IP to 100 requests per `window` (here, per 15 minutes)
+  standardHeaders: true, // Return rate limit info in the `RateLimit-*` headers
+  legacyHeaders: false, // Disable the `X-RateLimit-*` headers
+});
 
-const rateLimiter = (req: express.Request, res: express.Response, next: express.NextFunction) => {
-  const ip = req.ip || req.headers['x-forwarded-for'] || req.socket.remoteAddress || 'unknown';
-  const ipStr = Array.isArray(ip) ? ip[0] : ip;
-  const now = Date.now();
-
-  const record = rateLimitStore.get(ipStr);
-  if (!record || now > record.resetTime) {
-    rateLimitStore.set(ipStr, { count: 1, resetTime: now + RATE_LIMIT_WINDOW_MS });
-    next();
-  } else if (record.count < MAX_REQUESTS) {
-    record.count++;
-    next();
-  } else {
-    res.status(429).json({ error: 'Too many requests, please try again later.' });
-  }
-};
-
-app.use(rateLimiter);
+app.use(limiter);
 app.use(express.json());
 
 // Lazy-initialize GoogleGenAI client to avoid crashing on startup
