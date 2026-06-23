@@ -9,6 +9,7 @@ interface SettingsProps {
   setTemperature: (temp: number) => void;
   pacing: 'instant' | 'normal' | 'fast';
   setPacing: (pacing: 'instant' | 'normal' | 'fast') => void;
+  user?: any;
 }
 
 export default function Settings({
@@ -17,7 +18,8 @@ export default function Settings({
   temperature,
   setTemperature,
   pacing,
-  setPacing
+  setPacing,
+  user
 }: SettingsProps) {
   const [apiKey, setApiKey] = useState('');
   const [hasKey, setHasKey] = useState(false);
@@ -35,7 +37,8 @@ export default function Settings({
 
   const loadKeyStatus = async () => {
     try {
-      const res = await fetch(`${API_BASE_URL}/api/settings/key`);
+      const userId = user?.uid || localStorage.getItem('swarm_session_id') || 'default';
+      const res = await fetch(`${API_BASE_URL}/api/settings/key?userId=${userId}`);
       const data = await res.json();
       if (data.has_key) {
         setHasKey(true);
@@ -52,16 +55,17 @@ export default function Settings({
   // Load API Key status from OS Keyring on mount
   useEffect(() => {
     loadKeyStatus();
-  }, []);
+  }, [user]);
 
   const handleSaveApiKey = async (e: React.MouseEvent) => {
     e.preventDefault();
     if (!apiKey.trim()) return;
     try {
+      const userId = user?.uid || localStorage.getItem('swarm_session_id') || 'default';
       const res = await fetch(`${API_BASE_URL}/api/settings/key`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ api_key: apiKey.trim() })
+        body: JSON.stringify({ api_key: apiKey.trim(), userId })
       });
       const data = await res.json();
       if (res.ok && data.success) {
@@ -79,7 +83,8 @@ export default function Settings({
   const handleClearApiKey = async () => {
     if (!confirm('Are you sure you want to delete your API Key from the OS Keyring?')) return;
     try {
-      const res = await fetch(`${API_BASE_URL}/api/settings/key`, {
+      const userId = user?.uid || localStorage.getItem('swarm_session_id') || 'default';
+      const res = await fetch(`${API_BASE_URL}/api/settings/key?userId=${userId}`, {
         method: 'DELETE'
       });
       const data = await res.json();

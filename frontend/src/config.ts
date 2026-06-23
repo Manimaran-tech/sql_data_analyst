@@ -8,7 +8,8 @@ const getBackendUrls = () => {
   const envUrl = import.meta.env.VITE_BACKEND_URL;
   
   if (envUrl) {
-    const cleaned = envUrl.endsWith('/') ? envUrl.slice(0, -1) : envUrl;
+    const trimmed = envUrl.trim();
+    const cleaned = trimmed.endsWith('/') ? trimmed.slice(0, -1) : trimmed;
     
     // Automatically match WebSocket protocol with HTTP protocol
     let wsUrl = '';
@@ -28,8 +29,8 @@ const getBackendUrls = () => {
   
   // Local default (used by Tauri sidecar and local dev environment)
   return {
-    API_BASE_URL: 'http://localhost:8002',
-    WS_BASE_URL: 'ws://localhost:8002/ws/swarm'
+    API_BASE_URL: 'http://127.0.0.1:8002',
+    WS_BASE_URL: 'ws://127.0.0.1:8002/ws/swarm'
   };
 };
 

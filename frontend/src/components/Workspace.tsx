@@ -190,7 +190,7 @@ function parseMarkdown(text: string, isUser = false): React.ReactNode {
 }
 
 interface WorkspaceProps {
-  dataset: SaleRecord[];
+  dataset: any[];
   activeModel: string;
   selectedDbType: 'postgres' | 'mongodb' | 'firebase' | 'flatfile';
   postgresCreds: any;
@@ -205,6 +205,7 @@ interface WorkspaceProps {
   latestSwarmResult: SwarmResponse | null;
   setLatestSwarmResult: (res: SwarmResponse | null) => void;
   setActiveView: (view: 'workspace' | 'dashboard' | 'setup' | 'settings') => void;
+  user?: any;
 }
 
 export default function Workspace({
@@ -222,7 +223,8 @@ export default function Workspace({
   setLatestDashboardUrl,
   latestSwarmResult,
   setLatestSwarmResult,
-  setActiveView
+  setActiveView,
+  user
 }: WorkspaceProps) {
   const [query, setQuery] = useState('');
   const [isExecuting, setIsExecuting] = useState(false);
@@ -289,6 +291,7 @@ export default function Workspace({
     wsRef.current = ws;
 
     ws.onopen = () => {
+      const userId = user?.uid || localStorage.getItem('swarm_session_id') || 'default';
       // Package query and pass the existing chat history so the backend agent remembers context!
       ws.send(JSON.stringify({
         api_key: '', // backend retrieves it securely from OS keyring
@@ -299,7 +302,8 @@ export default function Workspace({
         chat_history: chatHistory.map(h => ({
           sender: h.sender,
           text: h.text
-        }))
+        })),
+        userId
       }));
     };
 
