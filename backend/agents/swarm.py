@@ -6,8 +6,8 @@ from backend.adapters.base import BaseDbAdapter
 
 class SwarmAgent:
     """Base class for all Swarm Agents."""
-    def __init__(self, nim_client: LLMClient):
-        self.nim = nim_client
+    def __init__(self, llm_client: LLMClient):
+        self.llm = llm_client
 
 class SchemaAnalystAgent(SwarmAgent):
     """
@@ -42,7 +42,7 @@ Respond with a concise analysis explaining:
 Keep it concise and clear so the Query Writer Agent knows exactly what fields exist.
 """
         messages = [{"role": "user", "content": prompt}]
-        return await self.nim.chat_completion(messages, temperature=0.1)
+        return await self.llm.chat_completion(messages, temperature=0.1)
 
 class QueryWriterAgent(SwarmAgent):
     """
@@ -129,7 +129,7 @@ DIALECT INSTRUCTIONS:
 Generate the query now. Do NOT add any surrounding text or markdown markers like ```sql or ```json. Return ONLY the executable query string.
 """
         messages = [{"role": "user", "content": prompt}]
-        return await self.nim.chat_completion(messages, temperature=0.1)
+        return await self.llm.chat_completion(messages, temperature=0.1)
 
 class QAEvaluatorAgent(SwarmAgent):
     """
@@ -154,7 +154,7 @@ Respond with a JSON object in this format (do not use markdown blocks):
 }}
 """
         messages = [{"role": "user", "content": prompt}]
-        res_str = await self.nim.chat_completion(messages, temperature=0.1)
+        res_str = await self.llm.chat_completion(messages, temperature=0.1)
         
         # Parse JSON output
         try:
@@ -185,7 +185,7 @@ Respond with a JSON object (no markdown wrapping):
 }}
 """
         messages = [{"role": "user", "content": prompt}]
-        res_str = await self.nim.chat_completion(messages, temperature=0.1)
+        res_str = await self.llm.chat_completion(messages, temperature=0.1)
         try:
             cleaned = res_str.replace("```json", "").replace("```", "").strip()
             return json.loads(cleaned)
@@ -236,7 +236,7 @@ Example output:
 Return ONLY the JSON list.
 """
         messages = [{"role": "user", "content": prompt}]
-        res_str = await self.nim.chat_completion(messages, temperature=0.2)
+        res_str = await self.llm.chat_completion(messages, temperature=0.2)
         try:
             cleaned = res_str.replace("```json", "").replace("```", "").strip()
             return json.loads(cleaned)
@@ -310,7 +310,7 @@ Executive summary here...
 }}
 """
         messages = [{"role": "user", "content": prompt}]
-        res_str = await self.nim.chat_completion(messages, temperature=0.3)
+        res_str = await self.llm.chat_completion(messages, temperature=0.3)
         
         if "[VISUALIZATION_SPEC]" in res_str:
             parts = res_str.split("[VISUALIZATION_SPEC]")
@@ -381,11 +381,11 @@ class SwarmOrchestrator:
     """
     Main Orchestrator to execute the Swarm workflow.
     """
-    def __init__(self, nim_client: LLMClient):
-        self.schema_agent = SchemaAnalystAgent(nim_client)
-        self.writer_agent = QueryWriterAgent(nim_client)
-        self.qa_agent = QAEvaluatorAgent(nim_client)
-        self.coord_agent = CoordinatorAgent(nim_client)
+    def __init__(self, llm_client: LLMClient):
+        self.schema_agent = SchemaAnalystAgent(llm_client)
+        self.writer_agent = QueryWriterAgent(llm_client)
+        self.qa_agent = QAEvaluatorAgent(llm_client)
+        self.coord_agent = CoordinatorAgent(llm_client)
 
     async def run_investigation(
         self,

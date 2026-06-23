@@ -95,9 +95,9 @@ export default function Settings({
   });
   const [customModelId, setCustomModelId] = useState(isCustomMode ? activeModel : '');
 
-  const loadKeyStatus = async () => {
+  const loadKeyStatus = async (provider = llmProvider) => {
     try {
-      const res = await fetch(`${API_BASE_URL}/api/settings/key`);
+      const res = await fetch(`${API_BASE_URL}/api/settings/key?provider=${provider}`);
       const data = await res.json();
       if (data.has_key) {
         setHasKey(true);
@@ -111,21 +111,24 @@ export default function Settings({
     }
   };
 
-  // Load API Key status from OS Keyring on mount
+  // Load API Key status from OS Keyring
   useEffect(() => {
-    loadKeyStatus();
-  }, []);
+    loadKeyStatus(llmProvider);
+  }, [llmProvider]);
 
   // When provider changes, update the selected model to that provider's default
   useEffect(() => {
     const provider = LLM_PROVIDERS.find(p => p.id === llmProvider);
     if (provider) {
       const isModelInProvider = provider.models.some(m => m.id === activeModel);
-      if (!isModelInProvider && !isCustomMode) {
+      const isKnownModelGlobally = LLM_PROVIDERS.some(p => p.models.some(m => m.id === activeModel));
+      
+      if (!isModelInProvider && (!isCustomMode || isKnownModelGlobally)) {
         setActiveModel(provider.models[0].id);
+        setIsCustomMode(false);
       }
     }
-  }, [llmProvider]);
+  }, [llmProvider, activeModel, isCustomMode, setActiveModel]);
 
   const handleSaveApiKey = async (e: React.MouseEvent) => {
     e.preventDefault();
@@ -134,7 +137,7 @@ export default function Settings({
       const res = await fetch(`${API_BASE_URL}/api/settings/key`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ api_key: apiKey.trim() })
+        body: JSON.stringify({ api_key: apiKey.trim(), provider: llmProvider })
       });
       const data = await res.json();
       if (res.ok && data.success) {
@@ -152,7 +155,7 @@ export default function Settings({
   const handleClearApiKey = async () => {
     if (!confirm('Are you sure you want to delete your API Key from the OS Keyring?')) return;
     try {
-      const res = await fetch(`${API_BASE_URL}/api/settings/key`, {
+      const res = await fetch(`${API_BASE_URL}/api/settings/key?provider=${llmProvider}`, {
         method: 'DELETE'
       });
       const data = await res.json();
@@ -360,21 +363,24 @@ export default function Settings({
                 placeholder={`e.g. ${providerModels[0]?.id || 'model-name'}`}
                 className="w-full max-w-md bg-white dark:bg-zinc-950 border border-slate-300 dark:border-zinc-800 hover:border-slate-400 dark:hover:border-zinc-700 focus:border-blue-600 dark:focus:border-blue-500 rounded-sm p-2 text-[11px] outline-none font-mono text-slate-950 dark:text-white transition-all"
               />
-              <label className="text-[10px] font-extrabold text-slate-600 dark:text-zinc-400 uppercase tracking-widest font-mono block mt-3 mb-1">
-                API Base URL (Optional, for Local LLMs)
-              </label>
-              <input
-                type="text"
-                value={apiBaseUrl}
-                onChange={(e) => setApiBaseUrl(e.target.value)}
-                placeholder="e.g. http://localhost:1234/v1 or http://localhost:11434"
-                className="w-full max-w-md bg-white dark:bg-zinc-950 border border-slate-300 dark:border-zinc-800 hover:border-slate-400 dark:hover:border-zinc-700 focus:border-blue-600 dark:focus:border-blue-500 rounded-sm p-2 text-[11px] outline-none font-mono text-slate-950 dark:text-white transition-all"
-              />
-              <p className="text-[10px] text-slate-500 dark:text-zinc-400 mt-1 font-sans">
-                Leave blank to use the provider's default cloud API. Set this to point to LM Studio, Ollama, vLLM, etc.
-              </p>
             </div>
           )}
+
+          <div className={`pt-2 ${!isCustomMode ? 'animate-fade-in' : ''}`}>
+            <label className={`text-[10px] font-extrabold text-slate-600 dark:text-zinc-400 uppercase tracking-widest font-mono block ${isCustomMode ? 'mt-3' : ''} mb-1`}>
+              API Base URL (Optional, for Local LLMs)
+            </label>
+            <input
+              type="text"
+              value={apiBaseUrl}
+              onChange={(e) => setApiBaseUrl(e.target.value)}
+              placeholder="e.g. http://localhost:1234/v1 or http://localhost:11434"
+              className="w-full max-w-md bg-white dark:bg-zinc-950 border border-slate-300 dark:border-zinc-800 hover:border-slate-400 dark:hover:border-zinc-700 focus:border-blue-600 dark:focus:border-blue-500 rounded-sm p-2 text-[11px] outline-none font-mono text-slate-950 dark:text-white transition-all"
+            />
+            <p className="text-[10px] text-slate-500 dark:text-zinc-400 mt-1 font-sans">
+              Leave blank to use the provider's default cloud API. Set this to point to LM Studio, Ollama, vLLM, etc.
+            </p>
+          </div>
         </div>
 
         {/* Parameter 2: Temperature Slider */}

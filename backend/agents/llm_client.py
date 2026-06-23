@@ -1,6 +1,9 @@
 import os
+import logging
 from typing import List, Dict, Optional
 import asyncio
+
+logger = logging.getLogger(__name__)
 
 # Provider-specific base URLs
 PROVIDER_BASE_URLS = {
@@ -26,15 +29,7 @@ class LLMClient:
         self.default_model = default_model
         self.api_base = api_base
 
-        # Set environment variables that litellm reads for each provider
-        if self.provider == "nvidia":
-            os.environ["NVIDIA_API_KEY"] = api_key
-        elif self.provider == "openai":
-            os.environ["OPENAI_API_KEY"] = api_key
-        elif self.provider == "anthropic":
-            os.environ["ANTHROPIC_API_KEY"] = api_key
-        elif self.provider == "groq":
-            os.environ["GROQ_API_KEY"] = api_key
+        # The API key is passed explicitly in chat_completion() to avoid process-wide env var mutations
 
     def _get_litellm_model_string(self, model: Optional[str] = None) -> str:
         """Convert the stored model name into a litellm-compatible model string."""
@@ -104,7 +99,7 @@ class LLMClient:
                 return content.strip()
             except litellm.exceptions.RateLimitError as e:
                 if attempt < max_retries - 1:
-                    print(f"Rate limit hit for {self.provider}. Retrying in 5 seconds... (Attempt {attempt+1}/{max_retries})")
+                    logger.warning(f"Rate limit hit for {self.provider}. Retrying in 5 seconds... (Attempt {attempt+1}/{max_retries})")
                     await asyncio.sleep(5)
                 else:
                     raise RuntimeError(f"LLM API rate limit exceeded ({self.provider}): {str(e)}")

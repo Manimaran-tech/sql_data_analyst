@@ -63,7 +63,7 @@ def generate_seaborn_dashboard(history: List[Dict[str, Any]], output_path: str):
         raw = item.get("raw_data", [])
         if raw and isinstance(raw, list) and len(raw) > 0:
             data_str = json.dumps(raw, sort_keys=True, default=str)
-            data_hash = hashlib.md5(data_str.encode('utf-8')).hexdigest()
+            data_hash = hashlib.sha256(data_str.encode('utf-8')).hexdigest()
             if data_hash not in seen_hashes:
                 seen_hashes.add(data_hash)
                 plots_data.append(item)

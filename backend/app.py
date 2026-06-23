@@ -93,10 +93,16 @@ def _decrypt_key(ciphertext: str) -> str:
     f = Fernet(_get_encryption_key())
     return f.decrypt(ciphertext.encode()).decode()
 
-def _is_key_expired() -> bool:
+def _get_key_user(provider: str) -> str:
+    return f"SwarmAnalystApiKey:{provider}"
+
+def _get_key_timestamp_user(provider: str) -> str:
+    return f"SwarmAnalystApiKeyTimestamp:{provider}"
+
+def _is_key_expired(provider: str) -> bool:
     """Check if the stored key has exceeded the 12-hour TTL."""
     try:
-        ts_str = keyring.get_password(SERVICE_NAME, KEY_TIMESTAMP_USER)
+        ts_str = keyring.get_password(SERVICE_NAME, _get_key_timestamp_user(provider))
         if not ts_str:
             return True
         stored_time = float(ts_str)
@@ -104,29 +110,29 @@ def _is_key_expired() -> bool:
     except Exception:
         return True
 
-def _purge_expired_key():
+def _purge_expired_key(provider: str):
     """Delete key and timestamp from keyring if expired."""
     try:
-        keyring.delete_password(SERVICE_NAME, KEY_USER)
+        keyring.delete_password(SERVICE_NAME, _get_key_user(provider))
     except Exception:
         pass
     try:
-        keyring.delete_password(SERVICE_NAME, KEY_TIMESTAMP_USER)
+        keyring.delete_password(SERVICE_NAME, _get_key_timestamp_user(provider))
     except Exception:
         pass
 
-def _retrieve_valid_key() -> str | None:
+def _retrieve_valid_key(provider: str) -> str | None:
     """Retrieve the decrypted API key if it exists and hasn't expired."""
-    if _is_key_expired():
-        _purge_expired_key()
+    if _is_key_expired(provider):
+        _purge_expired_key(provider)
         return None
     try:
-        encrypted = keyring.get_password(SERVICE_NAME, KEY_USER)
+        encrypted = keyring.get_password(SERVICE_NAME, _get_key_user(provider))
         if not encrypted:
             return None
         return _decrypt_key(encrypted)
     except Exception:
-        _purge_expired_key()
+        _purge_expired_key(provider)
         return None
 
 def _mask_key(key: str) -> str:
@@ -165,18 +171,19 @@ def get_adapter(db_type: str):
 
 class KeySaveRequest(BaseModel):
     api_key: str
+    provider: str
 
 @app.get("/api/settings/key")
-async def get_api_key():
+async def get_api_key(provider: str):
     """
     Retrieve the API Key status. Returns a masked version for display.
     The raw key is NEVER sent to the frontend via this endpoint.
     """
     try:
-        plaintext = _retrieve_valid_key()
+        plaintext = _retrieve_valid_key(provider)
         if plaintext:
             # Calculate remaining TTL
-            ts_str = keyring.get_password(SERVICE_NAME, KEY_TIMESTAMP_USER)
+            ts_str = keyring.get_password(SERVICE_NAME, _get_key_timestamp_user(provider))
             remaining = 0
             if ts_str:
                 elapsed = time.time() - float(ts_str)
@@ -200,8 +207,8 @@ async def save_api_key(req: KeySaveRequest):
     """
     try:
         encrypted = _encrypt_key(req.api_key)
-        keyring.set_password(SERVICE_NAME, KEY_USER, encrypted)
-        keyring.set_password(SERVICE_NAME, KEY_TIMESTAMP_USER, str(time.time()))
+        keyring.set_password(SERVICE_NAME, _get_key_user(req.provider), encrypted)
+        keyring.set_password(SERVICE_NAME, _get_key_timestamp_user(req.provider), str(time.time()))
         return {
             "success": True,
             "message": "API key encrypted (AES-256) and stored securely. It will auto-expire in 12 hours."
@@ -210,12 +217,12 @@ async def save_api_key(req: KeySaveRequest):
         raise HTTPException(status_code=500, detail=f"Failed to save key: {str(e)}")
 
 @app.delete("/api/settings/key")
-async def delete_api_key():
+async def delete_api_key(provider: str):
     """
     Immediately delete the API Key and its timestamp from the OS Keyring.
     """
     try:
-        _purge_expired_key()
+        _purge_expired_key(provider)
         return {"success": True, "message": "API key and timestamp purged from OS keyring."}
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Failed to delete key: {str(e)}")
@@ -304,7 +311,9 @@ async def websocket_swarm_endpoint(websocket: WebSocket):
         if not api_key:
             # Fallback to check keyring (decrypted)
             try:
-                api_key = _retrieve_valid_key()
+                # We need llm_provider to retrieve the key
+                llm_provider = config.get("llm_provider", "nvidia")
+                api_key = _retrieve_valid_key(llm_provider)
             except Exception:
                 pass
                 
@@ -340,7 +349,14 @@ async def websocket_swarm_endpoint(websocket: WebSocket):
             if model:
                 client_kwargs["default_model"] = model
             if api_base_url and api_base_url.strip():
-                client_kwargs["api_base"] = api_base_url.strip()
+                base_url = api_base_url.strip()
+                import urllib.parse
+                parsed = urllib.parse.urlparse(base_url)
+                if parsed.scheme not in ("http", "https"):
+                    raise Exception("api_base_url must use http or https scheme.")
+                if parsed.hostname not in ("localhost", "127.0.0.1", "::1"):
+                    raise Exception("api_base_url must point to localhost (127.0.0.1 or ::1).")
+                client_kwargs["api_base"] = base_url
             
             llm_client = LLMClient(**client_kwargs)
             orchestrator = SwarmOrchestrator(llm_client)
