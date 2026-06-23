@@ -33,3 +33,30 @@ jobs:
           firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
           projectId: sih-csbs-007
           entryPoint: landing_page
+
+  deploy-backend-render:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger Render Deploy Webhook
+        run: |
+          if [ -n "${{ secrets.RENDER_DEPLOY_HOOK }}" ]; then
+            curl -X POST "${{ secrets.RENDER_DEPLOY_HOOK }}"
+          else
+            echo "RENDER_DEPLOY_HOOK secret is not set, skipping Render deployment."
+          fi
+
+  deploy-backend-huggingface:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Push to Hugging Face Spaces
+        run: |
+          if [ -n "${{ secrets.HF_TOKEN }}" ]; then
+            git push --force https://Manimaran-tech:${{ secrets.HF_TOKEN }}@huggingface.co/spaces/Manimaran-tech/swarm_analyst master
+          else
+            echo "HF_TOKEN secret is not set, skipping Hugging Face deployment."
+          fi
