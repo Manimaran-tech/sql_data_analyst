@@ -115,6 +115,13 @@ export default function App() {
     }
   };
 
+  // Generate session UUID for offline fallback using cryptographically secure UUID (CWE-338)
+  useEffect(() => {
+    if (!localStorage.getItem('swarm_session_id')) {
+      localStorage.setItem('swarm_session_id', 'session_' + window.crypto.randomUUID());
+    }
+  }, []);
+
   return (
     <div className="flex bg-slate-50 dark:bg-zinc-950 text-slate-900 dark:text-zinc-100 h-screen overflow-hidden text-xs font-sans select-none leading-normal transition-colors duration-200">
       {/* 1. Global Left Navigation Panel */}
@@ -199,6 +206,7 @@ export default function App() {
                   latestSwarmResult={latestSwarmResult}
                   setLatestSwarmResult={setLatestSwarmResult}
                   setActiveView={setActiveView}
+                  user={null}
                 />
               </div>
 
@@ -237,6 +245,7 @@ export default function App() {
                   setFirebaseCreds={setFirebaseCreds}
                   uploadedFiles={uploadedFiles}
                   setUploadedFiles={setUploadedFiles}
+                  user={null}
                 />
               </div>
 
@@ -248,6 +257,7 @@ export default function App() {
                   setTemperature={setTemperature}
                   pacing={pacing}
                   setPacing={setPacing}
+                  user={null}
                 />
               </div>
             </div>

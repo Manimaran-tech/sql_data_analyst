@@ -18,6 +18,7 @@ interface DatabaseSetupProps {
   setFirebaseCreds: (creds: any) => void;
   uploadedFiles: any[];
   setUploadedFiles: (files: any[]) => void;
+  user?: any;
 }
 
 export default function DatabaseSetup({
@@ -33,7 +34,8 @@ export default function DatabaseSetup({
   firebaseCreds,
   setFirebaseCreds,
   uploadedFiles,
-  setUploadedFiles
+  setUploadedFiles,
+  user
 }: DatabaseSetupProps) {
   const [testConnectStatus, setTestConnectStatus] = useState<'idle' | 'success' | 'error'>('idle');
   const [testConnectError, setTestConnectError] = useState('');
@@ -51,8 +53,10 @@ export default function DatabaseSetup({
     setTestConnectStatus('idle');
     setTestConnectError('');
 
+    const userId = user?.uid || localStorage.getItem('swarm_session_id') || 'default';
     const formData = new FormData();
     formData.append('file', file);
+    formData.append('userId', userId);
 
     try {
       const res = await fetch(`${API_BASE_URL}/api/upload`, {
@@ -76,21 +80,20 @@ export default function DatabaseSetup({
             if (records.length > 0) {
               onDatasetUpdate(records, file.name);
               setTestConnectStatus('success');
+
+              const cols = Object.keys(records[0] || {});
+              const colLines = cols.map(col => {
+                const sampleVal = records[0][col];
+                const typeStr = typeof sampleVal === 'number' ? 'DOUBLE' : 'VARCHAR';
+                return `  ${col.padEnd(16)} ${typeStr.padEnd(12)} (nullable)`;
+              }).join('\n');
+
               setSchemaReflected(`DATABASE SCHEMA - Local Dataset Tables (CSV/Excel)
 ==================================================
 
 📊 ${data.table_name} (${records.length} rows)
 --------------------------------------------------
-  order_id         VARCHAR      (nullable)
-  order_date       DATE         (nullable)
-  product_name     VARCHAR      (nullable)
-  category         VARCHAR      (nullable)
-  quantity         BIGINT       (nullable)
-  unit_price       DOUBLE       (nullable)
-  discount         DOUBLE       (nullable)
-  region           VARCHAR      (nullable)
-  sales_amount     DOUBLE       (nullable)
-  customer_segment VARCHAR      (nullable)`);
+${colLines}`);
             } else {
               alert('Could not parse any valid row records in target file. Standard CSV configuration expected.');
             }
