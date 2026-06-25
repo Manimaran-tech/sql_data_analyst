@@ -192,6 +192,8 @@ function parseMarkdown(text: string, isUser = false): React.ReactNode {
 interface WorkspaceProps {
   dataset: any[];
   activeModel: string;
+  llmProvider: string;
+  apiBaseUrl: string;
   selectedDbType: 'postgres' | 'mongodb' | 'firebase' | 'flatfile';
   postgresCreds: any;
   mongoCreds: any;
@@ -211,6 +213,8 @@ interface WorkspaceProps {
 export default function Workspace({
   dataset,
   activeModel,
+  llmProvider,
+  apiBaseUrl,
   selectedDbType,
   postgresCreds,
   mongoCreds,
@@ -299,6 +303,8 @@ export default function Workspace({
         credentials,
         question: trimmedQuery,
         model: activeModel,
+        llm_provider: llmProvider,
+        api_base_url: apiBaseUrl,
         chat_history: chatHistory.map(h => ({
           sender: h.sender,
           text: h.text

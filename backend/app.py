@@ -56,7 +56,7 @@ from backend.adapters.postgres import PostgresAdapter
 from backend.adapters.mongo import MongoAdapter
 from backend.adapters.flatfile import FlatFileAdapter
 from backend.adapters.firebase import FirebaseAdapter
-from backend.agents.nim_client import NimClient
+from backend.agents.llm_client import LLMClient
 from backend.agents.swarm import SwarmOrchestrator
 
 app = FastAPI(title="Enterprise SQL Data Analyst Swarm API")
@@ -69,8 +69,8 @@ async def health_check():
     return {"status": "healthy", "service": "SwarmAnalyst API"}
 
 SERVICE_NAME = "SwarmAnalyst"
-KEY_USER = "NvidiaNimApiKey"
-KEY_TIMESTAMP_USER = "NvidiaNimApiKeyTimestamp"
+KEY_USER = "SwarmAnalystApiKey"
+KEY_TIMESTAMP_USER = "SwarmAnalystApiKeyTimestamp"
 KEY_TTL_SECONDS = 12 * 60 * 60  # 12 hours
 
 # ----- Encryption Utilities -----
@@ -93,10 +93,16 @@ def _decrypt_key(ciphertext: str) -> str:
     f = Fernet(_get_encryption_key())
     return f.decrypt(ciphertext.encode()).decode()
 
-def _is_key_expired(user_id: str = "default") -> bool:
+def _get_key_user(provider: str, user_id: str = "default") -> str:
+    return f"SwarmAnalystApiKey:{provider}_{user_id}"
+
+def _get_key_timestamp_user(provider: str, user_id: str = "default") -> str:
+    return f"SwarmAnalystApiKeyTimestamp:{provider}_{user_id}"
+
+def _is_key_expired(provider: str, user_id: str = "default") -> bool:
     """Check if the stored key has exceeded the 12-hour TTL."""
     try:
-        ts_str = keyring.get_password(SERVICE_NAME, f"NvidiaNimApiKeyTimestamp_{user_id}")
+        ts_str = keyring.get_password(SERVICE_NAME, _get_key_timestamp_user(provider, user_id))
         if not ts_str:
             return True
         stored_time = float(ts_str)
@@ -104,29 +110,29 @@ def _is_key_expired(user_id: str = "default") -> bool:
     except Exception:
         return True
 
-def _purge_expired_key(user_id: str = "default"):
+def _purge_expired_key(provider: str, user_id: str = "default"):
     """Delete key and timestamp from keyring if expired."""
     try:
-        keyring.delete_password(SERVICE_NAME, f"NvidiaNimApiKey_{user_id}")
+        keyring.delete_password(SERVICE_NAME, _get_key_user(provider, user_id))
     except Exception:
         pass
     try:
-        keyring.delete_password(SERVICE_NAME, f"NvidiaNimApiKeyTimestamp_{user_id}")
+        keyring.delete_password(SERVICE_NAME, _get_key_timestamp_user(provider, user_id))
     except Exception:
         pass
 
-def _retrieve_valid_key(user_id: str = "default") -> str | None:
+def _retrieve_valid_key(provider: str, user_id: str = "default") -> str | None:
     """Retrieve the decrypted API key if it exists and hasn't expired."""
-    if _is_key_expired(user_id):
-        _purge_expired_key(user_id)
+    if _is_key_expired(provider, user_id):
+        _purge_expired_key(provider, user_id)
         return None
     try:
-        encrypted = keyring.get_password(SERVICE_NAME, f"NvidiaNimApiKey_{user_id}")
+        encrypted = keyring.get_password(SERVICE_NAME, _get_key_user(provider, user_id))
         if not encrypted:
             return None
         return _decrypt_key(encrypted)
     except Exception:
-        _purge_expired_key(user_id)
+        _purge_expired_key(provider, user_id)
         return None
 
 def _mask_key(key: str) -> str:
@@ -165,19 +171,20 @@ def get_adapter(db_type: str):
 
 class KeySaveRequest(BaseModel):
     api_key: str
+    provider: str
     userId: str = "default"
 
 @app.get("/api/settings/key")
-async def get_api_key(userId: str = "default"):
+async def get_api_key(provider: str, userId: str = "default"):
     """
     Retrieve the API Key status. Returns a masked version for display.
     The raw key is NEVER sent to the frontend via this endpoint.
     """
     try:
-        plaintext = _retrieve_valid_key(userId)
+        plaintext = _retrieve_valid_key(provider, userId)
         if plaintext:
             # Calculate remaining TTL
-            ts_str = keyring.get_password(SERVICE_NAME, f"NvidiaNimApiKeyTimestamp_{userId}")
+            ts_str = keyring.get_password(SERVICE_NAME, _get_key_timestamp_user(provider, userId))
             remaining = 0
             if ts_str:
                 elapsed = time.time() - float(ts_str)
@@ -202,8 +209,8 @@ async def save_api_key(req: KeySaveRequest):
     try:
         user_id = req.userId
         encrypted = _encrypt_key(req.api_key)
-        keyring.set_password(SERVICE_NAME, f"NvidiaNimApiKey_{user_id}", encrypted)
-        keyring.set_password(SERVICE_NAME, f"NvidiaNimApiKeyTimestamp_{user_id}", str(time.time()))
+        keyring.set_password(SERVICE_NAME, _get_key_user(req.provider, user_id), encrypted)
+        keyring.set_password(SERVICE_NAME, _get_key_timestamp_user(req.provider, user_id), str(time.time()))
         return {
             "success": True,
             "message": "API key encrypted (AES-256) and stored securely. It will auto-expire in 12 hours."
@@ -212,12 +219,12 @@ async def save_api_key(req: KeySaveRequest):
         raise HTTPException(status_code=500, detail=f"Failed to save key: {str(e)}")
 
 @app.delete("/api/settings/key")
-async def delete_api_key(userId: str = "default"):
+async def delete_api_key(provider: str, userId: str = "default"):
     """
     Immediately delete the API Key and its timestamp from the OS Keyring.
     """
     try:
-        _purge_expired_key(userId)
+        _purge_expired_key(provider, userId)
         return {"success": True, "message": "API key and timestamp purged from OS keyring."}
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Failed to delete key: {str(e)}")
@@ -316,7 +323,9 @@ async def websocket_swarm_endpoint(websocket: WebSocket):
         if not api_key:
             # Fallback to check keyring (decrypted)
             try:
-                api_key = _retrieve_valid_key(userId)
+                # We need llm_provider to retrieve the key
+                llm_provider = config.get("llm_provider", "nvidia")
+                api_key = _retrieve_valid_key(llm_provider, userId)
             except Exception:
                 pass
                 
@@ -345,11 +354,24 @@ async def websocket_swarm_endpoint(websocket: WebSocket):
         # 3. Instantiate NIM client & Swarm Orchestrator
         try:
             model = config.get("model")
+            llm_provider = config.get("llm_provider", "nvidia")
+            api_base_url = config.get("api_base_url", "")
+            
+            client_kwargs = {"api_key": api_key, "provider": llm_provider}
             if model:
-                nim_client = NimClient(api_key=api_key, default_model=model)
-            else:
-                nim_client = NimClient(api_key=api_key)
-            orchestrator = SwarmOrchestrator(nim_client)
+                client_kwargs["default_model"] = model
+            if api_base_url and api_base_url.strip():
+                base_url = api_base_url.strip()
+                import urllib.parse
+                parsed = urllib.parse.urlparse(base_url)
+                if parsed.scheme not in ("http", "https"):
+                    raise Exception("api_base_url must use http or https scheme.")
+                if parsed.hostname not in ("localhost", "127.0.0.1", "::1"):
+                    raise Exception("api_base_url must point to localhost (127.0.0.1 or ::1).")
+                client_kwargs["api_base"] = base_url
+            
+            llm_client = LLMClient(**client_kwargs)
+            orchestrator = SwarmOrchestrator(llm_client)
             
             # Helper function mapper
             def sync_log_callback(agent: str, message: str):
