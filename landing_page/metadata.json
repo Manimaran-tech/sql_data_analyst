@@ -1,0 +1,6 @@
+{
+  "name": "Swarm Analyst",
+  "description": "Professional, open-source business-grade swarm intelligence data analysis tool competing with PowerBI.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

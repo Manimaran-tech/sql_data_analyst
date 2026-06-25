@@ -93,16 +93,16 @@ def _decrypt_key(ciphertext: str) -> str:
     f = Fernet(_get_encryption_key())
     return f.decrypt(ciphertext.encode()).decode()
 
-def _get_key_user(provider: str) -> str:
-    return f"SwarmAnalystApiKey:{provider}"
+def _get_key_user(provider: str, user_id: str = "default") -> str:
+    return f"SwarmAnalystApiKey:{provider}_{user_id}"
 
-def _get_key_timestamp_user(provider: str) -> str:
-    return f"SwarmAnalystApiKeyTimestamp:{provider}"
+def _get_key_timestamp_user(provider: str, user_id: str = "default") -> str:
+    return f"SwarmAnalystApiKeyTimestamp:{provider}_{user_id}"
 
-def _is_key_expired(provider: str) -> bool:
+def _is_key_expired(provider: str, user_id: str = "default") -> bool:
     """Check if the stored key has exceeded the 12-hour TTL."""
     try:
-        ts_str = keyring.get_password(SERVICE_NAME, _get_key_timestamp_user(provider))
+        ts_str = keyring.get_password(SERVICE_NAME, _get_key_timestamp_user(provider, user_id))
         if not ts_str:
             return True
         stored_time = float(ts_str)
@@ -110,29 +110,29 @@ def _is_key_expired(provider: str) -> bool:
     except Exception:
         return True
 
-def _purge_expired_key(provider: str):
+def _purge_expired_key(provider: str, user_id: str = "default"):
     """Delete key and timestamp from keyring if expired."""
     try:
-        keyring.delete_password(SERVICE_NAME, _get_key_user(provider))
+        keyring.delete_password(SERVICE_NAME, _get_key_user(provider, user_id))
     except Exception:
         pass
     try:
-        keyring.delete_password(SERVICE_NAME, _get_key_timestamp_user(provider))
+        keyring.delete_password(SERVICE_NAME, _get_key_timestamp_user(provider, user_id))
     except Exception:
         pass
 
-def _retrieve_valid_key(provider: str) -> str | None:
+def _retrieve_valid_key(provider: str, user_id: str = "default") -> str | None:
     """Retrieve the decrypted API key if it exists and hasn't expired."""
-    if _is_key_expired(provider):
-        _purge_expired_key(provider)
+    if _is_key_expired(provider, user_id):
+        _purge_expired_key(provider, user_id)
         return None
     try:
-        encrypted = keyring.get_password(SERVICE_NAME, _get_key_user(provider))
+        encrypted = keyring.get_password(SERVICE_NAME, _get_key_user(provider, user_id))
         if not encrypted:
             return None
         return _decrypt_key(encrypted)
     except Exception:
-        _purge_expired_key(provider)
+        _purge_expired_key(provider, user_id)
         return None
 
 def _mask_key(key: str) -> str:
@@ -172,18 +172,19 @@ def get_adapter(db_type: str):
 class KeySaveRequest(BaseModel):
     api_key: str
     provider: str
+    userId: str = "default"
 
 @app.get("/api/settings/key")
-async def get_api_key(provider: str):
+async def get_api_key(provider: str, userId: str = "default"):
     """
     Retrieve the API Key status. Returns a masked version for display.
     The raw key is NEVER sent to the frontend via this endpoint.
     """
     try:
-        plaintext = _retrieve_valid_key(provider)
+        plaintext = _retrieve_valid_key(provider, userId)
         if plaintext:
             # Calculate remaining TTL
-            ts_str = keyring.get_password(SERVICE_NAME, _get_key_timestamp_user(provider))
+            ts_str = keyring.get_password(SERVICE_NAME, _get_key_timestamp_user(provider, userId))
             remaining = 0
             if ts_str:
                 elapsed = time.time() - float(ts_str)
@@ -206,9 +207,10 @@ async def save_api_key(req: KeySaveRequest):
     Encrypt and save the API Key in the OS Keyring with a 12-hour TTL timestamp.
     """
     try:
+        user_id = req.userId
         encrypted = _encrypt_key(req.api_key)
-        keyring.set_password(SERVICE_NAME, _get_key_user(req.provider), encrypted)
-        keyring.set_password(SERVICE_NAME, _get_key_timestamp_user(req.provider), str(time.time()))
+        keyring.set_password(SERVICE_NAME, _get_key_user(req.provider, user_id), encrypted)
+        keyring.set_password(SERVICE_NAME, _get_key_timestamp_user(req.provider, user_id), str(time.time()))
         return {
             "success": True,
             "message": "API key encrypted (AES-256) and stored securely. It will auto-expire in 12 hours."
@@ -217,12 +219,12 @@ async def save_api_key(req: KeySaveRequest):
         raise HTTPException(status_code=500, detail=f"Failed to save key: {str(e)}")
 
 @app.delete("/api/settings/key")
-async def delete_api_key(provider: str):
+async def delete_api_key(provider: str, userId: str = "default"):
     """
     Immediately delete the API Key and its timestamp from the OS Keyring.
     """
     try:
-        _purge_expired_key(provider)
+        _purge_expired_key(provider, userId)
         return {"success": True, "message": "API key and timestamp purged from OS keyring."}
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Failed to delete key: {str(e)}")
@@ -253,7 +255,7 @@ async def test_connection(req: ConnectRequest):
         raise HTTPException(status_code=400, detail=f"Connection test failed: {str(e)}")
 
 @app.post("/api/upload")
-async def upload_dataset(file: UploadFile = File(...)):
+async def upload_dataset(file: UploadFile = File(...), userId: str = Form("default")):
     """
     Upload a local CSV or Excel file and save it to the server uploads folder.
     Returns the table name and local file path.
@@ -267,7 +269,16 @@ async def upload_dataset(file: UploadFile = File(...)):
     # Handle duplicates by adding a short uuid
     table_name = f"{table_name}_{uuid.uuid4().hex[:4]}"
 
-    file_path = os.path.join(UPLOAD_DIR, f"{table_name}{ext}")
+    # Save to user-scoped uploads folder safely preventing path injection (CWE-22)
+    user_upload_dir = os.path.abspath(os.path.join(UPLOAD_DIR, userId))
+    if not user_upload_dir.startswith(UPLOAD_DIR):
+        raise HTTPException(status_code=400, detail="Invalid userId")
+    os.makedirs(user_upload_dir, exist_ok=True)
+    
+    file_path = os.path.abspath(os.path.join(user_upload_dir, f"{table_name}{ext}"))
+    if not file_path.startswith(user_upload_dir):
+        raise HTTPException(status_code=400, detail="Invalid filename")
+
     try:
         with open(file_path, "wb") as buffer:
             shutil.copyfileobj(file.file, buffer)
@@ -307,13 +318,14 @@ async def websocket_swarm_endpoint(websocket: WebSocket):
         credentials = config.get("credentials", {})
         question = config.get("question")
         chat_history = config.get("chat_history", [])
+        userId = config.get("userId", "default")
         
         if not api_key:
             # Fallback to check keyring (decrypted)
             try:
                 # We need llm_provider to retrieve the key
                 llm_provider = config.get("llm_provider", "nvidia")
-                api_key = _retrieve_valid_key(llm_provider)
+                api_key = _retrieve_valid_key(llm_provider, userId)
             except Exception:
                 pass
                 
@@ -378,7 +390,8 @@ async def websocket_swarm_endpoint(websocket: WebSocket):
                 adapter=adapter,
                 db_type=db_type,
                 log_callback=sync_log_callback,
-                chat_history=chat_history
+                chat_history=chat_history,
+                userId=userId
             )
             
             # Resolve dashboard URL dynamically matching client connection host
@@ -419,13 +432,19 @@ async def websocket_swarm_endpoint(websocket: WebSocket):
 @app.get("/api/download-dashboard")
 async def download_dashboard(path: str):
     import os
-    # Extract filename safely
-    filename = os.path.basename(path)
-    file_path = os.path.join(UPLOAD_DIR, filename)
-    if not os.path.exists(file_path):
+    # Extract filename/relative path safely supporting subdirectory structure
+    parts = path.split("/uploads/")
+    rel_path = parts[1] if len(parts) > 1 else os.path.basename(path)
+    
+    file_path = os.path.join(UPLOAD_DIR, rel_path.replace("/", os.sep).replace("\\", os.sep))
+    normalized = os.path.normpath(file_path)
+    if not normalized.startswith(UPLOAD_DIR):
+        raise HTTPException(status_code=403, detail="Access denied")
+        
+    if not os.path.exists(normalized):
         raise HTTPException(status_code=404, detail="Dashboard file not found.")
     return FileResponse(
-        file_path,
+        normalized,
         media_type="image/png",
         filename="swarm_analyst_dashboard.png"
     )

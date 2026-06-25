@@ -393,7 +393,8 @@ class SwarmOrchestrator:
         adapter: BaseDbAdapter,
         db_type: str,
         log_callback: Callable[[str, str], None],
-        chat_history: Optional[List[Dict[str, Any]]] = None
+        chat_history: Optional[List[Dict[str, Any]]] = None,
+        userId: str = "default"
     ) -> Dict[str, Any]:
         """
         Runs the full hypothesis-driven swarm investigation.
@@ -503,18 +504,19 @@ class SwarmOrchestrator:
         # Define output path
         backend_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
         upload_dir = os.path.join(backend_dir, "uploads")
-        os.makedirs(upload_dir, exist_ok=True)
+        user_upload_dir = os.path.join(upload_dir, userId)
+        os.makedirs(user_upload_dir, exist_ok=True)
         
         # Clean up old dashboard files to avoid bloat
-        for f in os.listdir(upload_dir):
+        for f in os.listdir(user_upload_dir):
             if f.startswith("dashboard_") and f.endswith(".png"):
                 try:
-                    os.remove(os.path.join(upload_dir, f))
+                    os.remove(os.path.join(user_upload_dir, f))
                 except Exception:
                     pass
                     
         dashboard_filename = f"dashboard_{uuid.uuid4().hex[:8]}.png"
-        dashboard_path = os.path.join(upload_dir, dashboard_filename)
+        dashboard_path = os.path.join(user_upload_dir, dashboard_filename)
         
         try:
             generate_seaborn_dashboard(investigation_history, dashboard_path)
@@ -529,5 +531,5 @@ class SwarmOrchestrator:
             "report": report,
             "visualization": vis_spec,
             "history": investigation_history,
-            "dashboard_url": f"http://localhost:8002/uploads/{dashboard_filename}" if dashboard_filename else ""
+            "dashboard_url": f"http://localhost:8002/uploads/{userId}/{dashboard_filename}" if dashboard_filename else ""
         }

@@ -13,6 +13,7 @@ interface SettingsProps {
   setLlmProvider: (provider: string) => void;
   apiBaseUrl: string;
   setApiBaseUrl: (url: string) => void;
+  user?: any;
 }
 
 // Provider definitions with their default models
@@ -81,7 +82,8 @@ export default function Settings({
   llmProvider,
   setLlmProvider,
   apiBaseUrl,
-  setApiBaseUrl
+  setApiBaseUrl,
+  user
 }: SettingsProps) {
   const [apiKey, setApiKey] = useState('');
   const [hasKey, setHasKey] = useState(false);
@@ -97,7 +99,8 @@ export default function Settings({
 
   const loadKeyStatus = async (provider = llmProvider) => {
     try {
-      const res = await fetch(`${API_BASE_URL}/api/settings/key?provider=${provider}`);
+      const userId = user?.uid || localStorage.getItem('swarm_session_id') || 'default';
+      const res = await fetch(`${API_BASE_URL}/api/settings/key?provider=${provider}&userId=${userId}`);
       const data = await res.json();
       if (data.has_key) {
         setHasKey(true);
@@ -114,7 +117,7 @@ export default function Settings({
   // Load API Key status from OS Keyring
   useEffect(() => {
     loadKeyStatus(llmProvider);
-  }, [llmProvider]);
+  }, [llmProvider, user]);
 
   // When provider changes, update the selected model to that provider's default
   useEffect(() => {
@@ -134,10 +137,11 @@ export default function Settings({
     e.preventDefault();
     if (!apiKey.trim()) return;
     try {
+      const userId = user?.uid || localStorage.getItem('swarm_session_id') || 'default';
       const res = await fetch(`${API_BASE_URL}/api/settings/key`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ api_key: apiKey.trim(), provider: llmProvider })
+        body: JSON.stringify({ api_key: apiKey.trim(), provider: llmProvider, userId })
       });
       const data = await res.json();
       if (res.ok && data.success) {
@@ -155,7 +159,8 @@ export default function Settings({
   const handleClearApiKey = async () => {
     if (!confirm('Are you sure you want to delete your API Key from the OS Keyring?')) return;
     try {
-      const res = await fetch(`${API_BASE_URL}/api/settings/key?provider=${llmProvider}`, {
+      const userId = user?.uid || localStorage.getItem('swarm_session_id') || 'default';
+      const res = await fetch(`${API_BASE_URL}/api/settings/key?provider=${llmProvider}&userId=${userId}`, {
         method: 'DELETE'
       });
       const data = await res.json();

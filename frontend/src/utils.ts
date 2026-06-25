@@ -19,21 +19,13 @@ function cleanValue(val: string): string {
  * Parses raw CSV content into typed SaleRecord structure
  * Features automatic numeric converts and safe fallbacks
  */
-export function parseCSV(text: string): SaleRecord[] {
+export function parseCSV(text: string): Record<string, any>[] {
   if (!text || !text.trim()) return [];
   
   const lines = text.split(/\r?\n/);
-  if (lines.length < 2) return [];
+  if (lines.length === 0) return [];
 
-  // Parse headers
-  const headers = lines[0].split(',').map(h => cleanValue(h).toLowerCase().replace(/[\s_-]+/g, ''));
-  const records: SaleRecord[] = [];
-
-  for (let i = 1; i < lines.length; i++) {
-    const line = lines[i].trim();
-    if (!line) continue;
-
-    // Simple robust split that respects double quotes
+  const parseLine = (line: string): string[] => {
     const cells: string[] = [];
     let currentCell = '';
     let inQuotes = false;
@@ -50,63 +42,35 @@ export function parseCSV(text: string): SaleRecord[] {
       }
     }
     cells.push(currentCell);
+    return cells.map(cleanValue);
+  };
 
-    if (cells.length < 4) continue;
+  const headers = parseLine(lines[0]);
+  const records: Record<string, any>[] = [];
 
-    // Map columns dynamically based on closest name matching
-    let order_id = `R-${1000 + i}`;
-    let order_date = new Date().toISOString().split('T')[0];
-    let product_name = 'Enterprise Service Pack';
-    let category = 'Subscription';
-    let quantity = 1;
-    let unit_price = 100;
-    let discount = 0;
-    let region = 'Global';
-    let customer_segment = 'Enterprise';
+  for (let i = 1; i < lines.length; i++) {
+    const line = lines[i].trim();
+    if (!line) continue;
+
+    const cells = parseLine(line);
+    const record: Record<string, any> = {};
 
     headers.forEach((header, index) => {
-      const val = cleanValue(cells[index] || '');
-      if (!val) return;
-
-      if (header.includes('orderid') || header.includes('id') || header.includes('invoice')) {
-        order_id = val;
-      } else if (header.includes('date')) {
-        order_date = val;
-      } else if (header.includes('product') || header.includes('item') || header.includes('name')) {
-        product_name = val;
-      } else if (header.includes('category') || header.includes('type')) {
-        category = val;
-      } else if (header.includes('quantity') || header.includes('qty')) {
-        quantity = parseInt(val.replace(/[^0-9.-]/g, ''), 10) || 1;
-      } else if (header.includes('price') || header.includes('rate')) {
-        unit_price = parseFloat(val.replace(/[^0-9.-]/g, '')) || 100;
-      } else if (header.includes('discount')) {
-        discount = parseFloat(val.replace(/[^0-9.-]/g, '')) || 0;
-        // Treat percentage fields like '15' as '0.15'
-        if (discount > 1) {
-          discount = discount / 100;
-        }
-      } else if (header.includes('region') || header.includes('location') || header.includes('country')) {
-        region = val;
-      } else if (header.includes('segment') || header.includes('group') || header.includes('cohort')) {
-        customer_segment = val;
+      if (!header) return;
+      const rawVal = cells[index] || '';
+      
+      // Try to parse numeric values dynamically (ignore currency symbols and commas)
+      const sanitizedNumStr = rawVal.replace(/[^0-9.-]/g, '');
+      const numVal = Number(sanitizedNumStr);
+      
+      if (rawVal !== '' && !isNaN(numVal) && sanitizedNumStr !== '') {
+        record[header] = numVal;
+      } else {
+        record[header] = rawVal;
       }
     });
 
-    const sales_amount = (quantity * unit_price) * (1 - discount);
-
-    records.push({
-      order_id,
-      order_date,
-      product_name,
-      category,
-      quantity,
-      unit_price,
-      discount,
-      region,
-      sales_amount: Number(sales_amount.toFixed(2)),
-      customer_segment
-    });
+    records.push(record);
   }
 
   return records;
